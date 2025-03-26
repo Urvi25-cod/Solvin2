@@ -9,7 +9,7 @@ import australiaIcon from "../Images/australia.png"
 import mapImage from "../Images/mapImage.png";
 // import Abc from "./Abc";
 
-const Map = () => {
+const ContactUs = () => {
 
 
   const locations = [
@@ -248,4 +248,4 @@ const Map = () => {
   );
 };
 
-export default Map;
+export default ContactUs;
