@@ -6,7 +6,7 @@ import India from "../Images/India.png";
 import Usa from "../Images/Usa.png";
 import germany from "../Images/germany.png";
 import AUSTRALIA from "../Images/AUSTRALIA.png"
-import mapImage from "../Images/mapImage.png";
+import mapimages from "../Images/mapimages.png";
 // import Abc from "./Abc";
 
 const ContactUs = () => {
@@ -160,7 +160,7 @@ const ContactUs = () => {
             {/* Map Section */}
             <div className="w-full h-[400px] md:h-[600px] lg:h-[700px] xl:h-[800px] rounded-lg overflow-hidden">
               <img
-                src={mapImage}
+                src={mapimages}
                 alt="Map"
                 className="object-cover h-full w-full"
               />
