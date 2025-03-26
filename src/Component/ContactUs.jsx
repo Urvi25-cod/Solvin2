@@ -2,10 +2,10 @@ import { useState } from "react"
 import background from "../Images/background.png";
 import map from "../Images/map.svg";
 import Nav from "./Nav";
-import indiaIcon from "../Images/india.png";
-import usaIcon from "../Images/usa.png";
-import germanyIcon from "../Images/germany.png";
-import australiaIcon from "../Images/australia.png"
+import India from "../Images/India.png";
+import Usa from "../Images/Usa.png";
+import germany from "../Images/germany.png";
+import AUSTRALIA from "../Images/AUSTRALIA.png"
 import mapImage from "../Images/mapImage.png";
 // import Abc from "./Abc";
 
@@ -18,28 +18,28 @@ const ContactUs = () => {
       address: "701 E Parks Hwy, Wasilla, Alaska United States, 61.581765, 99654",
       number: "+91 23409 12348",
       email: "solviglobe@gmail.com",
-      icon: indiaIcon,
+      icon: India,
     },
     {
       name: "USA",
       address: "701 E Parks Hwy, Wasilla, Alaska United States, 61.581765, 99654",
       number: "+91 23409 12348",
       email: "solviglobe@gmail.com",
-      icon: usaIcon,
+      icon: Usa,
     },
     {
       name: "GERMANY",
       address: "701 E Parks Hwy, Wasilla, Alaska United States, 61.581765, 99654",
       number: "+91 23409 12348",
       email: "solviglobe@gmail.com",
-      icon: germanyIcon,
+      icon: germany,
     },
     {
       name: "AUSTRALIA",
       address: "701 E Parks Hwy, Wasilla, Alaska United States, 61.581765, 99654",
       number: "+91 23409 12348",
       email: "solviglobe@gmail.com",
-      icon: australiaIcon,
+      icon: AUSTRALIA,
     },
   ];
 
