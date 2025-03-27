@@ -7,9 +7,11 @@ import ContactUs from './Component/ContactUs';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Homes from "./Component/Homes";
 import About from './Component/About';
+import OurTeam from './Component/OurTeam';
 import InquiryForm from './Component/InquiryForm';
 import Registration from './Component/Registration';
 import Career from './Component/Career';
+import FounderNote from './Component/FounderNote';
 // import Abc from './Component/Abc';
 
 
@@ -33,6 +35,8 @@ function App() {
             <Route path='/Product' element={<Product />} />
             <Route path='/Services' element={<Services />} />
             <Route path='/About' element={<About />} />
+            <Route path='/OurTeam' element={<OurTeam/>} />
+            <Route path='/FounderNote' element={< FounderNote/>} />
             <Route path='/Blog' element={<Blog />} />
             <Route path='/ContactUs' element={<ContactUs />} />
             <Route path='/InquiryForm' element={<InquiryForm/>} />

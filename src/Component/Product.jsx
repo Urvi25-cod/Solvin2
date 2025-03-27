@@ -76,11 +76,30 @@
 
 
 import React from "react"
+import { useLocation } from "react-router-dom";
 import background from "../Images/background.png";
 import product1 from "../Images/product1.png"
 import Nav from "./Nav";
 
 export default function Product() {
+
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const category = queryParams.get("category"); // Get the 'category' value
+
+  const categories = [
+    "Aliphatic Based Spotting Fluid",
+    "FMCG Products",
+    "Industrial Chemicals",
+    "Petrochemical Products",
+    "Metals & Alloys",
+    "Agri-Commodities",
+    "Aviation Service and Parts",
+    "Pharmaceutical Products",
+    "Machinery & Equipment",
+    "Animal Nutrition & Feed",
+  ];
+
   return (
     <>
       <Nav bgColor="bg-white" textColor="text-black" />
@@ -129,25 +148,18 @@ export default function Product() {
         {/* Main Layout */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           {/* Sidebar */}
+          {/* Sidebar */}
           <div className="bg-white shadow-md rounded-lg p-2">
-
             <ul className="space-y-3">
-              {/* <li className="text-gray-700 hover:text-orange-500 cursor-pointerfont-medium">Aliphatic Based Spotting Fluid</li> */}
-              <li
-                className="cursor-pointer font-medium px-4 py-2 rounded-lg hover:bg-orange-500 text-gray-700 hover:text-white"
-
-              >
-                Aliphatic Based Spotting Fluid
-              </li>
-              <li className="cursor-pointer font-medium px-4 py-2 rounded-lg hover:bg-orange-500 text-gray-700 hover:text-white">FMCG Products</li>
-              <li className="cursor-pointer font-medium px-4 py-2 rounded-lg hover:bg-orange-500 text-gray-700 hover:text-white">Industrial Chemicals</li>
-              <li className="cursor-pointer font-medium px-4 py-2 rounded-lg hover:bg-orange-500 text-gray-700 hover:text-white">Petrochemical Products</li>
-              <li className="cursor-pointer font-medium px-4 py-2 rounded-lg hover:bg-orange-500 text-gray-700 hover:text-white">Metals & Alloys</li>
-              <li className="cursor-pointer font-medium px-4 py-2 rounded-lg hover:bg-orange-500 text-gray-700 hover:text-white">Agri-Commodities</li>
-              <li className="cursor-pointer font-medium px-4 py-2 rounded-lg hover:bg-orange-500 text-gray-700 hover:text-white">Aviation Service and Parts</li>
-              <li className="cursor-pointer font-medium px-4 py-2 rounded-lg hover:bg-orange-500 text-gray-700 hover:text-white">Pharmaceutical Products</li>
-              <li className="cursor-pointer font-medium px-4 py-2 rounded-lg hover:bg-orange-500 text-gray-700 hover:text-white">Machinery & Equipment</li>
-              <li className="cursor-pointer font-medium px-4 py-2 rounded-lg hover:bg-orange-500 text-gray-700 hover:text-white">Animal Nutrition & Feed</li>
+              {categories.map((item, index) => (
+                <li
+                  key={index}
+                  className={`cursor-pointer font-medium px-4 py-2 rounded-lg 
+                ${category === item ? "bg-orange-500 text-white" : "hover:bg-orange-500 hover:text-white text-gray-700"}`}
+                >
+                  {item}
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -174,3 +186,5 @@ export default function Product() {
     </>
   )
 }
+
+

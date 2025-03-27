@@ -64,17 +64,17 @@ export default function Services() {
                         Global Supply,{" "}
                         <span className="text-orange-500">Innovation, Reliability, Efficiency, Growth</span>
                     </h2>
-                    <p className="text-gray-600 mb-4 leading-relaxed text-sm md:text-lg ">
+                    <p className="text-gray-600 mb-4 leading-relaxed text-sm md:text-lg text-justify">
                         SolviGlobe Ltd, founded in 2022 and based in India, is a supplier of raw materials,
                         semi-finished products, finished goods, and services across multiple industries worldwide.
                         Our mission is to empower businesses with efficient, reliable, and innovative solutions.
                     </p>
-                    <p className="text-gray-600 mb-4 leading-relaxed text-sm md:text-lg">
+                    <p className="text-gray-600 mb-4 leading-relaxed text-sm md:text-lg text-justify">
                         Our vision is to become the world’s leading supplier of raw materials and finished goods
                         across all industries. Through our commitment to efficiency and innovation, we help
                         global businesses achieve seamless operations and exceptional growth.
                     </p>
-                    <p className="text-gray-600 leading-relaxed text-sm md:text-lg">
+                    <p className="text-gray-600 leading-relaxed text-sm md:text-lg text-justify">
                         Our mission is to revolutionize the global market through a customer-centric approach
                         and advanced technologies. We aim to deliver superior products and services promptly,
                         fostering long-term partnerships and driving global commerce.

@@ -1,168 +1,76 @@
-// // // import React from "react";
-// // // import spareparts from "../Images/spareparts.png";
-// // // import scientist from "../Images/scientist.png";
-// // // import petrol from "../Images/petrol.png";
-// // // import warehouse from "../Images/warehouse.png";
-// // // import stacked from "../Images/stacked.png";
-// // // import oil from "../Images/oil.png";
-// // // import petrochemical from "../Images/petrochemical.png";
-// // // import colourful from "../Images/colourful.png";
+// import React from "react";
+// import spareparts from "../Images/spareparts.png";
+// import scientist from "../Images/scientist.png";
+// import petrol from "../Images/petrol.png";
+// import warehouse from "../Images/warehouse.png";
+// import stacked from "../Images/stacked.png";
+// import oil from "../Images/oil.png";
+// import petrochemical from "../Images/petrochemical.png";
+// import colourful from "../Images/colourful.png";
 
+// const Ourproduct = () => {
+//   return (
+//     <section className="container mx-auto px-6 py-12">
+//       <h4 className="text-orange-500 font-semibold">Our Product</h4>
+//       <h2 className="text-2xl md:text-4xl font-bold text-[#1F4278]">
+//         Premium Raw Material <span className="text-orange-500">Supply Solutions</span>
+//       </h2>
 
-// // // const Ourproduct = () => {
-// // //   return (
-// // //     <section className="container mx-auto px-6 py-12">
-// // //       <h4 className="text-orange-500 font-semibold">Our Product</h4>
-// // //       <h2 className="text-2xl md:text-4xl font-bold text-[#1F4278]">
-// // //         Premium Raw Material <span className="text-orange-500">Supply Solutions</span>
-// // //       </h2>
-      
-// // //       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
-// // //         <div className="relative group">
-// // //           <img src={spareparts} alt="Aviation Spare Parts" className="w-full h-full rounded-lg" />
-// // //           <div className="absolute inset-0 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-// // //             <p className="text-white font-bold text-lg">Aviation Spare Parts</p>
-// // //           </div>
-// // //         </div>
-// // //         <img src={scientist} alt="Science" className="w-full h-full rounded-lg" />
-// // //         <img src={petrol} alt="Industry" className="w-full h-full rounded-lg" />
-// // //         <img src={warehouse} alt="Metal" className="w-full h-full rounded-lg" />
-// // //         <img src={stacked} alt="Grains" className="w-full h-full rounded-lg" />
-// // //         <img src={oil} alt="Oil Products" className="w-full h-full rounded-lg" />
-// // //         <img src={petrochemical} alt="Plastic" className="w-full h-full rounded-lg" />
-// // //         <img src={colourful} alt="Pharmaceuticals" className="w-full h-full rounded-lg" />
-// // //       </div>
-// // //     </section>
+//       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-6">
+//         <div className="relative group">
+//           <img src={spareparts} alt="Aviation Spare Parts" className="w-full h-full rounded-lg" />
+//           <div className="absolute inset-0 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+//             <p className="text-white font-bold text-lg">Aviation Spare Parts</p>
+//           </div>
+//         </div>
+//         <div className="relative group">
+//           <img src={scientist} alt="Science" className="w-full h-full rounded-lg" />
+//           <div className="absolute inset-0 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+//             <p className="text-white font-bold text-lg">Science</p>
+//           </div>
+//         </div>
+//         <div className="relative group">
+//           <img src={petrol} alt="Industry" className="w-full h-full rounded-lg" />
+//           <div className="absolute inset-0 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+//             <p className="text-white font-bold text-lg">Industry</p>
+//           </div>
+//         </div>
+//         <div className="relative group">
+//           <img src={warehouse} alt="Metal" className="w-full h-full rounded-lg" />
+//           <div className="absolute inset-0 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+//             <p className="text-white font-bold text-lg">Metal</p>
+//           </div>
+//         </div>
+//         <div className="relative group">
+//           <img src={stacked} alt="Grains" className="w-full h-full rounded-lg" />
+//           <div className="absolute inset-0 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+//             <p className="text-white font-bold text-lg">Grains</p>
+//           </div>
+//         </div>
+//         <div className="relative group">
+//           <img src={oil} alt="Oil Products" className="w-full h-full rounded-lg" />
+//           <div className="absolute inset-0 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+//             <p className="text-white font-bold text-lg">Oil Products</p>
+//           </div>
+//         </div>
+//         <div className="relative group">
+//           <img src={petrochemical} alt="Plastic" className="w-full h-full rounded-lg" />
+//           <div className="absolute inset-0 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+//             <p className="text-white font-bold text-lg">Plastic</p>
+//           </div>
+//         </div>
+//         <div className="relative group">
+//           <img src={colourful} alt="Pharmaceuticals" className="w-full h-full rounded-lg" />
+//           <div className="absolute inset-0 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+//             <p className="text-white font-bold text-lg">Pharmaceuticals</p>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
 
-    
-// // //   );
-// // // };
-
-// // // export default Ourproduct;
-
-
-
-// // // import React from "react";
-// // // import spareparts from "../Images/spareparts.png";
-// // // import scientist from "../Images/scientist.png";
-// // // import petrol from "../Images/petrol.png";
-// // // import warehouse from "../Images/warehouse.png";
-// // // import stacked from "../Images/stacked.png";
-// // // import oil from "../Images/oil.png";
-// // // import petrochemical from "../Images/petrochemical.png";
-// // // import colourful from "../Images/colourful.png";
-
-// // // const Ourproduct = () => {
-// // //   return (
-// // //     <section className="container mx-auto px-6 py-12">
-// // //       <h4 className="text-orange-500 font-semibold">Our Product</h4>
-// // //       <h2 className="text-2xl md:text-4xl font-bold text-[#1F4278]">
-// // //         Premium Raw Material <span className="text-orange-500">Supply Solutions</span>
-// // //       </h2>
-
-// // //       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-6">
-// // //         <div className="relative group">
-// // //           <img src={spareparts} alt="Aviation Spare Parts" className="w-full h-full rounded-lg" />
-// // //           <div className="absolute inset-0 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-// // //             <p className="text-white font-bold text-lg">Aviation Spare Parts</p>
-// // //           </div>
-// // //         </div>
-// // //         <div className="relative group">
-// // //           <img src={scientist} alt="Science" className="w-full h-full rounded-lg" />
-// // //           <div className="absolute inset-0 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-// // //             <p className="text-white font-bold text-lg">Science</p>
-// // //           </div>
-// // //         </div>
-// // //         <div className="relative group">
-// // //           <img src={petrol} alt="Industry" className="w-full h-full rounded-lg" />
-// // //           <div className="absolute inset-0 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-// // //             <p className="text-white font-bold text-lg">Industry</p>
-// // //           </div>
-// // //         </div>
-// // //         <div className="relative group">
-// // //           <img src={warehouse} alt="Metal" className="w-full h-full rounded-lg" />
-// // //           <div className="absolute inset-0 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-// // //             <p className="text-white font-bold text-lg">Metal</p>
-// // //           </div>
-// // //         </div>
-// // //         <div className="relative group">
-// // //           <img src={stacked} alt="Grains" className="w-full h-full rounded-lg" />
-// // //           <div className="absolute inset-0 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-// // //             <p className="text-white font-bold text-lg">Grains</p>
-// // //           </div>
-// // //         </div>
-// // //         <div className="relative group">
-// // //           <img src={oil} alt="Oil Products" className="w-full h-full rounded-lg" />
-// // //           <div className="absolute inset-0 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-// // //             <p className="text-white font-bold text-lg">Oil Products</p>
-// // //           </div>
-// // //         </div>
-// // //         <div className="relative group">
-// // //           <img src={petrochemical} alt="Plastic" className="w-full h-full rounded-lg" />
-// // //           <div className="absolute inset-0 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-// // //             <p className="text-white font-bold text-lg">Plastic</p>
-// // //           </div>
-// // //         </div>
-// // //         <div className="relative group">
-// // //           <img src={colourful} alt="Pharmaceuticals" className="w-full h-full rounded-lg" />
-// // //           <div className="absolute inset-0 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-// // //             <p className="text-white font-bold text-lg">Pharmaceuticals</p>
-// // //           </div>
-// // //         </div>
-// // //       </div>
-// // //     </section>
-// // //   );
-// // // };
-
-// // // export default Ourproduct;
-
-
-// // import React from "react";
-// // import spareparts from "../Images/spareparts.png";
-// // import scientist from "../Images/scientist.png";
-// // import petrol from "../Images/petrol.png";
-// // import warehouse from "../Images/warehouse.png";
-// // import stacked from "../Images/stacked.png";
-// // import oil from "../Images/oil.png";
-// // import petrochemical from "../Images/petrochemical.png";
-// // import colourful from "../Images/colourful.png";
-
-// // const Ourproduct = () => {
-// //   // Product Data Array
-// //   const products = [
-// //     { img: spareparts, title: "Aviation Spare Parts" },
-// //     { img: scientist, title: "Science" },
-// //     { img: petrol, title: "Industry" },
-// //     { img: warehouse, title: "Metal" },
-// //     { img: stacked, title: "Grains" },
-// //     { img: oil, title: "Oil Products" },
-// //     { img: petrochemical, title: "Plastic" },
-// //     { img: colourful, title: "Pharmaceuticals" }
-// //   ];
-
-// //   return (
-// //     <section className="container mx-auto px-6 py-12">
-// //       <h4 className="text-orange-500 font-semibold">Our Product</h4>
-// //       <h2 className="text-2xl md:text-4xl font-bold text-[#1F4278]">
-// //         Premium Raw Material <span className="text-orange-500">Supply Solutions</span>
-// //       </h2>
-
-// //       {/* Grid Layout */}
-// //       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-6">
-// //         {products.map((product, index) => (
-// //           <div key={index} className="relative group">
-// //             <img src={product.img} alt={product.title} className="w-full h-full rounded-lg" />
-// //             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-// //               <p className="text-white font-bold text-lg">{product.title}</p>
-// //             </div>
-// //           </div>
-// //         ))}
-// //       </div>
-// //     </section>
-// //   );
-// // };
-
-// // export default Ourproduct;
+// export default Ourproduct;
 
 
 // import React from "react";
@@ -236,6 +144,8 @@
 
 
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 import icon1 from "../Images/icon1.png";
 import icon2 from "../Images/icon2.png";
 import icon3 from "../Images/icon3.png";
@@ -248,6 +158,9 @@ import icon9 from "../Images/icon9.png";
 import Arrow from "../Images/Arrow.png"; // Import Arrow Icon
 
 const Ourproduct = () => {
+
+  const navigate = useNavigate();
+
   const categories = [
     { name: "FMCG Products", icon: icon1 },
     { name: "Industrial Chemicals", icon: icon2 },
@@ -259,6 +172,11 @@ const Ourproduct = () => {
     { name: "Machinery & Equipment", icon: icon8 },
     { name: "Animal Nutrition & Feed", icon: icon9 },
   ];
+
+  const handleNavigation = (categoryName) => {
+    // Navigate to the Product.jsx page with the category name as a query parameter
+    navigate(`/product?category=${encodeURIComponent(categoryName)}`);
+  };
 
   return (
     <div className="container mx-auto px-4 md:px-6 py-12">
@@ -276,6 +194,7 @@ const Ourproduct = () => {
           <div
             key={index}
             className="relative flex flex-col items-center justify-center w-65 h-40 hover:shadow-xl rounded-br-4xl transition-shadow duration-300 cursor-pointer group  p-4"
+              onClick={() => handleNavigation(category.name)}
           >
             {/* Icon Placeholder */}
             <div className="mb-4">
@@ -299,6 +218,8 @@ const Ourproduct = () => {
           </div>
         ))}
       </div>
+
+      
     </div>
   );
 };

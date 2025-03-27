@@ -28,10 +28,14 @@ export default function Nav({ bgColor, textColor }) {
               About us
               {isAboutDropdownOpen && (
                 <ul className="absolute top-full left-0 bg-white text-black mt-2 rounded shadow-lg">
-                  <li className="px-4 py-2 hover:bg-orange-500 text-sm md:text-base">Our Team</li>
+                  <Link to="/OurTeam"><li className="px-4 py-2 hover:bg-orange-500 text-sm md:text-base">Our Team</li></Link>
                   <li className="px-4 py-2 hover:bg-orange-500 text-sm md:text-base">
                     Founder’s Note
                   </li>
+                  <li className="px-4 py-2 hover:bg-orange-500 text-sm md:text-base">
+                    Founder’s Note
+                  </li>
+                  
                 </ul>
               )}
             </li>
@@ -49,17 +53,19 @@ export default function Nav({ bgColor, textColor }) {
             >
               Product
               {isProductDropdownOpen && (
-                <ul className="absolute top-full left-0 bg-white text-black mt-2 rounded shadow-lg">
+                <ul className="absolute top-full  left-0  bg-white text-black mt-2 rounded shadow-lg">
                   {/* Categories */}
-                  <li className="px-4 py-2 hover:bg-gray-200 text-sm md:text-base">FMCG Products</li>
-                  <li className="px-4 py-2 hover:bg-gray-200 text-sm md:text-base">Industrial Chemicals</li>
-                  <li className="px-4 py-2 hover:bg-gray-200 text-sm md:text-base">Petrochemical Products</li>
-                  <li className="px-4 py-2 hover:bg-orange-500 text-sm md:text-base ">Metals & Alloys</li>
-                  <li className="px-4 py-2 hover:bg-gray-200 text-sm md:text-base">Agri-Commodities</li>
-                  <li className="px-4 py-2 hover:bg-gray-200 text-sm md:text-base">Aviation Service and Parts</li>
-                  <li className="px-4 py-2 hover:bg-gray-200 text-sm md:text-base">Pharmaceutical Products</li>
-                  <li className="px-4 py-2 hover:bg-gray-200 text-sm md:text-base">Machinery & Equipment</li>
-                  <li className="px-4 py-2 hover:bg-gray-200 text-sm md:text-base">Animal Nutrition & Feed</li>
+                 
+                  <li className="p-2 text-center w-100 hover:bg-gray-200 text-sm md:text-base">FMCG Products</li>
+                  <li className="p-2 text-center w-100 hover:bg-gray-200 text-sm md:text-base">Industrial Chemicals</li>
+                  <li className="p-2 text-center w-100 hover:bg-gray-200 text-sm md:text-base">Petrochemical Products</li>
+                  <li className="p-2 text-center w-100 hover:bg-orange-500 text-sm md:text-base ">Metals & Alloys</li>
+                  <li className="p-2 text-center w-100 hover:bg-gray-200 text-sm md:text-base">Agri-Commodities</li>
+                  <li className="p-2 text-center w-100 hover:bg-gray-200 text-sm md:text-base">Aviation Service and Parts</li>
+                  <li className="p-2 text-center w-100 hover:bg-gray-200 text-sm md:text-base">Pharmaceutical Products</li>
+                  <li className="p-2 text-center w-100 hover:bg-gray-200 text-sm md:text-base">Machinery & Equipment</li>
+                  <li className="p-2 text-center w-100 hover:bg-gray-200 text-sm md:text-base">Animal Nutrition & Feed</li>
+                
                 </ul>
               )}
             </li>
@@ -76,9 +82,14 @@ export default function Nav({ bgColor, textColor }) {
               Services
               {isServicesDropdownOpen && (
                 <ul className="absolute top-full left-0 bg-white text-black mt-2 p-2 rounded shadow-lg">
-                  <li className="px-6 py-2 hover:bg-orange-500 text-gray-700 rounded-lg hover:text-white text-sm md:text-base">Sourcing & Processing</li>
-                  <li className="px-6 py-2 hover:bg-orange-500 text-gray-700 rounded-lg hover:text-white text-sm md:text-base">Recycling & Sustainability</li>
-                  <li className="px-6 py-2 hover:bg-orange-500 text-gray-700 rounded-lg hover:text-white text-sm md:text-base">Supply Chain & Logistics</li>
+                  <li className="px-6 py-2 hover:bg-orange-500 text-gray-700 rounded-lg hover:text-white text-sm md:text-base">Export-Import Services</li>
+                  <li className="px-6 py-2 hover:bg-orange-500 text-gray-700 rounded-lg hover:text-white text-sm md:text-base">E2E Logistic Services</li>
+                  <li className="px-6 py-2 hover:bg-orange-500 text-gray-700 rounded-lg hover:text-white text-sm md:text-base">Product Distribution</li>
+                  <li className="px-6 py-2 hover:bg-orange-500 text-gray-700 rounded-lg hover:text-white text-sm md:text-base">Warehousing Services</li>
+                  <li className="px-6 py-2 hover:bg-orange-500 text-gray-700 rounded-lg hover:text-white text-sm md:text-base">IT Outsourcing Services</li>
+                  <li className="px-6 py-2 hover:bg-orange-500 text-gray-700 rounded-lg hover:text-white text-sm md:text-base">Trade Finance</li>
+                  <li className="px-6 py-2 hover:bg-orange-500 text-gray-700 rounded-lg hover:text-white text-sm md:text-base">Product R&D</li>
+                  <li className="px-6 py-2 hover:bg-orange-500 text-gray-700 rounded-lg hover:text-white text-sm md:text-base">Ship Chandling Services</li>
                 </ul>
               )}
             </li>
@@ -130,10 +141,9 @@ export default function Nav({ bgColor, textColor }) {
               About us
               {isAboutDropdownOpen && (
                 <ul className="mt-2">
-                  <li className="px-4 py-2 hover:bg-orange-500 text-sm md:text-base">Our Team</li>
-                  <li className="px-4 py-2 hover:bg-orange-500 text-sm md:text-base">
-                    Founder’s Note
-                  </li>
+                   <Link to="/OurTeam"><li className="px-4 py-2 hover:bg-orange-500 text-sm md:text-base">Our Team</li></Link>
+                   <Link to="/FounderNote">  <li className="px-4 py-2 hover:bg-orange-500 text-sm md:text-base">
+                    Founder’s Note </li></Link>
                 </ul>
               )}
             </li>
