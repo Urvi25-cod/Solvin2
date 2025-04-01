@@ -12,6 +12,7 @@ import InquiryForm from './Component/InquiryForm';
 import Registration from './Component/Registration';
 import Career from './Component/Career';
 import FounderNote from './Component/FounderNote';
+import Singleproduct from './Component/Singleproduct';
 // import Abc from './Component/Abc';
 
 
@@ -38,6 +39,7 @@ function App() {
             <Route path='/OurTeam' element={<OurTeam/>} />
             <Route path='/FounderNote' element={< FounderNote/>} />
             <Route path='/Blog' element={<Blog />} />
+            <Route path='/Singleproduct' element={<Singleproduct/>} />
             <Route path='/ContactUs' element={<ContactUs />} />
             <Route path='/InquiryForm' element={<InquiryForm/>} />
             <Route path='/Registration' element={< Registration/>} />

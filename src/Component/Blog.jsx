@@ -247,6 +247,8 @@ import background from "../Images/background.png";
 import sky from "../Images/sky.png";
 import calendar from "../Images/calendar.png"; // Add your calendar image here
 import Nav from "./Nav";
+import { Link } from 'react-router-dom';
+
 
 const blogPosts = [
   {
@@ -329,7 +331,7 @@ const Blog = () => {
           {blogPosts.map((post, index) => (
             <div key={index} className="bg-white shadow-md rounded-lg overflow-hidden">
               {/* Post Image */}
-              <img src={post.image} alt={post.title} className="w-full h-80 object-cover" />
+           <Link to={'/Singleproduct'}><img src={post.image} alt={post.title} className="w-full h-80 object-cover" /></Link>
 
               {/* Post Content */}
               <div className="p-4">

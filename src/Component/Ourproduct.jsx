@@ -189,11 +189,11 @@ const Ourproduct = () => {
       </div>
 
       {/* Categories Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 ">
         {categories.map((category, index) => (
           <div
             key={index}
-            className="relative flex flex-col items-center justify-center w-65 h-40 hover:shadow-xl rounded-br-4xl transition-shadow duration-300 cursor-pointer group  p-4"
+            className="relative flex flex-col items-center   justify-center w-65 h-40 hover:shadow-xl rounded-br-4xl transition-shadow duration-300 cursor-pointer group  p-4  hover:border"
               onClick={() => handleNavigation(category.name)}
           >
             {/* Icon Placeholder */}
@@ -207,13 +207,13 @@ const Ourproduct = () => {
             </p>
 
             {/* Bottom Border Under Hover Effect */}
-            <div className="absolute bottom-[-30px] left-0 right-0 h-[1px] bg-gray-300 group-hover:bg-orange-500 transition-all mt-50 duration-300"></div>
+            <div className="absolute bottom-[-30px] left-0 right-0 h-[1px] bg-gray-300 group-hover:bg-orange-500 transition-all mt-50 duration-300 "></div>
 
             {/* Arrow Icon (Visible on Hover) */}
             <img
               src={Arrow}
               alt="Arrow Icon"
-              className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              className="absolute  top-4 right-4 opacity-0   group-hover:opacity-100 transition-opacity duration-300"
             />
           </div>
         ))}

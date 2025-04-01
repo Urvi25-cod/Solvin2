@@ -111,6 +111,17 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FiInstagram, FiFacebook, FiLinkedin, FiTwitter } from "react-icons/fi";
 import footer from "../Images/footer.png";
+import flag1 from "../Images/flag1.png";
+import flag2 from "../Images/flag2.png";
+import flag3 from "../Images/flag3.png";
+
+import flag5 from "../Images/flag5.png";
+import flag6 from "../Images/flag6.png";
+import flag7 from "../Images/flag7.png";
+import flag8 from "../Images/flag8.png";
+import flag9 from "../Images/flag9.png";
+import flag10 from "../Images/flag10.png";
+
 
 export default function Footer() {
   const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false);
@@ -120,16 +131,16 @@ export default function Footer() {
   };
 
   const languages = [
-    { name: "English", flag: "🇬🇧" },
-    { name: "हिंदी", flag: "🇮🇳" },
-    { name: "Español", flag: "🇪🇸" },
-    { name: "عربي", flag: "🇦🇪" },
-    { name: "Русский", flag: "🇷🇺" },
-    { name: "Deutsch", flag: "🇩🇪" },
-    { name: "Français", flag: "🇫🇷" },
-    { name: "Português", flag: "🇵🇹" },
-    { name: "日本語", flag: "🇯🇵" },
-    { name: "中文", flag: "🇨🇳" },
+    { name: "English", flag: flag1 },
+    { name: "हिंदी", flag: flag2 },
+    { name: "Español", flag: flag3 },
+    { name: "عربي", flag: flag3 },
+    { name: "Русский", flag: flag5 },
+    { name: "Deutsch", flag: flag6 },
+    { name: "Français", flag: flag7 },
+    { name: "Português", flag: flag8 },
+    { name: "日本語", flag: flag9 },
+    { name: "中文", flag: flag10 },
   ];
 
   return (
@@ -156,10 +167,10 @@ export default function Footer() {
         </div>
 
         {/* Middle Section */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-8">
           {/* Address Section */}
           <div>
-            <img src={footer} alt="Solvi Globe Logo" className="mb-4" />
+            <Link to={'/'}><img src={footer} alt="Solvi Globe Logo" className="mb-4" /></Link>
             <p className="text-sm">
               Address: G33, MBC-Meridian Business Center, Lajamni Chowk,
               opposite Opera Business center, Mota Varachha, Surat, Gujarat
@@ -176,12 +187,12 @@ export default function Footer() {
 
           {/* Company Links */}
           <div>
-            <h3 className="font-bold mb-4">Company</h3>
-            <ul className="space-y-2 text-sm">
-              <li>Why choose us</li>
-              <li>Review</li>
-              <li>Customers</li>
-              <li>Blog</li>
+            <h3 className="font-bold mb-4">About</h3>
+            <ul className="space-y-2 text-base">
+              <li>Company</li>
+              <li>Founder’s Note</li>
+              <li>Our Core Team</li>
+
               <Link to="/Registration">
                 <li>Register as Vendor</li>
               </Link>
@@ -190,28 +201,55 @@ export default function Footer() {
 
           {/* Industry Links */}
           <div>
-            <h3 className="font-bold mb-4">Industry</h3>
-            <ul className="space-y-2 text-sm">
-              <li>Aviation Spare Parts</li>
-              <li>Chemicals</li>
-              <li>Oil & Gas</li>
-              <li>Metals</li>
-              <li>Commodities</li>
+            <h3 className="font-bold mb-4">Product</h3>
+            <ul className="space-y-2 text-[#FFFFFF]">
               <li>FMCG Products</li>
-              <li>Plastic Raw Materials</li>
+              <li>Industrial Chemicals</li>
+              <li>Petrochemical Products</li>
+              <li>Metals & Alloys</li>
+              <li>Agri-Commodities</li>
+              <li>Aviation Service and Parts</li>
               <li>Pharmaceutical Products</li>
+              <li>Animal Nutrition & Feed</li>
+              <li>Machinery & Equipment</li>
             </ul>
           </div>
 
-          {/* Services Links */}
           <div>
             <h3 className="font-bold mb-4">Services</h3>
-            <ul className="space-y-2 text-sm">
-              <li>Sourcing & Processing</li>
-              <li>Recycling & Sustainability</li>
-              <li>Supply Chain & Logistics</li>
+            <ul className="space-y-2 text-[#FFFFFF]">
+              <li>Export-Import Services</li>
+              <li>vE2E Logistic Services</li>
+              <li>Product Distribution</li>
+              <li>Warehousing Services</li>
+              <li>IT Outsourcing Services</li>
+              <li>Trade Finance</li>
+              <li>Product R&D</li>
+              <li>Ship Chandling Services</li>
             </ul>
           </div>
+
+          <div>
+
+            <Link to={'/InquiryForm'}><p className="text-2xl">BUSINESS INQUIRY</p></Link>
+            <Link to={'/Registration'}><p className="text-2xl">REGISTER AS VENDOR</p></Link>
+            <Link to={'/Career'}><p className="text-2xl">JOIN OUR TEAM</p></Link>
+
+
+            <div>
+            <ul className="space-y-2 text-[#FFFFFF]">
+              <li>Blog</li>
+              <li>Privacy Policy</li>
+              <li>Terms & Condition</li>
+            </ul>
+          </div>
+          </div>
+
+         
+
+
+          {/* Services Links */}
+
         </div>
 
         {/* Language Selector Dropdown */}
@@ -221,7 +259,7 @@ export default function Footer() {
             onClick={toggleDropdown}
             className="bg-[#1F4278] text-white px-4 py-2 w-[200px] rounded-md flex items-center"
           >
-             English
+            English
             {/* Dropdown Arrow */}
             {languageDropdownOpen ? (
               <span className="ml-25">▲</span>
@@ -238,14 +276,15 @@ export default function Footer() {
                   key={lang.name}
                   className="py-2 px-4 hover:bg-gray-200 cursor-pointer flex items-center gap-x-[10px]"
                 >
-                  {lang.flag} {lang.name}
+                  <img src={lang.flag} className="h-[10%] w-[20%]" />
+                  <h1>{lang.name}</h1>
                 </li>
               ))}
             </ul>
           )}
         </div>
 
-        
+
 
         {/* Bottom Section */}
         <div className="text-center text-sm border-t border-white pt-4">

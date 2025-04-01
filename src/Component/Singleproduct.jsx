@@ -1,12 +1,52 @@
 import React from "react";
-import stacked from "../Images/stacked.png"; // Replace with actual image path
+import stacked from "../Images/stacked.png";
+import background from "../Images/background.png"; // Replace with actual image path
 import oil from "../Images/oil.png";
+import Nav from "./Nav";
 
 
 
 
 const Singleproduct = () => {
   return (
+    <>
+    
+
+<Nav bgColor="bg-white" textColor="text-black" />
+
+      {/* Hero Section */}
+      <div
+        className="relative h-[40vh] w-full bg-cover bg-center flex items-center"
+        style={{ backgroundImage: `url(${background})` }}
+      >
+
+        {/* Content Container */}
+        <div className="relative  h-full flex flex-col justify-center px-6 md:px-12 lg:px-20">
+          {/* Breadcrumb Navigation */}
+          {/* <div className="absolute inset-0  bg-opacity-50"></div> */}
+
+          <div className="mb-2 text-white text-sm md:text-base">
+            <a href="/" className="hover:text-orange-400 transition-colors">
+              Home
+            </a>
+            <span className="mx-2">/</span>
+            <a
+              href="/Blog"
+              className="hover:text-orange-400 transition-colors"
+            >
+              Blog/Blog Name
+            </a>
+          </div>
+
+          {/* Page Title */}
+          <h1 className="text-orange-500 text-3xl sm:text-4xl md:text-5xl font-bold">
+          Blog
+          </h1>
+        </div>
+      </div>
+
+
+    
     <section className="container mx-auto px-6 py-12 md:flex items-center">
      <div className="relative w-full lg:w-1/2 ">
                <img
@@ -48,7 +88,7 @@ const Singleproduct = () => {
 
     
 
-    
+    </>
 
     
   );

@@ -3,7 +3,7 @@ import Frame from "./Frame";
 import Ourproduct from "./Ourproduct";
 import Whychoose from "./Whychoose";
 import Framelogo  from "./Framelogo";
-import Certificate from "./Certificate";
+import OurServices from "./OurServices";
 import Testimonial from "./Testimonial";
 import Header1 from "./Header1";
 
@@ -18,7 +18,7 @@ const Homes = () => {
 <Frame/>
 <Ourproduct/>
 <Whychoose/>
-<Certificate/>
+<OurServices/>
 <Framelogo/>
 <Testimonial/>
 
