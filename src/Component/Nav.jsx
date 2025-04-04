@@ -382,7 +382,7 @@ export default function Nav({ bgColor, textColor }) {
           {/* About Dropdown */}
           <li>
             <Link to={'/About'}> <div
-              className="flex justify-between items-center text-sm md:text-base py-2 hover:bg-gray-200 cursor-pointer m"
+              className="flex justify-between items-center text-sm md:text-base py-2 hover:bg-gray-200 cursor-pointer mt-5"
               onClick={() => setIsAboutDropdownOpen(!isAboutDropdownOpen)}
             >
               About Us
