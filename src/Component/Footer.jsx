@@ -190,8 +190,8 @@ export default function Footer() {
             <h3 className="font-bold mb-4">About</h3>
             <ul className="space-y-2 text-base">
               <li>Company</li>
-              <li>Founder’s Note</li>
-              <li>Our Core Team</li>
+             <Link to={'/FounderNote'}> <li>Founder’s Note</li></Link>
+              <Link to={'/OurTeam'}><li>Our Core Team</li></Link>
 
               <Link to="/Registration">
                 <li>Register as Vendor</li>
@@ -202,7 +202,7 @@ export default function Footer() {
           {/* Industry Links */}
           <div>
             <h3 className="font-bold mb-4">Product</h3>
-            <ul className="space-y-2 text-[#FFFFFF]">
+            <Link to="/Product"><ul className="space-y-2 text-[#FFFFFF]">
               <li>FMCG Products</li>
               <li>Industrial Chemicals</li>
               <li>Petrochemical Products</li>
@@ -212,12 +212,12 @@ export default function Footer() {
               <li>Pharmaceutical Products</li>
               <li>Animal Nutrition & Feed</li>
               <li>Machinery & Equipment</li>
-            </ul>
+            </ul></Link>
           </div>
 
           <div>
             <h3 className="font-bold mb-4">Services</h3>
-            <ul className="space-y-2 text-[#FFFFFF]">
+           <Link to={'/Services'}><ul className="space-y-2 text-[#FFFFFF]">
               <li>Export-Import Services</li>
               <li>vE2E Logistic Services</li>
               <li>Product Distribution</li>
@@ -226,7 +226,7 @@ export default function Footer() {
               <li>Trade Finance</li>
               <li>Product R&D</li>
               <li>Ship Chandling Services</li>
-            </ul>
+            </ul></Link>
           </div>
 
           <div>
@@ -238,7 +238,7 @@ export default function Footer() {
 
             <div>
             <ul className="space-y-2 text-[#FFFFFF]">
-              <li>Blog</li>
+              <Link><li>Blog</li></Link>
               <li>Privacy Policy</li>
               <li>Terms & Condition</li>
             </ul>

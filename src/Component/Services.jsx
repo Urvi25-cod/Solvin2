@@ -39,7 +39,7 @@ export default function Services() {
                     </h1>
                 </div>
             </div>
-            <section className="container mx-auto px-12 py-12 md:flex items-center space-x-0 md:space-x-6">
+            <section className="container mx-auto px-4 py-12 md:flex items-center space-x-0 md:space-x-6">
 
                 <div className="relative w-full lg:w-1/2 flex justify-center">
                     {/* Orange Background Box */}

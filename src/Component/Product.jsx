@@ -75,7 +75,7 @@
 
 
 
-import React from "react"
+import React from "react";
 import { useLocation } from "react-router-dom";
 import background from "../Images/background.png";
 import product1 from "../Images/product1.png"
@@ -86,7 +86,7 @@ export default function Product() {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const category = queryParams.get("category"); // Get the 'category' value
-
+  console.log(category);
   const categories = [
     "Aliphatic Based Spotting Fluid",
     "FMCG Products",

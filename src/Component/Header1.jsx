@@ -107,54 +107,97 @@
 //   )
 // }
 
-import React from "react";
-import Nav from "./Nav";
 
-import background from "../Images/background.png";
+// import React from "react";
+// import Nav from "./Nav";
 
-export default function Header1() {
+// import background from "../Images/background.png";
+
+// export default function Header1() {
 
 
 
   
 
-  return (
-    <>
-    <header className="min-h-screen bg-cover bg-center z-10 " style={{ backgroundImage:`url(${background})`}}>
-      {/* Header */}
-      {/* <header className={`flex justify-between items-center px-6 py-4 ${bgColor}`}> */}
-        {/* Logo */}
-        {/* <div className="text-xl font-bold text-orange-500">
-          <span className="text-white ${textColor}">SOLVI</span> GLOBE
-        </div> */}
+//   return (
+//     <>
+//     <header className="min-h-screen bg-cover bg-center z-10 " style={{ backgroundImage:`url(${background})`}}>
+//       {/* Header */}
+//       {/* <header className={`flex justify-between items-center px-6 py-4 ${bgColor}`}> */}
+//         {/* Logo */}
+//         {/* <div className="text-xl font-bold text-orange-500">
+//           <span className="text-white ${textColor}">SOLVI</span> GLOBE
+//         </div> */}
 
-        <Nav bgColor="" textColor="text-white" />
-        {/* <Nav bgColor="" textColor="text-white" /> */}
-        {/* Navigation */}
+//         <Nav bgColor="" textColor="text-white" />
+//         {/* <Nav bgColor="" textColor="text-white" /> */}
+//         {/* Navigation */}
       
         
-        <main className="flex flex-col items-center justify-center text-center h-[calc(100vh_-_80px)] px-6">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-          From Raw to Refined:{" "}
-          <span className="text-orange-500">We Deliver Excellence.</span>
-        </h1>
-        <p className="text-lg md:text-xl text-gray-300 mb-8">
-          Connecting{" "}
-          <span className="text-orange-500 font-semibold">Your Needs</span> with
-          Our Expertise.
-        </p>
+//         <main className="flex flex-col items-center justify-center text-center h-[calc(100vh_-_80px)] px-6">
+//         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+//           From Raw to Refined:{" "}
+//           <span className="text-orange-500">We Deliver Excellence.</span>
+//         </h1>
+//         <p className="text-lg md:text-xl text-gray-300 mb-8">
+//           Connecting{" "}
+//           <span className="text-orange-500 font-semibold">Your Needs</span> with
+//           Our Expertise.
+//         </p>
       
-      </main>
+//       </main>
 
-      </header>
+//       </header>
 
      
 
-      {/* Footer */}
+//       {/* Footer */}
     
-     {/* </header> */}
+//      {/* </header> */}
+//     </>
+//   );
+// }
+
+
+
+import React from "react";
+import Nav from "./Nav";
+
+
+import background from "../Images/background.png";
+import serach from "../Images/serach.png";
+ // Updated background image
+
+export default function Header1() {
+  return (
+    <>
+      <header className="min-h-screen bg-cover bg-center z-10" style={{ backgroundImage: `url(${background})` }}>
+        <Nav bgColor="" textColor="text-white" />
+
+        <main className="flex flex-col items-center justify-center text-center h-[calc(100vh_-_80px)] px-6">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+            From Raw to Refined: {" "}
+            <span className="text-orange-500">We Deliver Excellence.</span>
+          </h1>
+          <p className="text-lg md:text-xl text-gray-300 mb-8">
+            Connecting {" "}
+            <span className="text-orange-500 font-semibold">Your Needs</span> with Our Expertise.
+          </p>
+          
+          {/* Search Section */}
+          <div className="flex items-center bg-white rounded-lg p-2 shadow-md w-full max-w-md">
+          <button className="px-4 py-2  text-white rounded-lg">
+              <img src={serach}/>
+            </button>
+            <input
+              type="text"
+              placeholder="Search Product & Services"
+              className="flex-1 p-2 outline-none text-blue-800"
+            />
+           
+          </div>
+        </main>
+      </header>
     </>
   );
 }
-
-

@@ -1,5 +1,6 @@
 import React from "react";
 import sr1 from "../Images/sr1.png";
+import sr2 from "../Images/sr2.png";
 import sr3 from "../Images/sr3.png";
 import sr4 from "../Images/sr4.png";
 import sr5 from "../Images/sr5.png";
@@ -8,13 +9,13 @@ import sr7 from "../Images/sr7.png";
 import sr8 from "../Images/sr8.png";
 
 import Arrow from "../Images/Arrow.png";
-import { Link, Navigate } from "react-router-dom";
+import { Link} from "react-router-dom";
 
 const OurServices = () => {
 
   const categories = [
       { name: "Export-Import Services", icon: sr1 },
-      { name: "E2E Logistic Services", icon: sr1 },
+      { name: "E2E Logistic Services", icon: sr2 },
       { name: "Product Distribution", icon: sr3 },
       { name: "Warehousing Services", icon: sr4 },
       { name: "Product R&D", icon: sr5 },
@@ -23,6 +24,8 @@ const OurServices = () => {
       { name: "IT Outsourcing Services", icon: sr8 },
      
   ];
+
+  
 
 
   return (
@@ -38,9 +41,9 @@ const OurServices = () => {
             {/* Categories Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               {categories.map((category, index) => (
-                <div
+               <Link to={'/Services'}><div
                   key={index}
-                  className="relative flex flex-col items-center justify-center w-65 h-40 hover:shadow-xl rounded-br-4xl transition-shadow duration-300 cursor-pointer group  p-4"
+                  className="relative flex flex-col items-center justify-center w-full h-40 hover:shadow-xl  rounded-br-4xl transition-shadow duration-300 cursor-pointer group  p-4 hover:border border-gray-300"
                 >
                   {/* Icon Placeholder */}
                   <div className="mb-4">
@@ -61,7 +64,7 @@ const OurServices = () => {
                     alt="Arrow Icon"
                     className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                   />
-                </div>
+                </div></Link>
               ))}
             </div>
       

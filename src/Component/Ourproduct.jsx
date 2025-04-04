@@ -176,10 +176,11 @@ const Ourproduct = () => {
   const handleNavigation = (categoryName) => {
     // Navigate to the Product.jsx page with the category name as a query parameter
     navigate(`/product?category=${encodeURIComponent(categoryName)}`);
+    console.log()
   };
 
   return (
-    <div className="container mx-auto px-4 md:px-6 py-12">
+    <div className="container mx-auto px-5 md:px-6 py-12">
       {/* Header */}
       <div className="text-center mb-8">
         <h2 className="text-orange-500 font-semibold text-sm">Our Product</h2>
@@ -193,7 +194,7 @@ const Ourproduct = () => {
         {categories.map((category, index) => (
           <div
             key={index}
-            className="relative flex flex-col items-center   justify-center w-65 h-40 hover:shadow-xl rounded-br-4xl transition-shadow duration-300 cursor-pointer group  p-4  hover:border"
+            className="relative flex flex-col items-center   justify-center w-full h-40 hover:shadow-xl rounded-br-4xl transition-shadow duration-300 cursor-pointer group  p-4  hover:border border-gray-300"
               onClick={() => handleNavigation(category.name)}
           >
             {/* Icon Placeholder */}
@@ -207,7 +208,7 @@ const Ourproduct = () => {
             </p>
 
             {/* Bottom Border Under Hover Effect */}
-            <div className="absolute bottom-[-30px] left-0 right-0 h-[1px] bg-gray-300 group-hover:bg-orange-500 transition-all mt-50 duration-300 "></div>
+            <div className="absolute bottom-[-20px] left-0 right-0 h-[1px] bg-gray-300 group-hover:bg-orange-500 transition-all mt-50 duration-300 "></div>
 
             {/* Arrow Icon (Visible on Hover) */}
             <img

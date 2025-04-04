@@ -8,7 +8,7 @@ import Nav from "./Nav";
 
 
 
-const FounderNote = () => {
+const Founder = () => {
 
 
     return (
@@ -39,10 +39,10 @@ const FounderNote = () => {
                         </a>
                         <span className="mx-2">/</span>
                         <a
-                            href="/FounderNote"
+                            href="/Founder"
                             className="hover:text-orange-400 transition-colors"
                         >
-                            Founder’s Note
+                            Founder
                         </a>
                     </div>
 
@@ -66,10 +66,10 @@ const FounderNote = () => {
                             className="absolute w-[90%] h-[400px] md:w-[95%] md:h-[80%] xl:h-[70%] xl:left-25 xl:top-23 top-15 md:top-10 left-10 object-contain z-10 "
                         />
                     </div>
-                   
+
 
                     {/* Right Section - Text Content */}
-                    <div className="w-full lg:w-1/1 px-4 md:px-8 ml-20">
+                    <div className="w-full lg:w-1/1 px-4 md:px-8 ml-10">
                         <p className="text-orange-500 font-semibold text-sm">Co-founder & CEO</p>
                         <h1 className="text-[#1F4278] font-bold text-2xl md:text-3xl mt-2">Brijeshkumar Kakdiya</h1>
                         <p className="text-blue-800 text-sm md:text-base mt-4 leading-relaxed text-justify">
@@ -85,8 +85,8 @@ const FounderNote = () => {
                             operations and exceptional growth, benefiting all our stakeholders. Our mission is to
                             revolutionize the global market through customer-centric approaches and advanced technologies.
                             We aim to deliver superior products and services promptly, fostering long-term partnerships and driving global
-                             commerce. By eliminating delays and enhancing efficiency, we empower our clients to achieve their goals and succeed
-                              in a competitive market.
+                            commerce. By eliminating delays and enhancing efficiency, we empower our clients to achieve their goals and succeed
+                            in a competitive market.
                         </p>
                         <p className="text-blue-800 text-sm md:text-base mt-4 leading-relaxed text-justify">
                             SolviGlobe Ltd, founded in 2022 and based in India, is a supplier of raw materials, semi-finished products,
@@ -109,4 +109,4 @@ const FounderNote = () => {
     );
 }
 
-export default FounderNote;
+export default Founder;

@@ -183,8 +183,8 @@ export default function Whychoose() {
             style={{ transform: `translateX(-${index * 100}%)` }}
           >
             {features.map((feature, idx) => (
-              <div key={idx} className="min-w-full sm:min-w-[50%] md:min-w-[33.33%] lg:min-w-[25%] p-4">
-                <div className="bg-white p-6 shadow-lg rounded-lg text-left flex flex-col items-center">
+              <div key={idx} className="min-w-full  sm:min-w-[50%] md:min-w-[33.33%] lg:min-w-[25%] p-4">
+                <div className="bg-white p-6 shadow-lg rounded-lg text-left flex flex-col items-center h-[300px] md:h-[350px]">
                   <img src={feature.icon} className="mb-4"></img>
                   <h3 className="text-lg font-bold text-[#1F4278]">{feature.title}</h3>
                   <p className="text-gray-600 mt-2 text-center">{feature.description}</p>

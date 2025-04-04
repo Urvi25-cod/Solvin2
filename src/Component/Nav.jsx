@@ -198,6 +198,7 @@
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import logo from "../Images/logo.png";
 
 export default function Nav({ bgColor, textColor }) {
@@ -206,6 +207,12 @@ export default function Nav({ bgColor, textColor }) {
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false)
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
 
+  const handleNavigation = (categoryName) => {
+    // Navigate to the Product.jsx page with the category name as a query parameter
+    navigate(`/product?category=${encodeURIComponent(categoryName)}`);
+    console.log(categoryName, "22");
+  };
+  const navigate = useNavigate();
   return (
     <>
       <nav className={`flex justify-between items-center px-4 py-5 ${bgColor} md:px-10 lg:px-20`}>
@@ -214,76 +221,77 @@ export default function Nav({ bgColor, textColor }) {
         </div>
 
         {/* Desktop Navigation */}
-        <ul className={`hidden md:flex space-x-6 items-center ${textColor}`}>
-          <Link to="/About">
-            <li
-              className="relative text-sm md:text-base lg:text-lg hover:text-orange-500 cursor-pointer z-10 lg:border-r-1  lg:pr-4 border-gray-500"
-              onMouseEnter={() => setIsAboutDropdownOpen(true)}
-              onMouseLeave={() => setIsAboutDropdownOpen(false)}
-            >
-              About us
-              {isAboutDropdownOpen && (
-                <ul className="absolute top-full left-0 bg-white text-black mt-2 w-[220px] rounded shadow-lg">
-                  <Link to="/OurTeam"><li className="px-4 py-2 hover:bg-orange-500 text-sm md:text-base">Our Team</li></Link>
-                  <Link to="/FounderNote"><li className="px-4 py-2 hover:bg-orange-500 text-sm md:text-base">
+        <ul className={`hidden  md:flex space-x-6 items-center ${textColor}`}>
+        <li
+            className="relative text-sm md:text-base lg:text-lg hover:text-orange-500 cursor-pointer z-10 lg:border-r-1 lg:pr-4 border-gray-500"
+            onClick={() => setIsAboutDropdownOpen(!isAboutDropdownOpen)}
+          >
+            About us
+            {isAboutDropdownOpen && (
+              <ul className="absolute top-full left-0 bg-white text-black mt-2 w-[220px] rounded shadow-lg">
+                <Link to="/OurTeam">
+                  <li className="px-4 py-2 hover:bg-orange-500 hover:text-white text-sm md:text-base">
+                    Our Team
+                  </li>
+                </Link>
+                <Link to="/Founder">
+                  <li className="px-4 py-2 hover:bg-orange-500 hover:text-white text-sm md:text-base">
                     Founder’s Note
-                  </li></Link>
-
-
-                </ul>
-              )}
-            </li>
-          </Link>
+                  </li>
+                </Link>
+              </ul>
+            )}
+          </li>
 
           {/* Product Dropdown */}
 
 
 
-          <Link to="/Product">
-            <li
-              className="relative text-sm md:text-base lg:text-lg hover:text-orange-500 cursor-pointer z-20  lg:pr-4 lg:border-r-1  border-gray-500"
-              onMouseEnter={() => setIsProductDropdownOpen(true)}
-              onMouseLeave={() => setIsProductDropdownOpen(false)}
-            >
-              Product
-              {isProductDropdownOpen && (
-                <ul className="absolute top-full  left-0  bg-white text-black mt-2 rounded shadow-lg w-[220px]">
-                  {/* Categories */}
 
-                  <li className="px-4 py-2  hover:bg-gray-200 text-sm md:text-base">FMCG Products</li>
-                  <li className="px-4 py-2  hover:bg-gray-200 text-sm md:text-base">Industrial Chemicals</li>
-                  <li className="px-4 py-2  hover:bg-gray-200 text-sm md:text-base">Petrochemical Products</li>
-                  <li className="px-4 py-2  hover:bg-orange-500 text-sm md:text-base">Metals & Alloys</li>
-                  <li className="px-4 py-2  hover:bg-gray-200 text-sm md:text-base">Agri-Commodities</li>
-                  <li className="px-4 py-2  hover:bg-gray-200 text-sm md:text-base">Aviation Service and Parts</li>
-                  <li className="px-4 py-2  hover:bg-gray-200 text-sm md:text-base">Pharmaceutical Products</li>
-                  <li className="px-4 py-2  hover:bg-gray-200 text-sm md:text-base">Machinery & Equipment</li>
-                  <li className="px-4 py-2  hover:bg-gray-200 text-sm md:text-base">Animal Nutrition & Feed</li>
+          <li
+            className="relative text-sm md:text-base lg:text-lg hover:text-orange-500 cursor-pointer z-10  lg:pr-4 lg:border-r-1  border-gray-500"
+            onClick={() => setIsProductDropdownOpen(!isProductDropdownOpen)}
+          // onMouseLeave={() => setIsProductDropdownOpen(false)}
+          >
+            Product
+            {isProductDropdownOpen && (
+              <ul className="absolute top-full  left-0  bg-white text-black mt-2  rounded shadow-lg w-[220px]">
+                {/* Categories */}
 
-                </ul>
-              )}
-            </li>
-          </Link>
+                <li className="px-4 py-2  hover:bg-orange-500 hover:text-white text-sm md:text-base" onClick={() => handleNavigation("FMCG Products")}>             FMCG Products</li>
+                <li className="px-4 py-2  hover:bg-orange-500 hover:text-white  text-sm md:text-base" onClick={() => handleNavigation("Industrial Chemicals")}>    Industrial Chemicals</li>
+                <li className="px-4 py-2  hover:bg-orange-500 hover:text-white  text-sm md:text-base" onClick={() => handleNavigation("Petrochemical Products")}>   Petrochemical Products</li>
+                <li className="px-4 py-2  hover:bg-orange-500 hover:text-white  text-sm md:text-base" onClick={() => handleNavigation("Metals & Alloys")}>          Metals & Alloys</li>
+                <li className="px-4 py-2  hover:bg-orange-500 hover:text-white text-sm md:text-base" onClick={() => handleNavigation("Agri-Commodities")}>           Agri-Commodities</li>
+                <li className="px-4 py-2  hover:bg-orange-500 hover:text-white text-sm md:text-base" onClick={() => handleNavigation("Aviation Service and Parts")}>   Aviation Service and Parts</li>
+                <li className="px-4 py-2  hover:bg-orange-500 hover:text-white text-sm md:text-base" onClick={() => handleNavigation("Pharmaceutical Products")}>   Pharmaceutical Products</li>
+                <li className="px-4 py-2  hover:bg-orange-500 hover:text-white text-sm md:text-base" onClick={() => handleNavigation("Machinery & Equipment")}>   Machinery & Equipment</li>
+                <li className="px-4 py-2  hover:bg-orange-500 hover:text-white text-sm md:text-base" onClick={() => handleNavigation("Animal Nutrition & Feed")}>  Animal Nutrition & Feed</li>
+
+              </ul>
+            )}
+          </li>
+
 
 
           {/* Services Dropdown */}
           <Link to="/Services">
             <li
               className="relative text-sm md:text-base lg:text-lg hover:text-orange-500 cursor-pointer z-10 lg:pr-4 lg:border-r-1  border-gray-500"
-              onMouseEnter={() => setIsServicesDropdownOpen(true)}
-              onMouseLeave={() => setIsServicesDropdownOpen(false)}
+              onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}
+            // onMouseLeave={() => setIsServicesDropdownOpen(false)}
             >
               Services
               {isServicesDropdownOpen && (
-                <ul className="absolute top-full left-0 bg-white text-black mt-2 p-2 rounded shadow-lg w-[220px]">
-                  <li className="px-4 py-2 hover:bg-orange-500 text-gray-700 rounded-lg hover:text-white text-sm md:text-base">Export-Import Services</li>
-                  <li className="px-4 py-2 hover:bg-orange-500 text-gray-700 rounded-lg hover:text-white text-sm md:text-base">E2E Logistic Services</li>
-                  <li className="px-4 py-2 hover:bg-orange-500 text-gray-700 rounded-lg hover:text-white text-sm md:text-base">Product Distribution</li>
-                  <li className="px-4 py-2 hover:bg-orange-500 text-gray-700 rounded-lg hover:text-white text-sm md:text-base">Warehousing Services</li>
-                  <li className="px-4 py-2 hover:bg-orange-500 text-gray-700 rounded-lg hover:text-white text-sm md:text-base">IT Outsourcing Services</li>
-                  <li className="px-4 py-2 hover:bg-orange-500 text-gray-700 rounded-lg hover:text-white text-sm md:text-base">Trade Finance</li>
-                  <li className="px-4 py-2 hover:bg-orange-500 text-gray-700 rounded-lg hover:text-white text-sm md:text-base">Product R&D</li>
-                  <li className="px-4 py-2 hover:bg-orange-500 text-gray-700 rounded-lg hover:text-white text-sm md:text-base">Ship Chandling Services</li>
+                <ul className="absolute top-full left-0 bg-white text-black mt-2  rounded shadow-lg w-[220px]">
+                  <li className="px-4 py-2 hover:bg-orange-500 text-gray-700  hover:text-white text-sm md:text-base">Export-Import Services</li>
+                  <li className="px-4 py-2 hover:bg-orange-500 text-gray-700  hover:text-white text-sm md:text-base">E2E Logistic Services</li>
+                  <li className="px-4 py-2 hover:bg-orange-500 text-gray-700  hover:text-white text-sm md:text-base">Product Distribution</li>
+                  <li className="px-4 py-2 hover:bg-orange-500 text-gray-700  hover:text-white text-sm md:text-base">Warehousing Services</li>
+                  <li className="px-4 py-2 hover:bg-orange-500 text-gray-700  hover:text-white text-sm md:text-base">IT Outsourcing Services</li>
+                  <li className="px-4 py-2 hover:bg-orange-500 text-gray-700  hover:text-white text-sm md:text-base">Trade Finance</li>
+                  <li className="px-4 py-2 hover:bg-orange-500 text-gray-700  hover:text-white text-sm md:text-base">Product R&D</li>
+                  <li className="px-4 py-2 hover:bg-orange-500 text-gray-700  hover:text-white text-sm md:text-base">Ship Chandling Services</li>
                 </ul>
               )}
             </li>
@@ -350,7 +358,7 @@ export default function Nav({ bgColor, textColor }) {
       >
         {/* Close Button */}
         <button
-          className="absolute top-4 right-4 text-black"
+          className="absolute top-4 right-4 text-black mb-20"
           onClick={() => setIsMobileMenuOpen(false)}
         >
           <svg
@@ -374,7 +382,7 @@ export default function Nav({ bgColor, textColor }) {
           {/* About Dropdown */}
           <li>
             <Link to={'/About'}> <div
-              className="flex justify-between items-center text-sm md:text-base py-2 hover:bg-gray-200 cursor-pointer"
+              className="flex justify-between items-center text-sm md:text-base py-2 hover:bg-gray-200 cursor-pointer m"
               onClick={() => setIsAboutDropdownOpen(!isAboutDropdownOpen)}
             >
               About Us
@@ -401,7 +409,7 @@ export default function Nav({ bgColor, textColor }) {
                     Our Team
                   </li>
                 </Link>
-                <Link to="/FounderNote">
+                <Link to="/Founder">
                   <li className="text-sm md:text-base py-2 hover:bg-orange-500">
                     Founder’s Note
                   </li>
@@ -412,7 +420,7 @@ export default function Nav({ bgColor, textColor }) {
 
           {/* Product Dropdown */}
           <li>
-            <Link to={'/Product'}> <div
+            <div
               className="flex justify-between items-center text-sm md:text-base py-2 hover:bg-gray-200 cursor-pointer"
               onClick={() => setIsProductDropdownOpen(!isProductDropdownOpen)}
             >
@@ -432,34 +440,62 @@ export default function Nav({ bgColor, textColor }) {
                   d="M19.5 9l-7.5 7.5L4.5 9"
                 />
               </svg>
-            </div></Link>
+            </div>
             {isProductDropdownOpen && (
               <ul className="pl-4 space-y-2">
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200">
+                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {
+                  handleNavigation("FMCG Products");
+                  setIsMobileMenuOpen(false);
+                }} >
                   FMCG Products
                 </li>
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200">
+                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {
+                  handleNavigation("Industrial Chemicals")
+                  setIsMobileMenuOpen(false);
+                  }}>
                   Industrial Chemicals
                 </li>
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200">
+                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {
+                  handleNavigation("Petrochemical Products")
+                  setIsMobileMenuOpen(false);
+                  }}>
+                  
                   Petrochemical Products
                 </li>
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200">
+                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {
+                  handleNavigation("Metals & Alloys")
+                  setIsMobileMenuOpen(false);
+                  }}>
                   Metals & Alloys
                 </li>
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200">
+                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {
+                  handleNavigation("Agri-Commodities");
+                  setIsMobileMenuOpen(false);
+                  }}>
                   Agri-Commodities
                 </li>
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200">
+                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {
+                  handleNavigation("Aviation Service and Parts");
+                  setIsMobileMenuOpen(false);
+                  }}>
                   Aviation Service and Parts
                 </li>
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200">
+                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {
+                  handleNavigation(" Pharmaceutical Products");
+                  setIsMobileMenuOpen(false);
+                  }}>
                   Pharmaceutical Products
                 </li>
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200">
+                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {
+                  handleNavigation("Machinery & Equipment");
+                  setIsMobileMenuOpen(false);
+                  }}>
                   Machinery & Equipment
                 </li>
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200">
+                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {
+                  handleNavigation("Animal Nutrition & Feed");
+                  setIsMobileMenuOpen(false);
+                  }}>
                   Animal Nutrition & Feed
                 </li>
               </ul>
@@ -468,7 +504,7 @@ export default function Nav({ bgColor, textColor }) {
 
           {/* Services Dropdown */}
           <li>
-            <Link to={'/Services'}><div
+            <div
               className="flex justify-between items-center text-sm md:text-base py-2 hover:bg-gray-200 cursor-pointer"
               onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}
             >
@@ -488,35 +524,35 @@ export default function Nav({ bgColor, textColor }) {
                   d="M19.5 9l-7.5 7.5L4.5 9"
                 />
               </svg>
-            </div></Link>
+            </div>
             {isServicesDropdownOpen && (
-              <ul className="pl-4 space-y-2">
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200">
+            <Link to={'/Services'}><ul className="pl-4 space-y-2">
+                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {setIsMobileMenuOpen(false)}} >
                   Export-Import Services
                 </li>
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200">
+                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {setIsMobileMenuOpen(false)}}>
                   E2E Logistic Services
                 </li>
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200">
+                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {setIsMobileMenuOpen(false)}}>
                   Product Distribution
                 </li>
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200">
+                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {setIsMobileMenuOpen(false)}}>
                   Warehousing Services
                 </li>
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200">
+                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {setIsMobileMenuOpen(false)}}>
                   IT Outsourcing Services
                 </li>
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200">
+                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {setIsMobileMenuOpen(false)}}>
                   Trade Finance
                 </li>
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200">
+                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {setIsMobileMenuOpen(false)}}>
                   Product R&D
                 </li>
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200">
+                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {setIsMobileMenuOpen(false)}}>
                   Ship Chandling Services
                 </li>
 
-              </ul>
+              </ul></Link>
             )}
           </li>
 

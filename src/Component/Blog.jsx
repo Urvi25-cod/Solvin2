@@ -327,33 +327,46 @@ const Blog = () => {
 
       {/* Blog Cards */}
       <div className="px-4 md:px-6 lg:px-12 xl:px-20 py-10">
-        <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {blogPosts.map((post, index) => (
-            <div key={index} className="bg-white shadow-md rounded-lg overflow-hidden">
-              {/* Post Image */}
-           <Link to={'/Singleproduct'}><img src={post.image} alt={post.title} className="w-full h-80 object-cover" /></Link>
+  <div className="grid gap-6 grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
+    {blogPosts.map((post, index) => (
+      <div key={index} className="bg-white shadow-md rounded-lg overflow-hidden">
+        {/* Post Image */}
+        <Link to={'/Singleproduct'}>
+          <img
+            src={post.image}
+            alt={post.title}
+            className="w-full h-auto object-cover md:h-80 lg:h-96"
+          />
+        </Link>
 
-              {/* Post Content */}
-              <div className="p-4">
-                {/* Calendar Icon and Date */}
-                <p className="text-sm text-[#1F4278] flex items-center">
-                  <img src={calendar} alt="Calendar" className="w-5 h-5 mr-2" />
-                  {post.date}
-                </p>
+        {/* Post Content */}
+        <div className="p-3 sm:p-2">
+          {/* Calendar Icon and Date */}
+          <p className="text-xs sm:text-xs md:text-sm text-[#1F4278] flex items-center">
+            <img src={calendar} alt="Calendar" className="w-4 h-4 mr-2" />
+            {post.date}
+          </p>
 
-                {/* Title */}
-                <h3 className="text-lg font-semibold mt-2">{post.title}</h3>
+          {/* Title */}
+          <h3 className="text-sm font-semibold mt-1 sm:text-xs md:text-sm">
+            {post.title}
+          </h3>
 
-                {/* Description */}
-                <p className="text-gray-700 mt-2">{post.description}</p>
+          {/* Description */}
+          <p className="text-gray-700 mt-1 text-xs sm:text-xs md:text-lg line-clamp-4">
+            {post.description}
+          </p>
 
-                {/* View Post Link */}
-                <a href="#" className="text-blue-500 text-sm mt-2 inline-block">View Post</a>
-              </div>
-            </div>
-          ))}
+          {/* View Post Link */}
+          <a href="#" className="text-blue-500 text-xs mt-1 inline-block">
+            View Post
+          </a>
         </div>
       </div>
+    ))}
+  </div>
+</div>
+
     </>
   );
 };

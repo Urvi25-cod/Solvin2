@@ -46,7 +46,7 @@ const About = () => {
 
       <section className="container mx-auto px-4 sm:px-6 lg:px-12 py-12 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
         {/* Image Container */}
-        <div className="relative w-full flex justify-center">
+        <div className="relative w-full flex">
           <img
             src={supply}
             alt="Supply Chain"
