@@ -8,20 +8,29 @@ import sr6 from "../Images/sr6.png";
 import sr7 from "../Images/sr7.png";
 import sr8 from "../Images/sr8.png";
 
+import se1 from "../Images/se1.png";
+import se2 from "../Images/se2.png";
+import se3 from "../Images/se3.png";
+import se4 from "../Images/se4.png";
+import se5 from "../Images/se5.png";
+import se6 from "../Images/se6.png";
+import se7 from "../Images/se7.png";
+import se8 from "../Images/se8.png";
+
 import Arrow from "../Images/Arrow.png";
 import { Link} from "react-router-dom";
 
 const OurServices = () => {
 
   const categories = [
-      { name: "Export-Import Services", icon: sr1 },
-      { name: "E2E Logistic Services", icon: sr2 },
-      { name: "Product Distribution", icon: sr3 },
-      { name: "Warehousing Services", icon: sr4 },
-      { name: "Product R&D", icon: sr5 },
-      { name: "Ship Candling Services", icon: sr6 },
-      { name: "IT Outsourcing Services", icon: sr7 },
-      { name: "IT Outsourcing Services", icon: sr8 },
+      { name: "Export-Import Services", icon: sr1, hover:se1 },
+      { name: "E2E Logistic Services", icon: sr2, hover:se2 },
+      { name: "Product Distribution", icon: sr3, hover:se3 },
+      { name: "Warehousing Services", icon: sr4, hover:se4 },
+      { name: "Product R&D", icon: sr5, hover:se5 },
+      { name: "Ship Candling Services", icon: sr6 , hover:se6},
+      { name: "IT Outsourcing Services", icon: sr7, hover:se7 },
+      { name: "IT Outsourcing Services", icon: sr8 , hover:se8},
      
   ];
 
@@ -46,8 +55,14 @@ const OurServices = () => {
                   className="relative flex flex-col items-center justify-center w-full h-40 hover:shadow-xl  rounded-br-4xl transition-shadow duration-300 cursor-pointer group  p-4 hover:border border-gray-300"
                 >
                   {/* Icon Placeholder */}
-                  <div className="mb-4">
-                   <Link to={'/Services'}><img src={category.icon} alt={category.name} className="w-16 h-16" /></Link>
+                  <div className="mb-4 relative w-16 h-16">
+                   <Link to={'/Services'}><img src={category.icon} alt={category.name} className="absolute top-0 left-0 w-16 h-16 transition-opacity duration-300 group-hover:opacity-0" /></Link>
+                
+                   <img
+                src={category.hover}
+                alt={category.name}
+                className="absolute top-0 left-0 w-16 h-16 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              />
                   </div>
       
                   {/* Category Name */}

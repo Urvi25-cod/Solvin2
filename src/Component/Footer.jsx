@@ -147,7 +147,7 @@ export default function Footer() {
     <footer className="bg-orange-500 text-white py-8">
       <div className="container mx-auto px-4">
         {/* Top Section */}
-        <div className="flex flex-col md:flex-row justify-between items-center mb-8">
+        <div className="flex flex-col md:flex-row justify-between items-start lg:items-center gap-6 pb-6 border-b border-white">
           {/* Heading */}
           <h2 className="text-lg md:text-2xl font-bold text-center md:text-left mb-4 md:mb-0">
             Connect with Us for Business Solutions
@@ -167,7 +167,7 @@ export default function Footer() {
         </div>
 
         {/* Middle Section */}
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 py-10  mb-8">
           {/* Address Section */}
           <div>
             <Link to={'/'}><img src={footer} alt="Solvi Globe Logo" className="mb-4" /></Link>
@@ -189,8 +189,8 @@ export default function Footer() {
           <div>
             <h3 className="font-bold mb-4">About</h3>
             <ul className="space-y-2 text-base">
-              <li>Company</li>
-             <Link to={'/FounderNote'}> <li>Founder’s Note</li></Link>
+              <Link to={'/About'}> <li>Company</li></Link>
+              <Link to={'/Founder'}> <li>Founder’s Note</li></Link>
               <Link to={'/OurTeam'}><li>Our Core Team</li></Link>
 
               <Link to="/Registration">
@@ -217,7 +217,7 @@ export default function Footer() {
 
           <div>
             <h3 className="font-bold mb-4">Services</h3>
-           <Link to={'/Services'}><ul className="space-y-2 text-[#FFFFFF]">
+            <Link to={'/Services'}><ul className="space-y-2 text-[#FFFFFF]">
               <li>Export-Import Services</li>
               <li>vE2E Logistic Services</li>
               <li>Product Distribution</li>
@@ -237,15 +237,15 @@ export default function Footer() {
 
 
             <div>
-            <ul className="space-y-2 text-[#FFFFFF]">
-              <Link><li>Blog</li></Link>
-              <li>Privacy Policy</li>
-              <li>Terms & Condition</li>
-            </ul>
-          </div>
+              <ul className="space-y-2 text-[#FFFFFF]">
+                <Link><li>Blog</li></Link>
+                <li>Privacy Policy</li>
+                <li>Terms & Condition</li>
+              </ul>
+            </div>
           </div>
 
-         
+
 
 
           {/* Services Links */}
@@ -294,3 +294,141 @@ export default function Footer() {
     </footer>
   );
 }
+
+
+
+//   3
+
+// import React, { useState } from "react";
+// import { FiInstagram, FiFacebook, FiLinkedin, FiYoutube } from "react-icons/fi";
+
+// const Footer = () => {
+//   const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false);
+
+//   const toggleDropdown = () => {
+//     setLanguageDropdownOpen(!languageDropdownOpen);
+//   };
+
+//   return (
+//     <footer className="bg-orange-500 text-white px-4 py-8">
+//       <div className="container mx-auto px-4">
+//         {/* Top Section */}
+//         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 pb-6 border-b border-white">
+//           <h2 className="text-2xl font-semibold max-w-xl">
+//             Connect with us to fulfill your business needs with smart solutions
+//           </h2>
+//           <div className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
+//             <input
+//               type="email"
+//               placeholder="Enter Mail"
+//               className="px-4 py-2 text-gray-700 rounded-md outline-none w-full sm:w-[300px]"
+//             />
+//             <button className="bg-white text-black px-4 py-2 rounded-md">
+//               Subscribe
+//             </button>
+//           </div>
+//         </div>
+
+//         {/* Middle Section */}
+//         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 py-10 text-sm">
+//           {/* Address */}
+//           <div>
+//             <img src="/logo.png" alt="Solvi Globe Logo" className="mb-4 w-32" />
+//             <p className="mb-2">
+//               Address: 633, Meridian Business Center, Lajamni Chowk, opposite Opera Business
+//               center, Mota Varachha. Surat, Gujarat 394105
+//             </p>
+//             <p className="mb-2">Email : solviglobe@gmail.com</p>
+//             <p>Number : +91 83200 83200</p>
+//             <div className="flex space-x-4 mt-4">
+//               <FiInstagram className="w-6 h-6 bg-white text-orange-500 rounded-full p-1" />
+//               <FiFacebook className="w-6 h-6 bg-white text-orange-500 rounded-full p-1" />
+//               <FiLinkedin className="w-6 h-6 bg-white text-orange-500 rounded-full p-1" />
+//               <FiYoutube className="w-6 h-6 bg-white text-orange-500 rounded-full p-1" />
+//             </div>
+//           </div>
+
+//           {/* About */}
+//           <div>
+//             <h3 className="font-bold mb-4">About</h3>
+//             <ul className="space-y-2">
+//               <li>Company</li>
+//               <li>Founder’s Note</li>
+//               <li>Our Core Team</li>
+//             </ul>
+//           </div>
+
+//           {/* Product */}
+//           <div>
+//             <h3 className="font-bold mb-4">Product</h3>
+//             <ul className="space-y-2">
+//               <li>FMCG Products</li>
+//               <li>Industrial Chemicals</li>
+//               <li>Petrochemical Products</li>
+//               <li>Metals & Alloys</li>
+//               <li>Agri-Commodities</li>
+//               <li>Aviation Service and Parts</li>
+//               <li>Pharmaceutical Products</li>
+//               <li>Animal Nutrition & Feed</li>
+//               <li>Machinery & Equipment</li>
+//             </ul>
+//           </div>
+
+//           {/* Services */}
+//           <div>
+//             <h3 className="font-bold mb-4">Services</h3>
+//             <ul className="space-y-2">
+//               <li>Export-Import Services</li>
+//               <li>E2E Logistic Services</li>
+//               <li>Product Distribution</li>
+//               <li>Warehousing Services</li>
+//               <li>IT Outsourcing Services</li>
+//               <li>Trade Finance</li>
+//               <li>Product R&D</li>
+//               <li>Ship Chandling Services</li>
+//             </ul>
+//           </div>
+
+//           {/* Extra Links */}
+//           <div className="space-y-4">
+//             <div className="space-y-1 text-lg font-bold">
+//               <p>BUSINESS INQUIRY</p>
+//               <p>REGISTER AS VENDOR</p>
+//               <p>JOIN OUR TEAM</p>
+//             </div>
+//             <ul className="space-y-2">
+//               <li>Blog</li>
+//               <li>Privacy Policy</li>
+//               <li>Terms & Condition</li>
+//             </ul>
+//             <div className="relative">
+//               <button
+//                 onClick={toggleDropdown}
+//                 className="bg-blue-700 px-4 py-2 rounded-md flex justify-between items-center w-full"
+//               >
+//                 <span className="flex items-center gap-2">
+//                   <img src="/uk-flag.png" alt="English" className="w-5 h-5" /> ENGLISH
+//                 </span>
+//                 <span>{languageDropdownOpen ? "▲" : "▼"}</span>
+//               </button>
+//               {languageDropdownOpen && (
+//                 <ul className="absolute bg-white text-black mt-2 rounded-md w-full shadow-md z-10">
+//                   <li className="px-4 py-2 hover:bg-gray-200 cursor-pointer">English</li>
+//                   <li className="px-4 py-2 hover:bg-gray-200 cursor-pointer">Hindi</li>
+//                   <li className="px-4 py-2 hover:bg-gray-200 cursor-pointer">Gujarati</li>
+//                 </ul>
+//               )}
+//             </div>
+//           </div>
+//         </div>
+
+//         {/* Bottom Section */}
+//         <div className="text-center text-sm border-t border-white pt-4">
+//           © 2022–2026 SolviGlobe Limited. All Rights Reserved.
+//         </div>
+//       </div>
+//     </footer>
+//   );
+// };
+
+// export default Footer;

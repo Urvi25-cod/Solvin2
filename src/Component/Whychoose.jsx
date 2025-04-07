@@ -102,9 +102,10 @@
 // }
 
 
-import { useState } from "react";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+// import { useState } from "react";
+// import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 // import { FaCheckCircle } from "react-icons/fa"; // Example icon, replace with actual icons
+import React from "react";
 import q1 from "../Images/q1.png";
 import q2 from "../Images/q2.png";
 import q3 from "../Images/q3.png";
@@ -152,15 +153,15 @@ const features = [
 ];
 
 export default function Whychoose() {
-  const [index, setIndex] = useState(0);
+  // const [index, setIndex] = useState(0);
 
-  const nextSlide = () => {
-    setIndex((prevIndex) => (prevIndex + 1) % features.length);
-  };
+  // const nextSlide = () => {
+  //   setIndex((prevIndex) => (prevIndex + 1) % features.length);
+  // };
 
-  const prevSlide = () => {
-    setIndex((prevIndex) => (prevIndex - 1 + features.length) % features.length);
-  };
+  // const prevSlide = () => {
+  //   setIndex((prevIndex) => (prevIndex - 1 + features.length) % features.length);
+  // };
 
   return (
     <div className="container mx-auto px-4 md:px-6 py-12">
@@ -171,16 +172,16 @@ export default function Whychoose() {
       </h2>
       </div>
       <div className="relative mt-8 flex items-center overflow-hidden">
-        <button
+        {/* <button
           className="absolute left-4 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow-md hover:bg-gray-100 z-10"
           onClick={prevSlide}
         >
           <FaArrowLeft className="text-orange-500 text-xl" />
-        </button>
+        </button> */}
         <div className="w-full overflow-hidden">
           <div
             className="flex transition-transform duration-500"
-            style={{ transform: `translateX(-${index * 100}%)` }}
+            // style={{ transform: `translateX(-${index * 100}%)` }}
           >
             {features.map((feature, idx) => (
               <div key={idx} className="min-w-full  sm:min-w-[50%] md:min-w-[33.33%] lg:min-w-[25%] p-4">
@@ -193,12 +194,12 @@ export default function Whychoose() {
             ))}
           </div>
         </div>
-        <button
+        {/* <button
           className="absolute right-4 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow-md hover:bg-gray-100 z-10"
           onClick={nextSlide}
         >
           <FaArrowRight className="text-orange-500 text-xl" />
-        </button>
+        </button> */}
       </div>
     </div>
   );

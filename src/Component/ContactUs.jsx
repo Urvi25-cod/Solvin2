@@ -170,7 +170,7 @@ const ContactUs = () => {
             <div className="flex flex-col justify-center">
               {/* Header */}
               <div className="text-orange-500 font-medium mb-2">Contact us</div>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-blue-900 mb-4">
+              <h1 className="text-3xl md:text-4xl  xl:text-4xl font-bold text-blue-900 mb-4">
                 Get in touch
               </h1>
 
