@@ -276,15 +276,15 @@ export default function Nav({ bgColor, textColor }) {
               <ul className="absolute top-full  left-0  bg-white text-black mt-2  rounded shadow-lg w-[220px]">
                 {/* Categories */}
 
-                <li className="px-4 py-2  hover:bg-orange-500 hover:text-white text-sm md:text-base" onClick={() => handleNavigation("FMCG Products")}>             FMCG Products</li>
-                <li className="px-4 py-2  hover:bg-orange-500 hover:text-white  text-sm md:text-base" onClick={() => handleNavigation("Industrial Chemicals")}>    Industrial Chemicals</li>
-                <li className="px-4 py-2  hover:bg-orange-500 hover:text-white  text-sm md:text-base" onClick={() => handleNavigation("Petrochemical Products")}>   Petrochemical Products</li>
-                <li className="px-4 py-2  hover:bg-orange-500 hover:text-white  text-sm md:text-base" onClick={() => handleNavigation("Metals & Alloys")}>          Metals & Alloys</li>
-                <li className="px-4 py-2  hover:bg-orange-500 hover:text-white text-sm md:text-base" onClick={() => handleNavigation("Agri-Commodities")}>           Agri-Commodities</li>
-                <li className="px-4 py-2  hover:bg-orange-500 hover:text-white text-sm md:text-base" onClick={() => handleNavigation("Aviation Service and Parts")}>   Aviation Service and Parts</li>
-                <li className="px-4 py-2  hover:bg-orange-500 hover:text-white text-sm md:text-base" onClick={() => handleNavigation("Pharmaceutical Products")}>   Pharmaceutical Products</li>
-                <li className="px-4 py-2  hover:bg-orange-500 hover:text-white text-sm md:text-base" onClick={() => handleNavigation("Machinery & Equipment")}>   Machinery & Equipment</li>
-                <li className="px-4 py-2  hover:bg-orange-500 hover:text-white text-sm md:text-base" onClick={() => handleNavigation("Animal Nutrition & Feed")}>  Animal Nutrition & Feed</li>
+                <li className="px-4 py-2  hover:bg-orange-500 hover:text-white text-sm md:text-base" onClick={() => handleNavigation("FMCG Products")}>FMCG Products</li>
+                <li className="px-4 py-2  hover:bg-orange-500 hover:text-white  text-sm md:text-base" onClick={() => handleNavigation("Industrial Chemicals")}>Industrial Chemicals</li>
+                <li className="px-4 py-2  hover:bg-orange-500 hover:text-white  text-sm md:text-base" onClick={() => handleNavigation("Petrochemical Products")}>Petrochemical Products</li>
+                <li className="px-4 py-2  hover:bg-orange-500 hover:text-white  text-sm md:text-base" onClick={() => handleNavigation("Metals & Alloys")}>Metals & Alloys</li>
+                <li className="px-4 py-2  hover:bg-orange-500 hover:text-white text-sm md:text-base" onClick={() => handleNavigation("Agri-Commodities")}>Agri-Commodities</li>
+                <li className="px-4 py-2  hover:bg-orange-500 hover:text-white text-sm md:text-base" onClick={() => handleNavigation("Aviation Service and Parts")}>Aviation Service and Parts</li>
+                <li className="px-4 py-2  hover:bg-orange-500 hover:text-white text-sm md:text-base" onClick={() => handleNavigation("Pharmaceutical Products")}>Pharmaceutical Products</li>
+                <li className="px-4 py-2  hover:bg-orange-500 hover:text-white text-sm md:text-base" onClick={() => handleNavigation("Machinery & Equipment")}>Machinery & Equipment</li>
+                <li className="px-4 py-2  hover:bg-orange-500 hover:text-white text-sm md:text-base" onClick={() => handleNavigation("Animal Nutrition & Feed")}>Animal Nutrition & Feed</li>
 
               </ul>
             )}
