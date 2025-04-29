@@ -245,9 +245,14 @@
 import React from 'react';
 import background from "../Images/background.png";
 import sky from "../Images/sky.png";
+import sky2 from "../Images/sky2.png";
+import sky3 from "../Images/sky3.png";
+import sky4 from "../Images/sky4.png";
+import sky5 from "../Images/sky5.png";
+
 import calendar from "../Images/calendar.png"; // Add your calendar image here
 import Nav from "./Nav";
-import { Link } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 
 
 const blogPosts = [
@@ -256,40 +261,49 @@ const blogPosts = [
     title: 'SolviGlobe Ltd',
     date: 'December 20, 2024',
     description: 'Founded in 2022 and based in India, is a supplier of raw materials.',
+    filename: '/Blog1'
+  },
+  {
+    image: sky2,
+    title: 'SolviGlobe Ltd',
+    date: 'December 20, 2024',
+    description: 'Founded in 2022 and based in India, is a supplier of raw materials.',
+    filename: '/Blog2'
+  },
+  {
+    image: sky3,
+    title: 'SolviGlobe Ltd',
+    date: 'December 20, 2024',
+    description: 'Founded in 2022 and based in India, is a supplier of raw materials.',
+    filename: '/Blog3'
+  },
+  {
+    image: sky4,
+    title: 'SolviGlobe Ltd',
+    date: 'December 20, 2024',
+    description: 'Founded in 2022 and based in India, is a supplier of raw materials.',
+    filename: '/Blog4'
+  },
+  {
+    image: sky5,
+    title: 'SolviGlobe Ltd',
+    date: 'December 20, 2024',
+    description: 'Founded in 2022 and based in India, is a supplier of raw materials.',
+    filename: '/Blog5'
   },
   {
     image: sky,
     title: 'SolviGlobe Ltd',
     date: 'December 20, 2024',
     description: 'Founded in 2022 and based in India, is a supplier of raw materials.',
-  },
-  {
-    image: sky,
-    title: 'SolviGlobe Ltd',
-    date: 'December 20, 2024',
-    description: 'Founded in 2022 and based in India, is a supplier of raw materials.',
-  },
-  {
-    image: sky,
-    title: 'SolviGlobe Ltd',
-    date: 'December 20, 2024',
-    description: 'Founded in 2022 and based in India, is a supplier of raw materials.',
-  },
-  {
-    image: sky,
-    title: 'SolviGlobe Ltd',
-    date: 'December 20, 2024',
-    description: 'Founded in 2022 and based in India, is a supplier of raw materials.',
-  },
-  {
-    image: sky,
-    title: 'SolviGlobe Ltd',
-    date: 'December 20, 2024',
-    description: 'Founded in 2022 and based in India, is a supplier of raw materials.',
+    filename: '/Blog6'
   },
 ];
 
 const Blog = () => {
+
+  const navigate = useNavigate();
+
   return (
     <>
       <Nav bgColor="bg-white" textColor="text-black" />
@@ -331,13 +345,14 @@ const Blog = () => {
     {blogPosts.map((post, index) => (
       <div key={index} className="bg-white shadow-md rounded-lg overflow-hidden">
         {/* Post Image */}
-        <Link to={'/Singleproduct'}>
+    
           <img
             src={post.image}
             alt={post.title}
             className="w-full h-auto object-cover md:h-80 lg:h-96"
+            onClick={() => navigate(post.filename)}
           />
-        </Link>
+      
 
         {/* Post Content */}
         <div className="p-3 sm:p-2">

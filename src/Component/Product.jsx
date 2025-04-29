@@ -231,6 +231,51 @@ import f28 from "../Images/f28.png";
 import f29 from "../Images/f29.png";
 import f30 from "../Images/f30.png";
 
+import f31 from "../Images/f31.png";
+import f32 from "../Images/f32.png";
+import f33 from "../Images/f33.png";
+import f34 from "../Images/f34.png";
+import f35 from "../Images/f35.png";
+import f36 from "../Images/f36.png";
+import f37 from "../Images/f37.png";
+import f38 from "../Images/f38.png";
+import f39 from "../Images/f39.png";
+import f40 from "../Images/f40.png";
+import f41 from "../Images/f41.png";
+import f42 from "../Images/f42.png";
+import f43 from "../Images/f43.png";
+import f44 from "../Images/f44.png";
+import f45 from "../Images/f45.png";
+import f46 from "../Images/f46.png";
+import f47 from "../Images/f47.png";
+import f48 from "../Images/f48.png";
+import f49 from "../Images/f49.png";
+// import f50 from "../Images/f50.png";
+import f51 from "../Images/f51.png";
+import f52 from "../Images/f52.png";
+import f53 from "../Images/f53.png";
+import f54 from "../Images/f54.png";
+import f55 from "../Images/f55.png";
+import f56 from "../Images/f56.png";
+import f57 from "../Images/f57.png";
+import f58 from "../Images/f58.png";
+import f59 from "../Images/f59.png";
+import f60 from "../Images/f60.png";
+import f62 from "../Images/f62.png";
+import f63 from "../Images/f63.png";
+import f64 from "../Images/f64.png";
+import f65 from "../Images/f65.png";
+import f66 from "../Images/f66.png";
+import f67 from "../Images/f67.png";
+import f68 from "../Images/f68.png";
+import f69 from "../Images/f69.png";
+import f70 from "../Images/f70.png";
+
+import f72 from "../Images/f72.png";
+import f73 from "../Images/f73.png";
+import f74 from "../Images/f74.png";
+
+
 
 
 import i1 from "../Images/i1.png";
@@ -355,7 +400,7 @@ import ag5 from "../Images/ag5.png";
 import ag6 from "../Images/ag6.png";
 import ag7 from "../Images/ag7.png";
 import ag8 from "../Images/ag8.png";
-import ag9 from "../Images/ag9.png";
+// import ag9 from "../Images/ag9.png";
 import ag10 from "../Images/ag10.png";
 import ag11 from "../Images/ag11.png";
 import ag12 from "../Images/ag12.png";
@@ -400,6 +445,87 @@ import ag50 from "../Images/ag50.png";
 
 
 
+import av1 from "../Images/av1.png";
+import av2 from "../Images/av2.png";
+import av3 from "../Images/av3.png";
+import av4 from "../Images/av4.png";
+import av5 from "../Images/av5.png";
+import av6 from "../Images/av6.png";
+import av7 from "../Images/av7.png";
+import av8 from "../Images/av8.png";
+// import av9 from "../Images/av9.png";
+import av10 from "../Images/av10.png";
+import av11 from "../Images/av11.png";
+import av12 from "../Images/av12.png";
+import av13 from "../Images/av13.png";
+import av14 from "../Images/av14.png";
+import av15 from "../Images/av15.png";
+import av16 from "../Images/av16.png";
+import av17 from "../Images/av17.png";
+// import av18 from "../Images/av18.png";
+// import av19 from "../Images/av19.png";
+import av20 from "../Images/av20.png";
+import av21 from "../Images/av21.png";
+// import av22 from "../Images/av22.png";
+import av23 from "../Images/av23.png";
+import av24 from "../Images/av24.png";
+// import av25 from "../Images/av25.png";
+import av26 from "../Images/av26.png";
+// import av27 from "../Images/av27.png";
+import av28 from "../Images/av28.png";
+import av29 from "../Images/av29.png";
+import av30 from "../Images/av30.png";
+import av31 from "../Images/av31.png";
+// import av32 from "../Images/av32.png";
+import av33 from "../Images/av33.png";
+import av34 from "../Images/av34.png";
+// import av35 from "../Images/av35.png";
+// import av36 from "../Images/av36.png";
+import av37 from "../Images/av37.png";
+// import av38 from "../Images/av38.png";
+import av39 from "../Images/av39.png";
+import av40 from "../Images/av40.png";
+import av41 from "../Images/av41.png";
+import av43 from "../Images/av43.png";
+import av46 from "../Images/av46.png";
+import av47 from "../Images/av47.png";
+// import av41 from "../Images/av41.png";
+
+//------------------------------------------------Metals & Alloys--------------------------------------------------
+
+import me1 from "../Images/me1.png";
+import me2 from "../Images/me2.png";
+import me3 from "../Images/me3.png";
+import me4 from "../Images/me4.png";
+import me5 from "../Images/me5.png";
+import me6 from "../Images/me6.png";
+import me7 from "../Images/me7.png";
+import me8 from "../Images/me8.png";
+import me9 from "../Images/me9.png";
+import me10 from "../Images/me10.png";
+import me11 from "../Images/me11.png";
+import me12 from "../Images/me12.png";
+import me13 from "../Images/me13.png";
+import me14 from "../Images/me14.png";
+import me15 from "../Images/me15.png";
+// import me16 from "../Images/me16.png";
+import me17 from "../Images/me17.png";
+// import me18 from "../Images/me18.png";
+import me19 from "../Images/me19.png";
+import me20 from "../Images/me20.png";
+import me21 from "../Images/me21.png";
+import me22 from "../Images/me22.png";
+import me23 from "../Images/me23.png";
+import me24 from "../Images/me24.png";
+import me25 from "../Images/me25.png";
+import me26 from "../Images/me26.png";
+import me29 from "../Images/me29.png";
+import me30 from "../Images/me30.png";
+
+
+
+
+
 export default function Product() {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
@@ -422,7 +548,52 @@ export default function Product() {
   // Simulated product list
   const allProducts = [
 
-    { name: "Aviation Spare Parts", category: "Aviation Service and Parts", imgs: f1 },
+    { name: "Aircraft Fuselages", category: "Aviation Service and Parts", imgs: av1 },
+    { name: "Wing Components", category: "Aviation Service and Parts", imgs: av2 },
+    { name: "MRO Services (A320)", category: "Aviation Service and Parts", imgs: av3 },
+    { name: "Landing Gear Parts", category: "Aviation Service and Parts", imgs: av4 },
+    { name: "Avionics Components", category: "Aviation Service and Parts", imgs: av5 },
+    { name: "Turbine Blades", category: "Aviation Service and Parts", imgs: av6 },
+    { name: "Aircraft Fasteners", category: "Aviation Service and Parts", imgs: av7 },
+    { name: "Hydraulic Actuators", category: "Aviation Service and Parts", imgs: av8 },
+    // { name: "Ground Support Equipment (GSE)", category: "Aviation Service and Parts", imgs: av9 },
+    { name: "Composite Panels", category: "Aviation Service and Parts", imgs: av10 },
+    { name: "Engine Mounts", category: "Aviation Service and Parts", imgs: av11 },
+    { name: "Cable Assemblies", category: "Aviation Service and Parts", imgs: av12 },
+    { name: "Sheet Metal Parts", category: "Aviation Service and Parts", imgs: av13 },
+    { name: "Aircraft Hoses", category: "Aviation Service and Parts", imgs: av14 },
+    { name: "Insulation Blankets", category: "Aviation Service and Parts", imgs: av15 },
+    { name: "Precision Machined Parts", category: "Aviation Service and Parts", imgs: av16 },
+    { name: "Aircraft Seals", category: "Aviation Service and Parts", imgs: av17 },
+    // { name: "Control Surfaces", category: "Aviation Service and Parts", imgs: av18 },
+    // { name: "Propeller Parts", category: "Aviation Service and Parts", imgs: av19 },
+    { name: "Aircraft Bearings", category: "Aviation Service and Parts", imgs: av20 },
+    { name: "Pneumatic Valves", category: "Aviation Service and Parts", imgs: av21 },
+    // { name: "De-Icing Systems", category: "Aviation Service and Parts", imgs: av22 },
+    { name: "Aircraft Pumps", category: "Aviation Service and Parts", imgs: av23 },
+    { name: "Tooling Services", category: "Aviation Service and Parts", imgs: av24 },
+    // { name: "Aircraft Interiors", category: "Aviation Service and Parts", imgs: av25 },
+    { name: "Jet Engine Parts", category: "Aviation Service and Parts", imgs: av26 },
+    // { name: "Avionics Systems", category: "Aviation Service and Parts", imgs: av27 },
+    { name: "Landing Gear Assemblies", category: "Aviation Service and Parts", imgs: av28 },
+    { name: "Hydraulic Systems", category: "Aviation Service and Parts", imgs: av29 },
+    { name: "Composite Materials", category: "Aviation Service and Parts", imgs: av30 },
+    { name: "Aircraft Tires", category: "Aviation Service and Parts", imgs: av31 },
+    // { name: "Flight Control Systems", category: "Aviation Service and Parts", imgs: av32 },
+    { name: "Engine Control Units", category: "Aviation Service and Parts", imgs: av33 },
+    { name: "APU (Auxiliary Power Unit)", category: "Aviation Service and Parts", imgs: av34 },
+    // { name: "Radar Systems", category: "Aviation Service and Parts", imgs: av35 },
+    // { name: "Cockpit Displays", category: "Aviation Service and Parts", imgs: av36 },
+    { name: "Fuel Pumps", category: "Aviation Service and Parts", imgs: av37 },
+    // { name: "De-Icing Equipment", category: "Aviation Service and Parts", imgs: av38 },
+    { name: "Aircraft Batteries", category: "Aviation Service and Parts", imgs: av39 },
+    { name: "Actuators (Electric)", category: "Aviation Service and Parts", imgs: av40 },
+    { name: "Oxygen Systems", category: "Aviation Service and Parts", imgs: av41 },
+    { name: "Heat Exchangers", category: "Aviation Service and Parts", imgs: av43 },
+    { name: "Fire Suppression Systems", category: "Aviation Service and Parts", imgs: av46 },
+    { name: "Vibration Isolators", category: "Aviation Service and Parts", imgs: av47 },
+    // { name: "Oxygen Systems", category: "Aviation Service and Parts", imgs: av41 },
+
 
     //----------------------  FMCG Products----------------------------------------
     { name: "Whole & Ground Spices", category: "FMCG Products", imgs: f1 },
@@ -432,33 +603,81 @@ export default function Product() {
     { name: "Sugar and Salt", category: "FMCG Products", imgs: f5 },
     { name: "Salad Dressings & Dips", category: "FMCG Products", imgs: f6 },
     { name: "Rice Varieties", category: "FMCG Products", imgs: f7 },
+    { name: "Assorted FMCG Grocery (20ft/40ft)", category: "FMCG Products", imgs: f74 },
     { name: "Ready-to-Eat Meals", category: "FMCG Products", imgs: f8 },
     { name: "Ready-to-Cook Gravy Mixes", category: "FMCG Products", imgs: f9 },
-    { name: "Pulses & Lentils", category: "FMCG Products", imgs: f10 },
-    { name: "Pressure Cookers & Pans", category: "FMCG Products", imgs: f11 },
-    { name: "Pickles & Chutneys", category: "FMCG Products", imgs: f12 },
-    { name: "Pet Food & Care", category: "FMCG Products", imgs: f13 },
-    { name: "Perfumes & Attars", category: "FMCG Products", imgs: f14 },
-    { name: "Paper Products (Tissue, Towels, Napkins)", category: "FMCG Products", imgs: f15 },
-    { name: "Papads & Fryums", category: "FMCG Products", imgs: f16 },
 
+    { name: "Pickles & Chutneys", category: "FMCG Products", imgs: f12 },
+    { name: "Papads & Fryums", category: "FMCG Products", imgs: f16 },
     { name: "Organic Grains & Millets", category: "FMCG Products", imgs: f17 },
     { name: "Organic & Gluten-Free Products", category: "FMCG Products", imgs: f18 },
     { name: "Non-stick Cookware", category: "FMCG Products", imgs: f19 },
     { name: "Non-Dairy Milk Alternatives", category: "FMCG Products", imgs: f20 },
-    { name: "Mouth Fresheners & Digestives", category: "FMCG Products", imgs: f21 },
-    { name: "Mosquito Repellents", category: "FMCG Products", imgs: f22 },
-    { name: "Mehendi & Hair Color", category: "FMCG Products", imgs: f23 },
-    { name: "Makeup & Beauty Kits", category: "FMCG Products", imgs: f24 },
-    { name: "Laundry Detergents", category: "FMCG Products", imgs: f25 },
     { name: "Keto & Low-Carb Products", category: "FMCG Products", imgs: f26 },
     { name: "Juices & Beverages", category: "FMCG Products", imgs: f27 },
     { name: "Jaggery & Natural Sweeteners", category: "FMCG Products", imgs: f28 },
     { name: "Instant Noodles & Pasta", category: "FMCG Products", imgs: f29 },
     { name: "Instant Mixes (Food)", category: "FMCG Products", imgs: f30 },
+    { name: "Indian Traditional Sweets", category: "FMCG Products", imgs: f31 },
+    { name: "Indian Snacks & Namkeen", category: "FMCG Products", imgs: f32 },
+    { name: "Diabetic-Friendly Foods", category: "FMCG Products", imgs: f59 },
+    { name: "Indian Masalas & Spice Blends", category: "FMCG Products", imgs: f33 },
+    { name: "Incense Sticks & Cones", category: "FMCG Products", imgs: f34 },
+    { name: "Ice Creams & Frozen Desserts", category: "FMCG Products", imgs: f35 },
+    { name: "Baby Cereals & Foods", category: "FMCG Products", imgs: f73 },
+    { name: "Pulses & Lentils", category: "FMCG Products", imgs: f10 },
+    { name: "Herbal Teas & Infusions", category: "FMCG Products", imgs: f37 },
+    { name: "Health Supplements & Capsules", category: "FMCG Products", imgs: f38 },
+    { name: "Health Foods & Supergrains", category: "FMCG Products", imgs: f39 },
+    { name: "Hair Oil & Shampoo", category: "FMCG Products", imgs: f41 },
+    { name: "Gourmet Sauces & Condiments", category: "FMCG Products", imgs: f42 },
+    { name: "Gluten-Free Bakery Items", category: "FMCG Products", imgs: f43 },
+    { name: "Ghee & Butter", category: "FMCG Products", imgs: f44 },
+    { name: "Frozen Indian Breads & Snacks", category: "FMCG Products", imgs: f45 },
+    { name: "Flours (Wheat, Rice, Gram)", category: "FMCG Products", imgs: f46 },
+    { name: "Essential Oils & Diffusers", category: "FMCG Products", imgs: f51 },
+    { name: "Energy & Soft Drinks", category: "FMCG Products", imgs: f52 },
+    { name: "Energy & Protein Bars", category: "FMCG Products", imgs: f53 },
+    { name: "Edible Oils", category: "FMCG Products", imgs: f54 },
+    { name: "Eco-friendly Disposable Cutlery", category: "FMCG Products", imgs: f55 },
+    { name: "Dry Fruits & Nuts", category: "FMCG Products", imgs: f56 },
+    { name: "Diwali Diyas & Holi Colors", category: "FMCG Products", imgs: f57 },
+
+    // { name: "Dals (Split Pulses)", category: "FMCG Products", imgs: f61 },
+    { name: "Cooking Pastes & Marinades", category: "FMCG Products", imgs: f64 },
+    { name: "Chocolates & Confectionery", category: "FMCG Products", imgs: f65 },
+    { name: "Canned Foods", category: "FMCG Products", imgs: f66 },
+    { name: "Camphor & Pooja Samagri", category: "FMCG Products", imgs: f67 },
+    { name: "Breakfast Cereals & Oats", category: "FMCG Products", imgs: f68 },
+    { name: "Biscuits & Bakery Items", category: "FMCG Products", imgs: f70 },
+    // { name: "Bathroom Cleaning Tools", category: "FMCG Products", imgs: f71 },
+
+    { name: "Mouth Fresheners & Digestives", category: "FMCG Products", imgs: f21 },
+    { name: "Mosquito Repellents", category: "FMCG Products", imgs: f22 },
+    { name: "Mehendi & Hair Color", category: "FMCG Products", imgs: f23 },
+    { name: "Makeup & Beauty Kits", category: "FMCG Products", imgs: f24 },
+    { name: "Laundry Detergents", category: "FMCG Products", imgs: f25 },
+    { name: "Perfumes & Attars", category: "FMCG Products", imgs: f14 },
+    { name: "Paper Products (Tissue, Towels, Napkins)", category: "FMCG Products", imgs: f15 },
+    { name: "Pet Food & Care", category: "FMCG Products", imgs: f13 },
+    { name: "Handwash & Sanitizers", category: "FMCG Products", imgs: f40 },
+    { name: "Floor & Toilet Cleaners", category: "FMCG Products", imgs: f47 },
+    { name: "Body Lotions & Oils", category: "FMCG Products", imgs: f69 },
+    { name: "Festive Decorative Lights", category: "FMCG Products", imgs: f48 },
+    { name: "Festival Gift Boxes & Hampers", category: "FMCG Products", imgs: f49 },
+    // { name: "Face Wash, Scrubs & Creams", category: "FMCG Products", imgs: f50 },
+    { name: "Cookware & Kitchen Utensils", category: "FMCG Products", imgs: f63 },
+    { name: "Copper Bottles & Utensils", category: "FMCG Products", imgs: f62 },
+    { name: "Pressure Cookers & Pans", category: "FMCG Products", imgs: f11 },
+    { name: "Deodorants & Fragrances", category: "FMCG Products", imgs: f60 },
+    { name: "Dishwashing & Cleaning Products", category: "FMCG Products", imgs: f58 },
+    { name: "Household Cleaning Tools", category: "FMCG Products", imgs: f36 },
+    { name: "Bath & Personal Care Products", category: "FMCG Products", imgs: f72 },
 
 
-    
+
+
+
 
 
 
@@ -475,49 +694,11 @@ export default function Product() {
     { name: "Alumina", category: "Industrial Chemicals", imgs: i9 },
     { name: "Ferric Chloride", category: "Industrial Chemicals", imgs: i10 },
     { name: "Phosphoric Acid", category: "Industrial Chemicals", imgs: i11 },
-    // { name: "Liquid Chlorine", category: "Industrial Chemicals", imgs: i12},
-    // { name: "Hydrogen Peroxide", category: "Industrial Chemicals", imgs: i13 },
-    // { name: "Sodium Hypochlorite", category: "Industrial Chemicals", imgs: i14 },
-
-    { name: "BENZENE", category: "Industrial Chemicals", imgs: f1 },
-    { name: "P-XYLENE", category: "Industrial Chemicals", imgs: f1 },
-    { name: "Toluene", category: "Industrial Chemicals", imgs: f1 },
-    { name: "Xylene", category: "Industrial Chemicals", imgs: f1 },
-    { name: "Styrene", category: "Industrial Chemicals", imgs: f1 },
-    { name: "Ethylene Dichloride", category: "Industrial Chemicals", imgs: f1 },
-    { name: "Vinyl Chloride Monomer", category: "Industrial Chemicals", imgs: f1 },
-
-    { name: "Adipic Acid", category: "Industrial Chemicals", imgs: f1 },
-    { name: "Caprolactam", category: "Industrial Chemicals", imgs: f1 },
-    { name: "Glyphosate", category: "Industrial Chemicals", imgs: f1 },
-    { name: "2,4-D", category: "Industrial Chemicals", imgs: f1 },
-    { name: "Atrazine", category: "Industrial Chemicals", imgs: f1 },
-    { name: "Mancozeb", category: "Industrial Chemicals", imgs: f1 },
-    { name: "Chlorpyrifos", category: "Industrial Chemicals", imgs: f1 },
-    { name: "Imidacloprid", category: "Industrial Chemicals", imgs: f1 },
-    { name: "Acephate", category: "Industrial Chemicals", imgs: f1 },
-    { name: "Carbofuran", category: "Industrial Chemicals", imgs: f1 },
-    { name: "Monocrotophos", category: "Industrial Chemicals", imgs: f1 },
-    { name: "Phorate", category: "Industrial Chemicals", imgs: f1 },
+    // { name: "Nitric Acid", category: "Industrial Chemicals", imgs: i12},
+    // { name: "Liquid Chlorine", category: "Industrial Chemicals", imgs: i13 },
+    // { name: "Hydrogen Peroxide", category: "Industrial Chemicals", imgs: i14 },
 
 
-    { name: "HMS 1 & HMS 2", category: "Metals & Alloys", imgs: f1 },
-    { name: "Shredded Steel Scrap (ISRI 210-211)", category: "Metals & Alloys", imgs: f1 },
-    { name: "Cast Iron Scrap", category: "Metals & Alloys", imgs: f1 },
-    { name: "Mild Steel Scrap", category: "Metals & Alloys", imgs: f1 },
-    { name: "CRGO / CRNO Sheet Scrap", category: "Metals & Alloys", imgs: f1 },
-    { name: "Rail Scrap (R50-R65)", category: "Metals & Alloys", imgs: f1 },
-    { name: "Automobile Scrap", category: "Metals & Alloys", imgs: f1 },
-    { name: "", category: "Metals & Alloys", imgs: f1 },
-    { name: "", category: "Metals & Alloys", imgs: f1 },
-    { name: "", category: "Metals & Alloys", imgs: f1 },
-    { name: "", category: "Metals & Alloys", imgs: f1 },
-
-    { name: "Animal Feed A", category: "Animal Nutrition & Feed", imgs: f1 },
-    { name: "Metal Scrap", category: "Metals & Alloys", imgs: f1 },
-    { name: "Agri-Commodities Item", category: "Agri-Commodities", imgs: f1 },
-    { name: "Petrochemical 1", category: "Petrochemical Products", imgs: f1 },
-    { name: "Pharma Item", category: "Pharmaceutical Products", imgs: f1 },
 
 
     //---------------------------------Machinery & Equipment--------------------------
@@ -572,7 +753,7 @@ export default function Product() {
 
     //-----------------------------------7.  Pharmaceutical Products-------------------------
 
-    
+
     // { name: "Product 47", category: "Pharmaceutical Products", imgs: ph50 },
 
     { name: "Paracetamol (Acetaminophen)", category: "Pharmaceutical Products", imgs: ph1 },
@@ -625,7 +806,7 @@ export default function Product() {
     { name: "Rotavirus Vaccine", category: "Pharmaceutical Products", imgs: ph48 },
     { name: "DTP Vaccine (Diphtheria-Tetanus-Pertussis)", category: "Pharmaceutical Products", imgs: ph49 },
     { name: "Multivitamin + Multimineral Capsules", category: "Pharmaceutical Products", imgs: ph50 },
-    
+
 
 
     //--------------------------------------------    "Agri-Commodities"-------------------------------
@@ -637,7 +818,7 @@ export default function Product() {
     { name: "Chia Seeds", category: "Agri-Commodities", imgs: ag6 },
     { name: "Chickpeas (Desi)", category: "Agri-Commodities", imgs: ag7 },
     { name: "Cocoa Powder & Powder", category: "Agri-Commodities", imgs: ag8 },
-    { name: "Coconut Oil", category: "Agri-Commodities", imgs: ag9 },
+    // { name: "Coconut Oil", category: "Agri-Commodities", imgs: ag9 },
     { name: "Coffee", category: "Agri-Commodities", imgs: ag10 },
     { name: "Coriander Seeds", category: "Agri-Commodities", imgs: ag11 },
     { name: "Corn", category: "Agri-Commodities", imgs: ag12 },
@@ -679,7 +860,45 @@ export default function Product() {
     { name: "Turmeric Fingers", category: "Agri-Commodities", imgs: ag48 },
     { name: "Vanilla", category: "Agri-Commodities", imgs: ag49 },
     { name: "Wheat", category: "Agri-Commodities", imgs: ag50 },
-// //----------------------------------------------------------    
+
+
+    // //-----------------------------------------------------Metals & Alloys---------------------------------------------------------------------
+    { name: "HMS 1 & HMS 2", category: "Metals & Alloys", imgs: me1 },
+    { name: "Shredded Steel Scrap (ISRI 210-211)", category: "Metals & Alloys", imgs: me2 },
+    { name: "Cast Iron Scrap", category: "Metals & Alloys", imgs: me3 },
+    { name: "Mild Steel Scrap", category: "Metals & Alloys", imgs: me4 },
+    { name: "CRGO / CRNO Sheet Scrap", category: "Metals & Alloys", imgs: me5 },
+    { name: "Rail Scrap (R50-R65)", category: "Metals & Alloys", imgs: me6 },
+    { name: "Automobile Scrap", category: "Metals & Alloys", imgs: me7 },
+    { name: "Re-Rollable Scrap", category: "Metals & Alloys", imgs: me8 },
+    { name: "Steel Turning & Boring Scrap", category: "Metals & Alloys", imgs: me9 },
+    { name: "Aluminum Scrap – Tense", category: "Metals & Alloys", imgs: me10 },
+    { name: "Aluminum Scrap – Taint/Tabor", category: "Metals & Alloys", imgs: me11 },
+    { name: "Aluminum Scrap – UBC", category: "Metals & Alloys", imgs: me12 },
+    { name: "Aluminum Scrap – Twitch", category: "Metals & Alloys", imgs: me13 },
+    { name: "Copper Scrap – Millberry", category: "Metals & Alloys", imgs: me14 },
+    { name: "Copper Scrap – Berry/Birch", category: "Metals & Alloys", imgs: me15 },
+    // { name: "Brass Scrap – Honey", category: "Metals & Alloys", imgs: me16 },
+    { name: "Brass Turnings", category: "Metals & Alloys", imgs: me17 },
+    // { name: "Lead Scrap – Rains", category: "Metals & Alloys", imgs: me18 },
+    { name: "Zinc Scrap (Old Die Cast, Dross)", category: "Metals & Alloys", imgs: me19 },
+    { name: "Stainless Steel Scrap (304, 316, etc.)", category: "Metals & Alloys", imgs: me20 },
+    { name: "Nickel Scrap (incl. Inconel)", category: "Metals & Alloys", imgs: me21 },
+    { name: "Titanium Scrap", category: "Metals & Alloys", imgs: me22 },
+    { name: "Tungsten Carbide Scrap", category: "Metals & Alloys", imgs: me23 },
+    { name: "Tool Steel & HSS Scrap", category: "Metals & Alloys", imgs: me24 },
+    { name: "Monel / Hastelloy Scrap", category: "Metals & Alloys", imgs: me25 },
+    { name: "Electric Motor Scrap", category: "Metals & Alloys", imgs: me26 },
+    // { name: "Generator & Transformer Scrap", category: "Metals & Alloys", imgs: me27 },
+    // { name: "Battery Scrap (Lead-Acid, Lithium-Ion)", category: "Metals & Alloys", imgs: me28 },
+    { name: "Electronic Waste Scrap (Wires, PCBs)", category: "Metals & Alloys", imgs: me29 },
+    { name: "Cable Scrap (Aluminum/Copper Cables)", category: "Metals & Alloys", imgs: me30 },
+
+
+
+
+
+
   ];
 
   // Filter products if a category is selected
@@ -689,7 +908,10 @@ export default function Product() {
 
   return (
     <>
-      <Nav bgColor="bg-white" textColor="text-black" />
+
+
+
+      {/* <Nav bgColor="bg-white" textColor="text-black" />
       <div
         className="relative h-[40vh] w-full bg-cover bg-center flex items-center"
         style={{ backgroundImage: `url(${background})` }}
@@ -720,11 +942,14 @@ export default function Product() {
           <button className="text-white px-4 py-2 bg-[#1F4278] transition-colors duration-300">
             Search
           </button>
-        </div>
+        </div> */}
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-          {/* Sidebar */}
-          <div className="bg-white shadow-md rounded-lg p-2">
+
+
+
+      {/* <div className="grid grid-cols-1 md:grid-cols-4 gap-4"> */}
+      {/* Sidebar */}
+      {/* <div className="bg-white shadow-md rounded-lg p-2">
             <ul className="space-y-3">
               {categories.map((item, index) => (
                 <li
@@ -740,10 +965,10 @@ export default function Product() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
-          {/* Product Grid */}
-          <div className="col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {/* Product Grid */}
+      {/* <div className="col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredProducts.map((product, index) => (
               <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
                 <img
@@ -759,7 +984,121 @@ export default function Product() {
           </div>
 
         </div>
+      </div> */}
+      {/* ----------------- */}
+      <Nav bgColor="bg-white" textColor="text-black" />
+
+      {/* Hero Section */}
+      <div
+        className="relative h-[40vh] w-full bg-cover bg-center flex items-center"
+        style={{ backgroundImage: `url(${background})` }}
+      >
+        <div className="relative h-full flex flex-col justify-center px-4 sm:px-6 md:px-12 lg:px-20">
+          <div className="mb-2 text-white text-xs sm:text-sm md:text-base">
+            <a href="/" className="hover:text-orange-400 transition-colors">
+              Home
+            </a>
+            <span className="mx-2">/</span>
+            <a href="/product" className="hover:text-orange-400 transition-colors">
+              Product
+            </a>
+          </div>
+          <h1 className="text-orange-500 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
+            Product
+          </h1>
+        </div>
       </div>
+
+      {/* Main Container */}
+      <div className="container mx-auto px-4 py-8">
+        {/* Search Bar */}
+        {/* <div className="mb-4 flex flex-col sm:flex-row sm:space-x-1 rounded-lg">
+          <input
+            type="text"
+            placeholder="Search Product..."
+            className="lg:w-[18%] sm:w-auto  px-4 py-2 text-gray-700 bg-[#1F4278] rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 transition"
+          />
+          <button className="mt-2 sm:mt-0 text-white md:px-4 px-6  py-2 bg-[#1F4278] rounded-md hover:bg-gray-600 transition-colors duration-300">
+            Search
+          </button>
+        </div> */}
+        <div className="mb-4 flex sm:mt-2 flex-col md:flex-row md:space-x-1 lg:flex-row lg:space-x-1 rounded-lg">
+          <input
+            type="text"
+            placeholder="Search Product..."
+            className="w-full lg:w-[18%] px-4 py-2 text-white bg-[#1F4278] rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 transition mb-[2px] "
+          />
+          <button className=" lg:mt-0 text-white px-6 py-2 bg-[#1F4278] rounded-md hover:bg-gray-600 transition-colors duration-300">
+            Search
+          </button>
+        </div>
+
+
+        <div className="flex flex-col md:flex-row gap-6">
+          {/* Sidebar */}
+          <div className="md:w-1/4 bg-white shadow-lg border border-gray-200 rounded-lg p-4">
+            <ul className="space-y-3">
+              {categories.map((item, index) => (
+                <li
+                  key={index}
+                  className={`cursor-pointer font-medium px-4 py-2 rounded-lg text-center md:text-left
+              ${selectedCategory === item
+                      ? "bg-orange-500 text-white"
+                      : "hover:bg-orange-500 hover:text-white text-gray-700"
+                    }`}
+                  onClick={() => setSelectedCategory(item)}
+                >
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Product Grid */}
+          {/* <div className="md:w-3/4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {filteredProducts.map((product, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col"
+              >
+                <img
+                  src={product.imgs}
+                  alt={product.name}
+                  className="w-full h-48 sm:h-56 md:h-64 object-cover"
+                />
+                <div className="p-4 text-center">
+                  <p className="font-medium text-gray-800 text-sm sm:text-base">
+                    {product.name}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div> */}
+          <div className="md:w-3/4 max-h-[80vh] overflow-y-auto pr-2 ">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
+              {filteredProducts.map((product, index) => (
+                <div
+                  key={index}
+                  className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col "
+                >
+                  <img
+                    src={product.imgs}
+                    alt={product.name}
+                    className="w-full h-48 sm:h-56 md:h-64 object-cover"
+                  />
+                  <div className="p-4 text-center">
+                    <p className="font-medium text-gray-800 text-sm sm:text-base">
+                      {product.name}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </>
   );
 }

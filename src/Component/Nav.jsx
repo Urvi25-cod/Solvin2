@@ -222,10 +222,10 @@ export default function Nav({ bgColor, textColor }) {
 
         {/* Desktop Navigation */}
         <ul className={`hidden  md:flex space-x-6 items-center ${textColor}`}>
-        <li
+          <li
             className="relative text-sm md:text-base lg:text-lg hover:text-orange-500 cursor-pointer z-10 lg:border-r-1 lg:pr-4 border-gray-500"
             onClick={() => {
-              
+
               setIsAboutDropdownOpen(!isAboutDropdownOpen)
               setIsProductDropdownOpen(false)
               setIsServicesDropdownOpen(false)
@@ -233,12 +233,14 @@ export default function Nav({ bgColor, textColor }) {
 
 
             }
-            
+
             }
+            onMouseEnter={() => setIsAboutDropdownOpen(true)}
+            onMouseLeave={() => setIsAboutDropdownOpen(false)}
           >
             About us
             {isAboutDropdownOpen && (
-              <ul className="absolute top-full left-0 bg-white text-black mt-2 w-[220px] rounded shadow-lg">
+              <ul className="absolute top-full left-0 bg-white text-black  w-[220px] rounded shadow-lg">
                 <Link to="/OurTeam">
                   <li className="px-4 py-2 hover:bg-orange-500 hover:text-white text-sm md:text-base">
                     Our Team
@@ -251,7 +253,7 @@ export default function Nav({ bgColor, textColor }) {
                 </Link>
                 <Link to="/About">
                   <li className="px-4 py-2 hover:bg-orange-500 hover:text-white text-sm md:text-base">
-                  About Us
+                    About Us
                   </li>
                 </Link>
               </ul>
@@ -265,15 +267,18 @@ export default function Nav({ bgColor, textColor }) {
 
           <li
             className="relative text-sm md:text-base lg:text-lg hover:text-orange-500 cursor-pointer z-10  lg:pr-4 lg:border-r-1  border-gray-500"
-            onClick={() => {setIsProductDropdownOpen(!isProductDropdownOpen)
+            onClick={() => {
+              setIsProductDropdownOpen(!isProductDropdownOpen)
               setIsAboutDropdownOpen(false)
               setIsServicesDropdownOpen(false)
             }}
+            onMouseEnter={() => setIsProductDropdownOpen(true)}
+            onMouseLeave={() => setIsProductDropdownOpen(false)}
           // onMouseLeave={() => setIsProductDropdownOpen(false)}
           >
             Product
             {isProductDropdownOpen && (
-              <ul className="absolute top-full  left-0  bg-white text-black mt-2  rounded shadow-lg w-[220px]">
+              <ul className="absolute top-full  left-0  bg-white text-black  rounded shadow-lg w-[220px]">
                 {/* Categories */}
 
                 <li className="px-4 py-2  hover:bg-orange-500 hover:text-white text-sm md:text-base" onClick={() => handleNavigation("FMCG Products")}>FMCG Products</li>
@@ -293,30 +298,33 @@ export default function Nav({ bgColor, textColor }) {
 
 
           {/* Services Dropdown */}
-          
-            <li
-              className="relative text-sm md:text-base lg:text-lg hover:text-orange-500 cursor-pointer z-10 lg:pr-4 lg:border-r-1  border-gray-500"
-              onClick={() => {setIsServicesDropdownOpen(!isServicesDropdownOpen)
-                setIsAboutDropdownOpen(false)
-                setIsProductDropdownOpen(false)
-              }}
-            // onMouseLeave={() => setIsServicesDropdownOpen(false)}
-            >
-              Services
-              {isServicesDropdownOpen && (
-              <Link to="/Services"> <ul className="absolute top-full left-0 bg-white text-black mt-2  rounded shadow-lg w-[220px]">
-                  <li className="px-4 py-2 hover:bg-orange-500 text-gray-700  hover:text-white text-sm md:text-base">Export-Import Services</li>
-                  <li className="px-4 py-2 hover:bg-orange-500 text-gray-700  hover:text-white text-sm md:text-base">E2E Logistic Services</li>
-                  <li className="px-4 py-2 hover:bg-orange-500 text-gray-700  hover:text-white text-sm md:text-base">Product Distribution</li>
-                  <li className="px-4 py-2 hover:bg-orange-500 text-gray-700  hover:text-white text-sm md:text-base">Warehousing Services</li>
-                  <li className="px-4 py-2 hover:bg-orange-500 text-gray-700  hover:text-white text-sm md:text-base">IT Outsourcing Services</li>
-                  <li className="px-4 py-2 hover:bg-orange-500 text-gray-700  hover:text-white text-sm md:text-base">Trade Finance</li>
-                  <li className="px-4 py-2 hover:bg-orange-500 text-gray-700  hover:text-white text-sm md:text-base">Product R&D</li>
-                  <li className="px-4 py-2 hover:bg-orange-500 text-gray-700  hover:text-white text-sm md:text-base">Ship Chandling Services</li>
-                </ul></Link> 
-              )}
-            </li>
-         
+
+          <li
+            className="relative text-sm md:text-base lg:text-lg hover:text-orange-500 cursor-pointer z-10 lg:pr-4 lg:border-r-1  border-gray-500"
+            onClick={() => {
+              setIsServicesDropdownOpen(!isServicesDropdownOpen)
+              setIsAboutDropdownOpen(false)
+              setIsProductDropdownOpen(false)
+            }}
+            onMouseEnter={() => setIsServicesDropdownOpen(true)}
+            onMouseLeave={() => setIsServicesDropdownOpen(false)}
+          // onMouseLeave={() => setIsServicesDropdownOpen(false)}
+          >
+            Services
+            {isServicesDropdownOpen && (
+              <ul className="absolute top-full left-0 bg-white text-black   rounded shadow-lg w-[220px]">
+                <Link to={'/Services'}><li className="px-4 py-2 hover:bg-orange-500 text-gray-700  hover:text-white text-sm md:text-base">Export-Import Services</li></Link>
+                <Link to={'/E2Eservices'}><li className="px-4 py-2 hover:bg-orange-500 text-gray-700  hover:text-white text-sm md:text-base">E2E Logistic Services</li></Link>
+                <Link to={'/Distribution'}>  <li className="px-4 py-2 hover:bg-orange-500 text-gray-700  hover:text-white text-sm md:text-base">Product Distribution</li></Link>
+                <Link to={'/Warehousing'}> <li className="px-4 py-2 hover:bg-orange-500 text-gray-700  hover:text-white text-sm md:text-base">Warehousing Services</li></Link>
+                <Link to={'/ITOutsourcing'}> <li className="px-4 py-2 hover:bg-orange-500 text-gray-700  hover:text-white text-sm md:text-base">IT Outsourcing Services</li></Link>
+                <Link to={'/Tradefinance'}> <li className="px-4 py-2 hover:bg-orange-500 text-gray-700  hover:text-white text-sm md:text-base">Trade Finance</li></Link>
+                <Link to={'/ProductRandD'}> <li className="px-4 py-2 hover:bg-orange-500 text-gray-700  hover:text-white text-sm md:text-base">Product R&D</li></Link>
+                <Link to={'/Shipchandling'}> <li className="px-4 py-2 hover:bg-orange-500 text-gray-700  hover:text-white text-sm md:text-base">Ship Chandling Services</li></Link>
+              </ul>
+            )}
+          </li>
+
 
           <Link to="/Career"> <li className="text-sm md:text-base lg:text-lg hover:text-orange-500 cursor-pointer lg:pr-4  lg:border-r-1  border-gray-500">Career</li></Link>
           <Link to="/Blog"><li className="text-sm md:text-base lg:text-lg hover:text-orange-500 cursor-pointer  lg:border-r-1  lg:pr-4 border-gray-500">Blog</li></Link>
@@ -402,7 +410,7 @@ export default function Nav({ bgColor, textColor }) {
         <ul className="flex flex-col space-y-4 p-4">
           {/* About Dropdown */}
           <li>
-           <div
+            <div
               className="flex justify-between items-center text-sm md:text-base py-2 hover:bg-gray-200 cursor-pointer mt-5"
               onClick={() => setIsAboutDropdownOpen(!isAboutDropdownOpen)}
             >
@@ -437,7 +445,7 @@ export default function Nav({ bgColor, textColor }) {
                 </Link>
                 <Link to="/About">
                   <li className="text-sm md:text-base py-2 hover:bg-orange-500">
-                  About Us
+                    About Us
                   </li>
                 </Link>
               </ul>
@@ -478,50 +486,50 @@ export default function Nav({ bgColor, textColor }) {
                 <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {
                   handleNavigation("Industrial Chemicals")
                   setIsMobileMenuOpen(false);
-                  }}>
+                }}>
                   Industrial Chemicals
                 </li>
                 <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {
                   handleNavigation("Petrochemical Products")
                   setIsMobileMenuOpen(false);
-                  }}>
-                  
+                }}>
+
                   Petrochemical Products
                 </li>
                 <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {
                   handleNavigation("Metals & Alloys")
                   setIsMobileMenuOpen(false);
-                  }}>
+                }}>
                   Metals & Alloys
                 </li>
                 <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {
                   handleNavigation("Agri-Commodities");
                   setIsMobileMenuOpen(false);
-                  }}>
+                }}>
                   Agri-Commodities
                 </li>
                 <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {
                   handleNavigation("Aviation Service and Parts");
                   setIsMobileMenuOpen(false);
-                  }}>
+                }}>
                   Aviation Service and Parts
                 </li>
                 <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {
                   handleNavigation(" Pharmaceutical Products");
                   setIsMobileMenuOpen(false);
-                  }}>
+                }}>
                   Pharmaceutical Products
                 </li>
                 <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {
                   handleNavigation("Machinery & Equipment");
                   setIsMobileMenuOpen(false);
-                  }}>
+                }}>
                   Machinery & Equipment
                 </li>
                 <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {
                   handleNavigation("Animal Nutrition & Feed");
                   setIsMobileMenuOpen(false);
-                  }}>
+                }}>
                   Animal Nutrition & Feed
                 </li>
               </ul>
@@ -552,29 +560,29 @@ export default function Nav({ bgColor, textColor }) {
               </svg>
             </div>
             {isServicesDropdownOpen && (
-            <ul className="pl-4 space-y-2">
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {setIsMobileMenuOpen(false)}} >
+              <ul className="pl-4 space-y-2">
+                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => { setIsMobileMenuOpen(false) }} >
                   Export-Import Services
                 </li>
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {setIsMobileMenuOpen(false)}}>
+                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => { setIsMobileMenuOpen(false) }}>
                   E2E Logistic Services
                 </li>
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {setIsMobileMenuOpen(false)}}>
+                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => { setIsMobileMenuOpen(false) }}>
                   Product Distribution
                 </li>
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {setIsMobileMenuOpen(false)}}>
+                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => { setIsMobileMenuOpen(false) }}>
                   Warehousing Services
                 </li>
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {setIsMobileMenuOpen(false)}}>
+                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => { setIsMobileMenuOpen(false) }}>
                   IT Outsourcing Services
                 </li>
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {setIsMobileMenuOpen(false)}}>
+                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => { setIsMobileMenuOpen(false) }}>
                   Trade Finance
                 </li>
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {setIsMobileMenuOpen(false)}}>
+                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => { setIsMobileMenuOpen(false) }}>
                   Product R&D
                 </li>
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => {setIsMobileMenuOpen(false)}}>
+                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => { setIsMobileMenuOpen(false) }}>
                   Ship Chandling Services
                 </li>
 

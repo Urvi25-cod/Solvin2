@@ -120,8 +120,8 @@ const ContactUs = () => {
                 <img src={map} alt="World Map" className="w-full h-full object-cover" />
 
                 {/* Location Markers */}
-                <div className="absolute top-[40%] left-[60%] transform -translate-x-1/2 -translate-y-1/2">
-                  <div className="bg-orange-500 text-white px-2 py-1 rounded-md text-sm">India</div>
+                <div className="absolute top-[43%] right-[27%] transform -translate-x-1/2 -translate-y-1/2">
+                  <div className="bg-orange-500 text-white sm:px-2 sm:py-2 px-1 py-1 rounded-md text-sm">India</div>
                 </div>
                 {/* Add more markers as needed */}
               </div>
