@@ -18,19 +18,21 @@ import se7 from "../Images/se7.png";
 import se8 from "../Images/se8.png";
 
 import Arrow from "../Images/Arrow.png";
-import { Link} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+// import { Link} from "react-router-dom";
 
 const OurServices = () => {
+   const navigate = useNavigate();
 
   const categories = [
-      { name: "Export-Import Services", icon: sr1, hover:se1 },
-      { name: "E2E Logistic Services", icon: sr2, hover:se2 },
-      { name: "Product Distribution", icon: sr3, hover:se3 },
-      { name: "Warehousing Services", icon: sr4, hover:se4 },
-      { name: "Product R&D", icon: sr5, hover:se5 },
-      { name: "Ship Candling Services", icon: sr6 , hover:se6},
-      { name: "IT Outsourcing Services", icon: sr7, hover:se7 },
-      { name: "IT Outsourcing Services", icon: sr8 , hover:se8},
+      { name: "Export-Import Services", icon: sr1, hover:se1,pagename:'/Services'},
+      { name: "E2E Logistic Services", icon: sr2, hover:se2,pagename:'/E2Eservices' },
+      { name: "Product Distribution", icon: sr3, hover:se3,pagename:'/Distribution' },
+      { name: "Warehousing Services", icon: sr4, hover:se4,pagename:'/Warehousing' },
+      { name: "Product R&D", icon: sr5, hover:se5 ,pagename:'/ITOutsourcing'},
+      { name: "Ship Candling Services", icon: sr6 , hover:se6,pagename:'/Tradefinance'},
+      { name: "IT Outsourcing Services", icon: sr7, hover:se7 ,pagename:'/ProductRandD'},
+      { name: "IT Outsourcing Services", icon: sr8 , hover:se8,pagename:'/Shipchandling'},
      
   ];
 
@@ -50,18 +52,19 @@ const OurServices = () => {
             {/* Categories Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               {categories.map((category, index) => (
-               <Link to={'/Services'}><div
+               <div
                   key={index}
                   className="relative flex flex-col items-center justify-center w-full h-40 hover:shadow-xl  rounded-br-4xl transition-shadow duration-300 cursor-pointer group  p-4 hover:border border-gray-300"
                 >
                   {/* Icon Placeholder */}
                   <div className="mb-4 relative w-16 h-16">
-                   <Link to={'/Services'}><img src={category.icon} alt={category.name} className="absolute top-0 left-0 w-16 h-16 transition-opacity duration-300 group-hover:opacity-0" /></Link>
+                   <img src={category.icon} alt={category.name} className="absolute top-0 left-0 w-16 h-16 transition-opacity duration-300 group-hover:opacity-0" />
                 
                    <img
                 src={category.hover}
                 alt={category.name}
                 className="absolute top-0 left-0 w-16 h-16 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                
               />
                   </div>
       
@@ -78,8 +81,9 @@ const OurServices = () => {
                     src={Arrow}
                     alt="Arrow Icon"
                     className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    onClick={() => navigate(category.pagename)}
                   />
-                </div></Link>
+                </div>
               ))}
             </div>
       
