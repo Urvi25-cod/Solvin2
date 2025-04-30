@@ -285,6 +285,9 @@ const Ourproduct = () => {
               src={Arrow}
               alt="Arrow Icon"
               className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
             />
           </div>
         ))}

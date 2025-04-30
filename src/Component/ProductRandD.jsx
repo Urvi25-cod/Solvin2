@@ -16,7 +16,7 @@ export default function ProductRandD() {
             >
 
                 {/* Content Container */}
-                <div className="relative  h-full flex flex-col justify-center px-6 md:px-12 lg:px-20">
+                <div className="relative container mx-auto  h-full flex flex-col justify-center px-6 md:px-12 lg:px-20">
                     {/* Breadcrumb Navigation */}
                     {/* <div className="absolute inset-0  bg-opacity-50"></div> */}
 
@@ -61,7 +61,7 @@ export default function ProductRandD() {
 
 
                 {/* Right Section - Text */}
-                <div className="w-full lg:w-1/3 px-4 md:px-8 lg:px-0">
+                <div className="w-full lg:w-1/2 px-4 md:px-8 lg:px-4">
                     <h3 className="text-orange-500 font-semibold text-lg md:text-xl mb-2">
                         Sourcing & Processing
                     </h3>
@@ -70,13 +70,13 @@ export default function ProductRandD() {
                         <span className="text-orange-500">Innovation, Reliability, Efficiency, Growth</span>
                     </h2>
                     <p className="text-gray-600 mb-4 leading-relaxed text-sm md:text-lg text-justify">
-                    Product Research and Development (R&D) in import-export services focuses on creating, enhancing, and adapting products to meet the specific needs of global markets. As international trade demands vary greatly from region to region, businesses involved in import and export must continually research and innovate to stay competitive
+                        Product Research and Development (R&D) in import-export services focuses on creating, enhancing, and adapting products to meet the specific needs of global markets. As international trade demands vary greatly from region to region, businesses involved in import and export must continually research and innovate to stay competitive
                     </p>
                     <p className="text-gray-600 mb-4 leading-relaxed text-sm md:text-lg text-justify">
-                    R&D services help companies understand foreign market requirements, consumer preferences, regulatory standards, and emerging trends, allowing them to develop products that are well-suited for successful global distribution and acceptance.
+                        R&D services help companies understand foreign market requirements, consumer preferences, regulatory standards, and emerging trends, allowing them to develop products that are well-suited for successful global distribution and acceptance.
                     </p>
                     <p className="text-gray-600 leading-relaxed text-sm md:text-lg text-justify">
-                    The R&D process for import-export typically involves extensive market analysis, competitor benchmarking, product customization, compliance assessment, and innovation planning. Research teams study international regulations, cultural preferences, and technical standards to ensure products meet local expectations and legal requirements. 
+                        The R&D process for import-export typically involves extensive market analysis, competitor benchmarking, product customization, compliance assessment, and innovation planning. Research teams study international regulations, cultural preferences, and technical standards to ensure products meet local expectations and legal requirements.
                     </p>
                 </div>
 

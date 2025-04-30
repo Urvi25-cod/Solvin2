@@ -170,7 +170,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 py-10  mb-8">
           {/* Address Section */}
           <div>
-            <Link to={'/'}><img src={footer} alt="Solvi Globe Logo" className="mb-4" /></Link>
+            {/* <Link to={'/'}><img src={footer} alt="Solvi Globe Logo" className="mb-4" /></Link> */}
+            <Link
+              to="/"
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+            >
+              <img src={footer} alt="Solvi Globe Logo" className="mb-4" />
+            </Link>
+
             <p className="text-sm">
               Address: G33, MBC-Meridian Business Center, Lajamni Chowk,
               opposite Opera Business center, Mota Varachha, Surat, Gujarat
@@ -202,7 +211,7 @@ export default function Footer() {
           {/* Industry Links */}
           <div>
             <h3 className="font-bold mb-4">Product</h3>
-            <Link to="/Product"><ul className="space-y-2 text-[#FFFFFF]">
+            <Link to="/Product" onClick={() => {  window.scrollTo({ top: 0, behavior: 'smooth' }) }}><ul className="space-y-2 text-[#FFFFFF]">
               <li>FMCG Products</li>
               <li>Industrial Chemicals</li>
               <li>Petrochemical Products</li>
@@ -216,29 +225,30 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-bold mb-4">Services</h3>
-            <Link to={'/Services'}><ul className="space-y-2 text-[#FFFFFF]">
-              <li>Export-Import Services</li>
-              <li>vE2E Logistic Services</li>
-              <li>Product Distribution</li>
-              <li>Warehousing Services</li>
-              <li>IT Outsourcing Services</li>
-              <li>Trade Finance</li>
-              <li>Product R&D</li>
-              <li>Ship Chandling Services</li>
-            </ul></Link>
+            <h3 className="font-bold mb-4 ">Services</h3>
+            <ul className="text-[#FFFFFF]">
+              <Link to={'/Services'}><li className="mb-2" onClick={() => {  window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Export-Import Services</li></Link>
+              <Link to={'/E2Eservices'}><li className="mb-2"  onClick={() => {  window.scrollTo({ top: 0, behavior: 'smooth' }) }}>vE2E Logistic Services</li></Link>
+              <Link to={'/Distribution'}><li className="mb-2"  onClick={() => {  window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Product Distribution</li></Link>
+              <Link to={'/Warehousing'}><li className="mb-2"  onClick={() => {  window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Warehousing Services</li></Link>
+              <Link to={'/ITOutsourcing'}><li className="mb-2"  onClick={() => {  window.scrollTo({ top: 0, behavior: 'smooth' }) }}>IT Outsourcing Services</li></Link>
+              <Link to={'/Tradefinance'}><li className="mb-2"  onClick={() => {  window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Trade Finance</li></Link>
+              <Link to={'/ProductRandD'}><li className="mb-2"  onClick={() => {  window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Product R&D</li></Link>
+              <Link to={'/Shipchandling'}><li  onClick={() => {  window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Ship Chandling Services</li></Link> {/* Last item no margin */}
+            </ul>
+
           </div>
 
           <div>
 
-            <Link to={'/InquiryForm'}><p className="text-2xl">BUSINESS INQUIRY</p></Link>
-            <Link to={'/Registration'}><p className="text-2xl">REGISTER AS VENDOR</p></Link>
-            <Link to={'/Career'}><p className="text-2xl">JOIN OUR TEAM</p></Link>
+            <Link to={'/InquiryForm'}><p className="text-2xl" onClick={() => {  window.scrollTo({ top: 0, behavior: 'smooth' }) }}>BUSINESS INQUIRY</p></Link>
+            <Link to={'/Registration'}><p className="text-2xl" onClick={() => {  window.scrollTo({ top: 0, behavior: 'smooth' }) }}>REGISTER AS VENDOR</p></Link>
+            <Link to={'/Career'}><p className="text-2xl" onClick={() => {  window.scrollTo({ top: 0, behavior: 'smooth' }) }}>JOIN OUR TEAM</p></Link>
 
 
             <div>
               <ul className="space-y-2 text-[#FFFFFF]">
-                <Link><li>Blog</li></Link>
+                <Link to={'/Blog'}><li onClick={() => {  window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Blog</li></Link>
                 <li>Privacy Policy</li>
                 <li>Terms & Condition</li>
               </ul>

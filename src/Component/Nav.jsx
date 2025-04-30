@@ -561,30 +561,31 @@ export default function Nav({ bgColor, textColor }) {
             </div>
             {isServicesDropdownOpen && (
               <ul className="pl-4 space-y-2">
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => { setIsMobileMenuOpen(false) }} >
+
+                <Link to={'/Services'}><li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => { setIsMobileMenuOpen(false) }} >
                   Export-Import Services
-                </li>
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => { setIsMobileMenuOpen(false) }}>
+                </li></Link>
+                   <Link to={'/E2Eservices'}><li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => { setIsMobileMenuOpen(false) }}>
                   E2E Logistic Services
-                </li>
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => { setIsMobileMenuOpen(false) }}>
+                </li></Link>
+                  <Link to={'/Distribution'}><li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => { setIsMobileMenuOpen(false) }}>
                   Product Distribution
-                </li>
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => { setIsMobileMenuOpen(false) }}>
+                </li></Link>
+                   <Link to={'/Warehousing'}>    <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => { setIsMobileMenuOpen(false) }}>
                   Warehousing Services
-                </li>
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => { setIsMobileMenuOpen(false) }}>
+                </li></Link>
+                 <Link to={'/ITOutsourcing'}> <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => { setIsMobileMenuOpen(false) }}>
                   IT Outsourcing Services
-                </li>
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => { setIsMobileMenuOpen(false) }}>
+                </li></Link>
+                 <Link to={'/Tradefinance'}> <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => { setIsMobileMenuOpen(false) }}>
                   Trade Finance
-                </li>
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => { setIsMobileMenuOpen(false) }}>
+                </li></Link>
+                  <Link to={'/ProductRandD'}><li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => { setIsMobileMenuOpen(false) }}>
                   Product R&D
-                </li>
-                <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => { setIsMobileMenuOpen(false) }}>
+                </li></Link>
+                <Link to={'/Shipchandling'}> <li className="text-sm md:text-base py-2 hover:bg-gray-200" onClick={() => { setIsMobileMenuOpen(false) }}>
                   Ship Chandling Services
-                </li>
+                </li></Link>
 
               </ul>
             )}

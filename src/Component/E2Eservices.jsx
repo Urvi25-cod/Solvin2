@@ -16,7 +16,7 @@ export default function E2Eservices() {
             >
 
                 {/* Content Container */}
-                <div className="relative  h-full flex flex-col justify-center px-6 md:px-12 lg:px-20">
+                <div className="relative container mx-auto  h-full flex flex-col justify-center px-6 md:px-12 lg:px-20">
                     {/* Breadcrumb Navigation */}
                     {/* <div className="absolute inset-0  bg-opacity-50"></div> */}
 
@@ -62,7 +62,7 @@ export default function E2Eservices() {
 
 
                 {/* Right Section - Text */}
-                <div className="w-full lg:w-1/2 px-4 md:px-8 lg:px-0 ">
+                <div className="w-full lg:w-1/2 px-4 md:px-8 lg:px-4">
                     <h3 className="text-orange-500 font-semibold text-lg md:text-xl mb-2">
                         Sourcing & Processing
                     </h3>

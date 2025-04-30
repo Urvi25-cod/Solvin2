@@ -67,8 +67,8 @@
 //            // Replace with your icon path
 //         },
 //         {
-//             id: 5,
-//             number:"5",
+//             id: d,
+//             number:"d",
 //             title: "Excellence",
 //             description:
 //                 "Striving for excellence drives us. We set high standards and are relentless in our pursuit of superior results.",
@@ -118,6 +118,13 @@
 
 
 import React from "react";
+// import Innovation from "../Images/Innovation.png";
+
+import Respect from "../Images/Respect.png";
+import Innovation from "../Images/Innovation.png";
+import Adaptability from "../Images/Adaptability.png";
+import Excellence from "../Images/Innovation.png";
+import Reliability from "../Images/Reliability.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -125,11 +132,13 @@ import OurCompanies from "./OurCompanies";
 
 const About2 = () => {
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
+        autoplay: true, 
+        autoplaySpeed: 2000,
         responsive: [
             {
                 breakpoint: 1440, // Tablet and smaller devices
@@ -171,11 +180,11 @@ const About2 = () => {
     };
 
     const coreValues = [
-        { id: 1, number: "1", title: "Reliability", description: "Trust is our cornerstone. We promise timely and efficient delivery, ensuring that our clients receive what they need." },
-        { id: 2, number: "2", title: "Adaptability", description: "In a constantly evolving global market, flexibility is key. We embrace change and swiftly adjust to meet challenges." },
-        { id: 3, number: "3", title: "Respect for All Stakeholders", description: "We value every relationship and believe in treating all stakeholders with respect and dignity." },
-        { id: 4, number: "4", title: "Excellence", description: "Striving for excellence drives us. We set high standards and are relentless in our pursuit of superior results." },
-        { id: 5, number: "5", title: "Innovation", description: "We continuously strive to innovate and improve, ensuring we stay ahead in the competitive landscape." },
+        { id: 1, number:Reliability , title: "Reliability", description: "Trust is our cornerstone. We promise timely and efficient delivery, ensuring that our clients receive what they need." },
+        { id: 2, number: Adaptability, title: "Adaptability", description: "In a constantly evolving global market, flexibility is key. We embrace change and swiftly adjust to meet challenges." },
+        { id: 3, number:Respect, title: "Respect for All Stakeholders", description: "We value every relationship and believe in treating all stakeholders with respect and dignity." },
+        { id: 4, number: Excellence, title: "Excellence", description: "Striving for excellence drives us. We set high standards and are relentless in our pursuit of superior results." },
+        { id: 5, number:Innovation, title: "Innovation", description: "We continuously strive to innovate and improve, ensuring we stay ahead in the competitive landscape." },
     ];
 
     return (
@@ -192,8 +201,9 @@ const About2 = () => {
                         <div key={value.id} className="">
                             <div className="w-72 h-60 bg-white rounded-lg shadow-lg p-6 text-center flex flex-col items-center">
                                 {/* Circular Number */}
-                                <div className="w-16 h-16 flex items-center justify-center rounded-full bg-orange-100 text-orange-500 text-xl font-bold mb-4">
-                                    {value.number}
+                                <div className="w-16 h-16 flex items-center justify-center mb-4">
+                                    {/* {value.number} */}
+                                    <img src={value.number} alt="icons" />
                                 </div>
                                 {/* Title */}
                                 <h3 className="text-lg font-semibold text-[#1F4278] mb-2">{value.title}</h3>
@@ -212,3 +222,5 @@ const About2 = () => {
 };
 
 export default About2;
+
+

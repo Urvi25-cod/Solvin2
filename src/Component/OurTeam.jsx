@@ -268,7 +268,7 @@ const OurTeam = () => {
                 style={{ backgroundImage: `url(${background})` }}
             >
                 {/* Content Container */}
-                <div className="relative h-full flex flex-col justify-center px-6 md:px-12 lg:px-20">
+                <div className="relative h-full flex flex-col justify-center  md:px-18 px-10  xl:px-25">
                     {/* Breadcrumb Navigation */}
                     <div className="mb-2 text-white text-sm md:text-base">
                         <a href="/" className="hover:text-orange-400 transition-colors">

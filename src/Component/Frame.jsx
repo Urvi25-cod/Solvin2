@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 import supply from "../Images/supply.png"; // Replace with actual image path
-import globalsupply from "../Images/globalsupply.png";
-
-
-
+import rain from "../Images/rain.png";
 
 const Frame = () => {
   const [partnerships, setPartnerships] = useState(0);
@@ -26,7 +23,6 @@ const Frame = () => {
       if (start >= steps) clearInterval(interval);
     }, stepTime);
   }, []);
-
 
   return (
     <>
@@ -52,20 +48,23 @@ const Frame = () => {
           <img
             src={supply}
             alt="Model 1"
-            className="w-full max-w-[80%] sm:max-w-[70%] lg:max-w-[70%] object-cover"
+            className="w-full max-w-[80%] sm:max-w-[70%] lg:max-w-[70%] object-cover rounded-md"
           />
-          <div className="absolute top-1/2 right-[-1%] transform -translate-y-1/2 w-[50%] max-w-[40%] lg:mt-[5%] ">
-            <img src={globalsupply}
+
+          <div className="absolute top-1/2 right-[-1%] transform -translate-y-1/2 w-[50%] max-w-[40%] lg:mt-[5%]  ">
+            <img src={rain}
               alt="Model 2"
-              className="w-full object-cover" />
+              className="w-full object-cover rounded-md" />
           </div>
         </div>
+
         <div className="px-4 sm:px-8 text-center sm:text-left">
           <h4 className="text-orange-500 font-semibold">Who we are</h4>
           <h2 className="text-2xl md:text-4xl font-bold text-[#1F4278]">
             Global Supply, <span className="text-orange-500">Innovation, Reliability,</span>
             <span className="text-[#1F4278]"> Efficiency, Growth</span>
           </h2>
+
           <p className="mt-4 text-[#1F4278] text-justify text-sm md:text-base">
             SolviGlobe Ltd, founded in 2022 and based in India, is a supplier of raw materials, semi-
             finished products, finished goods, and services across multiple industries worldwide.
@@ -80,16 +79,15 @@ const Frame = () => {
             growth, benefiting all our stakeholders.
           </p>
 
-
           <p className="mt-4 text-[#1F4278] text-justify  text-sm md:text-base">
-
             Our mission is to revolutionize the global market through customer-centric approach
             and advance technologies. We aim to deliver superior products and services promptly,
             fostering long-term partnerships and driving global commerce. By eliminating delays
             and enhancing efficiency, we empower our clients to achieve their goals and succeed
             in a competitive market.
           </p>
-          <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center md:text-left">
+
+          {/* <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center md:text-left">
             <div className="flex flex-col items-center md:items-start border-r border-gray-400 pr-6 last:border-r-0">
               <p className="text-orange-500 text-3xl font-bold">{partnerships}+</p>
               <p className="text-[#1F4278] text-base">Successful Partnerships</p>
@@ -104,19 +102,27 @@ const Frame = () => {
               <p className="text-orange-500 text-3xl font-bold">{experience}+</p>
               <p className="text-[#1F4278] text-base">Years of Experience</p>
             </div>
-          </div>
+          </div> */}
+          <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center md:text-left">
+            <div className="flex flex-col items-center md:items-start border-r border-gray-400 pr-6 last:border-r-0">
+              <p className="text-orange-500 text-3xl font-bold">{partnerships}+</p>
+              <p className="text-[#1F4278] text-base">Successful Partnerships</p>
+            </div>
 
+            <div className="flex flex-col items-center md:items-start border-r border-gray-400 pr-6 last:border-r-0">
+              <p className="text-orange-500 text-3xl font-bold">{countries}+</p>
+              <p className="text-[#1F4278] text-base">Countries Covered</p>
+            </div>
+
+            <div className="flex flex-col items-center md:items-start border-r sm:border-r-0 border-gray-400 pb-4 sm:pb-0">
+              <p className="text-orange-500 text-3xl font-bold">{experience}+</p>
+              <p className="text-[#1F4278] text-base">Years of Experience</p>
+            </div>
+          </div>
 
         </div>
       </section>
-
     </>
-
-
-
-
-
-
   );
 };
 

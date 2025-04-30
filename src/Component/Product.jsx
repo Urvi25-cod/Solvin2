@@ -304,6 +304,14 @@ import ma8 from "../Images/ma8.png";
 import ma9 from "../Images/ma9.png";
 import ma10 from "../Images/ma10.png";
 
+
+//--------------------------Petrochemical Products----------------------
+import p1 from "../Images/p1.png";
+import p3 from "../Images/p3.png";
+import p4 from "../Images/p4.png";
+
+
+
 //----------------------------------8.  Animal Nutrition & Feed----------------------------------------
 
 import aa1 from "../Images/aa1.png";
@@ -681,7 +689,7 @@ export default function Product() {
 
 
 
-    //-------------------------------------
+    //-------------------------------------Industrial Chemicals-----------------------------
 
     { name: "Sulfuric Acid", category: "Industrial Chemicals", imgs: i1 },
     { name: "Hydrochloric Acid", category: "Industrial Chemicals", imgs: i2 },
@@ -894,6 +902,11 @@ export default function Product() {
     { name: "Electronic Waste Scrap (Wires, PCBs)", category: "Metals & Alloys", imgs: me29 },
     { name: "Cable Scrap (Aluminum/Copper Cables)", category: "Metals & Alloys", imgs: me30 },
 
+//-----------------------------------------------
+
+{ name: "Polyvinyl Alcohol ", category: "Petrochemical Products", imgs: p1},
+{ name: " Polycarbonate ", category: "Petrochemical Products", imgs: p3 },
+{ name: " Nitrile Rubber", category: "Petrochemical Products", imgs: p4 },
 
 
 
@@ -993,7 +1006,7 @@ export default function Product() {
         className="relative h-[40vh] w-full bg-cover bg-center flex items-center"
         style={{ backgroundImage: `url(${background})` }}
       >
-        <div className="relative h-full flex flex-col justify-center px-4 sm:px-6 md:px-12 lg:px-20">
+        <div className="relative h-full container mx-auto flex flex-col justify-center px-4 sm:px-6 md:px-12">
           <div className="mb-2 text-white text-xs sm:text-sm md:text-base">
             <a href="/" className="hover:text-orange-400 transition-colors">
               Home

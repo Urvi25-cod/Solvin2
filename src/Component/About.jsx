@@ -20,7 +20,7 @@ const About = () => {
       >
 
         {/* Content Container */}
-        <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-12 lg:px-20">
+        <div className="relative container mx-auto  z-10 h-full flex flex-col justify-center px-6 md:px-12 ">
           {/* Breadcrumb Navigation */}
           {/* <div className="absolute inset-0  bg-opacity-50"></div> */}
 
@@ -50,15 +50,15 @@ const About = () => {
           <img
             src={supply}
             alt="Supply Chain"
-            className="w-full max-w-[80%] sm:max-w-[70%] lg:max-w-[70%] object-cover"
+            className="w-full max-w-[80%] sm:max-w-[70%] lg:max-w-[70%] object-cover rounded-md"
           />
           <div className="absolute top-1/2 right-[-1%] transform -translate-y-1/2 w-[50%] max-w-[40%] lg:mt-[5%] ">
-            <img src={globalsupply} alt="Global Supply" className="w-full object-cover" />
+            <img src={globalsupply} alt="Global Supply" className="w-full object-cover rounded-md" />
           </div>
         </div>
 
         {/* Text Content */}
-        <div className="px-4 sm:px-8 text-center sm:text-left">
+        <div className="px-4 text-center sm:text-left">
           <h4 className="text-orange-500 font-semibold">Who we are</h4>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1F4278]">
             Global Supply, <span className="text-orange-500">Innovation, Reliability,</span>
@@ -81,7 +81,7 @@ const About = () => {
 
 
 
-      <div className="container mx-auto px-6 py-12">
+      <div className="container mx-auto px-4 py-12">
         <div>
           <h3 className="text-orange-500 mb-4">
             Our Mission & Vision </h3>
