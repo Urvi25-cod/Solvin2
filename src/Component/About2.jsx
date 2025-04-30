@@ -120,7 +120,7 @@
 import React from "react";
 // import Innovation from "../Images/Innovation.png";
 
-import Respect from "../Images/Respect.png";
+import respect from "../Images/respect.png";
 import Innovation from "../Images/Innovation.png";
 import Adaptability from "../Images/Adaptability.png";
 import Excellence from "../Images/Innovation.png";
@@ -182,7 +182,7 @@ const About2 = () => {
     const coreValues = [
         { id: 1, number:Reliability , title: "Reliability", description: "Trust is our cornerstone. We promise timely and efficient delivery, ensuring that our clients receive what they need." },
         { id: 2, number: Adaptability, title: "Adaptability", description: "In a constantly evolving global market, flexibility is key. We embrace change and swiftly adjust to meet challenges." },
-        { id: 3, number:Respect, title: "Respect for All Stakeholders", description: "We value every relationship and believe in treating all stakeholders with respect and dignity." },
+        { id: 3, number:respect, title: "Respect for All Stakeholders", description: "We value every relationship and believe in treating all stakeholders with respect and dignity." },
         { id: 4, number: Excellence, title: "Excellence", description: "Striving for excellence drives us. We set high standards and are relentless in our pursuit of superior results." },
         { id: 5, number:Innovation, title: "Innovation", description: "We continuously strive to innovate and improve, ensuring we stay ahead in the competitive landscape." },
     ];
