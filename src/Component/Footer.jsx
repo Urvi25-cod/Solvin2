@@ -248,7 +248,7 @@ export default function Footer() {
 
             <div>
               <ul className="space-y-2 text-[#FFFFFF]">
-                <Link to={'/Blog'}><li onClick={() => {  window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Blog</li></Link>
+                <Link to={'/Blog'}><li  className= "mb-1" onClick={() => {  window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Blog</li></Link>
                 <li>Privacy Policy</li>
                 <li>Terms & Condition</li>
               </ul>
