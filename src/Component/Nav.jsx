@@ -223,15 +223,12 @@ export default function Nav({ bgColor, textColor }) {
         {/* Desktop Navigation */}
         <ul className={`hidden  md:flex space-x-6 items-center ${textColor}`}>
           <li
-            className="relative text-sm md:text-base lg:text-lg hover:text-orange-500 cursor-pointer z-10 lg:border-r-1 lg:pr-4 border-gray-500"
+            className="relative text-sm md:text-base lg:text-lg hover:text-orange-500 cursor-pointer z-40 lg:border-r-1 lg:pr-4 border-gray-500"
             onClick={() => {
 
               setIsAboutDropdownOpen(!isAboutDropdownOpen)
               setIsProductDropdownOpen(false)
               setIsServicesDropdownOpen(false)
-
-
-
             }
 
             }
@@ -266,7 +263,7 @@ export default function Nav({ bgColor, textColor }) {
 
 
           <li
-            className="relative text-sm md:text-base lg:text-lg hover:text-orange-500 cursor-pointer z-10  lg:pr-4 lg:border-r-1  border-gray-500"
+            className="relative text-sm md:text-base lg:text-lg hover:text-orange-500 cursor-pointer z-40   lg:pr-4 lg:border-r-1  border-gray-500"
             onClick={() => {
               setIsProductDropdownOpen(!isProductDropdownOpen)
               setIsAboutDropdownOpen(false)
@@ -300,7 +297,7 @@ export default function Nav({ bgColor, textColor }) {
           {/* Services Dropdown */}
 
           <li
-            className="relative text-sm md:text-base lg:text-lg hover:text-orange-500 cursor-pointer z-10 lg:pr-4 lg:border-r-1  border-gray-500"
+            className="relative text-sm md:text-base lg:text-lg hover:text-orange-500 cursor-pointer z-40 lg:pr-4 lg:border-r-1  border-gray-500"
             onClick={() => {
               setIsServicesDropdownOpen(!isServicesDropdownOpen)
               setIsAboutDropdownOpen(false)

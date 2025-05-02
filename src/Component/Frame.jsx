@@ -44,18 +44,14 @@ const Frame = () => {
 
       {/* <section className="container mx-auto px-4 sm:px-6 md:px-6  py-12 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center"> */}
       <section className="px-4 py-12 container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 items-center md:px-6">
-        <div className="relative w-full flex justify-center ">
+        <div className=" w-full flex justify-center ">
           <img
             src={supply}
             alt="Model 1"
             className="w-full max-w-[80%] sm:max-w-[70%] lg:max-w-[70%] object-cover rounded-md"
           />
 
-          <div className="absolute top-1/2 right-[-1%] transform -translate-y-1/2 w-[50%] max-w-[40%] lg:mt-[5%]  ">
-            <img src={rain}
-              alt="Model 2"
-              className="w-full object-cover rounded-md" />
-          </div>
+
         </div>
 
         <div className="px-4 sm:px-8 text-center sm:text-left">
@@ -104,17 +100,18 @@ const Frame = () => {
             </div>
           </div> */}
           <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center md:text-left">
-            <div className="flex flex-col items-center md:items-start border-r border-gray-400 pr-6 last:border-r-0">
+            <div className="flex flex-col items-center md:items-start md:border-r border-gray-400 pr-6 last:border-r-0">
               <p className="text-orange-500 text-3xl font-bold">{partnerships}+</p>
               <p className="text-[#1F4278] text-base">Successful Partnerships</p>
             </div>
 
-            <div className="flex flex-col items-center md:items-start border-r border-gray-400 pr-6 last:border-r-0">
+            <div className="flex flex-col items-center md:items-start md:border-r border-gray-400 pr-6 last:border-r-0">
               <p className="text-orange-500 text-3xl font-bold">{countries}+</p>
               <p className="text-[#1F4278] text-base">Countries Covered</p>
             </div>
 
-            <div className="flex flex-col items-center md:items-start border-r sm:border-r-0 border-gray-400 pb-4 sm:pb-0">
+
+            <div className="flex flex-col items-center md:items-start md:border-r border-gray-400 pr-6 last:border-r-0">
               <p className="text-orange-500 text-3xl font-bold">{experience}+</p>
               <p className="text-[#1F4278] text-base">Years of Experience</p>
             </div>

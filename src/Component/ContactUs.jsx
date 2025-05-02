@@ -5,7 +5,7 @@ import Nav from "./Nav";
 import India from "../Images/India.png";
 import Usa from "../Images/Usa.png";
 import germany from "../Images/germany.png";
-import AUSTRALIA from "../Images/AUSTRALIA.png"
+import ausr from "../Images/ausr.svg"
 import mapimages from "../Images/mapimages.png";
 // import Abc from "./Abc";
 
@@ -39,7 +39,7 @@ const ContactUs = () => {
       address: "701 E Parks Hwy, Wasilla, Alaska United States, 61.581765, 99654",
       number: "+91 23409 12348",
       email: "solviglobe@gmail.com",
-      icon: AUSTRALIA,
+      icon: ausr,
     },
   ];
 
@@ -120,9 +120,14 @@ const ContactUs = () => {
                 <img src={map} alt="World Map" className="w-full h-full object-cover" />
 
                 {/* Location Markers */}
-                <div className="absolute top-[43%] right-[27%] transform -translate-x-1/2 -translate-y-1/2">
+                {/* <div className="absolute top-[43%] right-[27%] transform -translate-x-1/2 -translate-y-1/2">
                   <div className="bg-orange-500 text-white sm:px-2 sm:py-2 px-1 py-1 rounded-md text-sm">India</div>
+                </div> */}
+                <div className="absolute top-[28%]  lg:right-[20%] md:right-40  md:-bottom-[-15]  xl:top-[40%] xl:right-[25%] right-[15%] transform -translate-x-1/2 -translate-y-1/2 india-marker">
+                  <div className="bg-orange-500 text-white sm:px-1 sm:py-1 rounded-md lg:text-base sm:text-xs">India</div>
                 </div>
+
+
                 {/* Add more markers as needed */}
               </div>
             </div>
