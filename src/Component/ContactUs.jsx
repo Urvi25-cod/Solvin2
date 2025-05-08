@@ -7,6 +7,7 @@ import Usa from "../Images/Usa.png";
 import germany from "../Images/germany.png";
 import ausr from "../Images/ausr.svg"
 import mapimages from "../Images/mapimages.png";
+import WorldLocationsMap from "./WorldLocationsMap";
 // import Abc from "./Abc";
 
 const ContactUs = () => {
@@ -73,10 +74,10 @@ const ContactUs = () => {
         >
 
           {/* Content Container */}
-          <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-12 lg:px-20">
+          {/* <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-12 lg:px-20"> */}
             {/* Breadcrumb Navigation */}
             {/* <div className="absolute inset-0  bg-opacity-50"></div> */}
-
+            <div className="relative z-10 h-full flex flex-col justify-center container mx-auto px-4 py-8">
             <div className="mb-2 text-white text-sm md:text-base">
               <a href="/" className="hover:text-orange-400 transition-colors">
                 Home
@@ -98,42 +99,7 @@ const ContactUs = () => {
         </div>
 
         {/* Map Section */}
-        <section className="">
-          <div className="px-4 md:px-6 lg:px-12 xl:px-20 py-10">
-            <div className="text-center mb-8 md:mb-12 lg:mb-16">
-              <h2 className="text-orange-500 font-semibold text-sm md:text-base lg:text-lg">
-                Our Synergy in Trade
-              </h2>
-              <h1 className="md:text-3xl lg:text-4xl font-bold text-[#1F4278] leading-tight md:leading-snug lg:leading-relaxed">
-                Our synergy in trade fosters growth,
-                <span className="text-orange-500">trust</span>,
-                <span>innovation,</span>
-                <span className="text-orange-500">efficiency</span>,
-                and success.
-              </h1>
-            </div>
-
-            <div className="relative">
-              {/* World Map */}
-              <div className="relative w-full h-full">
-                {/* Add your map image or use a library like Leaflet.js */}
-                <img src={map} alt="World Map" className="w-full h-full object-cover" />
-
-                {/* Location Markers */}
-                {/* <div className="absolute top-[43%] right-[27%] transform -translate-x-1/2 -translate-y-1/2">
-                  <div className="bg-orange-500 text-white sm:px-2 sm:py-2 px-1 py-1 rounded-md text-sm">India</div>
-                </div> */}
-                <div className="absolute top-[28%]  lg:right-[20%] md:right-40  md:-bottom-[-15]  xl:top-[40%] xl:right-[25%] right-[15%] transform -translate-x-1/2 -translate-y-1/2 india-marker">
-                  <div className="bg-orange-500 text-white sm:px-1 sm:py-1 rounded-md lg:text-base sm:text-xs">India</div>
-                </div>
-
-
-                {/* Add more markers as needed */}
-              </div>
-            </div>
-          </div>
-
-        </section>
+        <WorldLocationsMap/>
         <div className="container mx-auto px-4 py-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
             {locations.map((location, index) => (

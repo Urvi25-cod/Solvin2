@@ -44,7 +44,8 @@ const About = () => {
         </div>
       </div>
 
-      <section className="container mx-auto px-4 sm:px-6 lg:px-12 py-12 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+      {/* <section className="container mx-auto px-4 sm:px-6 lg:px-12 py-12 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center"> */}
+      <section className="container mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
         {/* Image Container */}
         <div className="w-full flex justify-center">
           <img

@@ -25,7 +25,7 @@ const Blog4 = () => {
       >
 
         {/* Content Container */}
-        <div className="relative  h-full flex flex-col justify-center px-6 md:px-12 lg:px-20">
+        <div className="relative  h-full flex flex-col justify-center container mx-auto px-4 py-8">
           {/* Breadcrumb Navigation */}
           {/* <div className="absolute inset-0  bg-opacity-50"></div> */}
 
@@ -51,7 +51,7 @@ const Blog4 = () => {
 
 
     
-    <section className="container mx-auto px-4 py-12 flex flex-col lg:flex-row items-center gap-10">
+    <section className="container mx-auto px-4 py-8 flex flex-col lg:flex-row items-center gap-10">
      <div className="relative w-full lg:w-1/2 ">
                {/* <img
                  src={stacked}
@@ -63,7 +63,7 @@ const Blog4 = () => {
                   alt="Model 2" 
                   className="lg:w-[80%] w-[90%] " />
                </div> */}
-                 <img  src={sky4} className="w-full h-auto"></img>
+                 <img  src={sky4} className="w-full h-auto rounded-lg"></img>
                </div>
       <div className="w-full lg:w-1/2 px-4 md:px-8 lg:px-0">
         <h4 className="text-orange-500 font-semibold">Zinc Carbonate - Hydrogen Sulphide Scavenger</h4>
@@ -71,19 +71,19 @@ const Blog4 = () => {
           Global Supply, <span className="text-orange-500">Innovation, Reliability,</span>
             <span className="text-[#1F4278]"> Efficiency, Growth</span>
         </h2>
-        <p className="mt-4 text-[#1F4278] text-sm md:text-base">
+        <p className="mt-4 text-[#1F4278]  text-justify text-sm md:text-base">
         At SolviGlobe Ltd, our supply chain journey begins with the strategic sourcing of high-quality raw materials. We collaborate with trusted suppliers to procure essential components, 
         ensuring that each material meets our stringent quality standards. This foundational step is crucial, as the integrity of raw materials directly influences the excellence of the final
          products we deliver to our clients.
         </p>
 
-        <p className="mt-4 text-[#1F4278] text-sm md:text-base">
+        <p className="mt-4 text-[#1F4278] text-justify  text-sm md:text-base">
         Once the raw materials are secured, they enter our streamlined production process. Here, advanced manufacturing techniques and rigorous quality control measures are employed to transform these materials into semi-finished and finished goods.
          Our operations are designed to be efficient and adaptable, allowing us to meet diverse industry demands while maintaining consistency and reliability in our outputs.
         </p>
 
         
-        <p className="mt-4 text-[#1F4278] text-sm md:text-base">
+        <p className="mt-4 text-[#1F4278]  text-justify text-sm md:text-base">
         The final phase involves the distribution of finished goods to our clients across various industries worldwide. Leveraging a robust logistics network, we ensure timely and secure delivery, minimizing disruptions and maximizing client satisfaction. At every stage of this journey, 
         SolviGlobe's commitment to efficiency, innovation, and reliability ensures that our clients receive superior products that support their operational success and growth.
         </p>

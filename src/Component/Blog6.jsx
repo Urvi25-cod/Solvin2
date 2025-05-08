@@ -25,7 +25,7 @@ const Blog6 = () => {
             >
 
                 {/* Content Container */}
-                <div className="relative  h-full flex flex-col justify-center px-6 md:px-12 lg:px-20">
+                <div className="relative  h-full flex flex-col justify-center container mx-auto px-4 py-8">
                     {/* Breadcrumb Navigation */}
                     {/* <div className="absolute inset-0  bg-opacity-50"></div> */}
 
@@ -63,27 +63,27 @@ const Blog6 = () => {
                             alt="Model 2"
                             className="lg:w-[80%] w-[90%] " />
                     </div> */}
-                      <img  src={sky} className="w-full h-auto"></img>
+                      <img  src={sky} className="w-full h-auto rounded-lg"></img>
                 </div>
-                <div className="w-full lg:w-1/3 px-4 md:px-8 lg:px-0">
+                <div className="w-full lg:w-1/2 px-4 md:px-8 lg:px-0">
                     <h4 className="text-orange-500 font-semibold">Zinc Carbonate - Hydrogen Sulphide Scavenger</h4>
                     <h2 className="text-2xl md:text-4xl font-bold text-[#1F4278]">
                         Global Supply, <span className="text-orange-500">Innovation, Reliability,</span>
                         <span className="text-[#1F4278]"> Efficiency, Growth</span>
                     </h2>
-                    <p className="mt-4 text-[#1F4278] text-sm md:text-base">
+                    <p className="mt-4 text-[#1F4278]  text-justify text-sm md:text-base">
                         Efficiency is no longer just an advantage — it’s a necessity in today’s competitive markets. At SolviGlobe Ltd, we specialize in optimizing supply chain processes to minimize waste, shorten lead times,
                         and streamline operations. By adopting lean practices and advanced technologies, we help businesses operate more smoothly and reduce the hidden costs that often slow growth.
                     </p>
 
-                    <p className="mt-4 text-[#1F4278] text-sm md:text-base">
+                    <p className="mt-4 text-[#1F4278]  text-justify text-sm md:text-base">
                         Our smart logistics systems ensure real-time visibility, faster transportation routes, and minimal handling delays. Through predictive inventory management and accurate demand
                         forecasting, we prevent overstocking and stockouts, saving businesses significant operational costs. Every step of our supply chain is designed to move products faster and
                         smarter, directly benefiting our clients' bottom line.
                     </p>
 
 
-                    <p className="mt-4 text-[#1F4278] text-sm md:text-base">
+                    <p className="mt-4 text-[#1F4278]  text-justify text-sm md:text-base">
                         With SolviGlobe’s focus on efficiency, companies can shift their energy from solving supply problems to expanding their core business. Our commitment to delivering timely, cost-effective
                         solutions empowers clients to maximize productivity, improve profitability, and stay ahead in a fast-changing global environment.
                     </p>

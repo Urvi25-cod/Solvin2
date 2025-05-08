@@ -215,7 +215,8 @@ export default function Nav({ bgColor, textColor }) {
   const navigate = useNavigate();
   return (
     <>
-      <nav className={`flex justify-between items-center px-4 py-5 ${bgColor} md:px-10 lg:px-20`}>
+      {/* <nav className={`flex justify-between items-center px-4 py-5 ${bgColor} md:px-10 lg:px-20`}> */}
+      <nav className={`flex justify-between items-center px-4 py-8 container mx-auto  ${bgColor}`}>
         <div className="flex justify-start">
           <Link to="/"><img src={logo} alt="Solvi Globe Logo" className="h-8 w-auto md:h-10 lg:h-12" /></Link>
         </div>

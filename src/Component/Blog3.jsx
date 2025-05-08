@@ -24,7 +24,7 @@ const Blog3 = () => {
       >
 
         {/* Content Container */}
-        <div className="relative  h-full flex flex-col justify-center px-6 md:px-12 lg:px-20">
+        <div className="relative  h-full flex flex-col justify-center container mx-auto px-4 py-8">
           {/* Breadcrumb Navigation */}
           {/* <div className="absolute inset-0  bg-opacity-50"></div> */}
 
@@ -50,7 +50,7 @@ const Blog3 = () => {
 
 
     
-    <section className="container mx-auto px-4 py-12 flex flex-col lg:flex-row items-center gap-10">
+    <section className="container mx-auto px-4 py-8 flex flex-col lg:flex-row items-center gap-10">
      <div className="relative w-full lg:w-1/2 ">
                {/* <img
                  src={stacked}
@@ -62,7 +62,7 @@ const Blog3 = () => {
                   alt="Model 2" 
                   className="lg:w-[80%] w-[90%] " />
                </div> */}
-                 <img  src={sky3} className="w-full h-auto"></img>
+                 <img  src={sky3} className="w-full h-auto rounded-lg"></img>
                </div>
       <div className="w-full lg:w-1/3 px-4 md:px-8 lg:px-0">
         <h4 className="text-orange-500 font-semibold">Zinc Carbonate - Hydrogen Sulphide Scavenger</h4>
@@ -70,13 +70,13 @@ const Blog3 = () => {
           Global Supply, <span className="text-orange-500">Innovation, Reliability,</span>
             <span className="text-[#1F4278]"> Efficiency, Growth</span>
         </h2>
-        <p className="mt-4 text-[#1F4278] text-sm md:text-base">
+        <p className="mt-4 text-[#1F4278] text-justify text-sm md:text-base">
         At SolviGlobe Ltd, our mission has always been clear: to empower businesses across industries with reliable products, innovative services, and efficient supply chain solutions.
          From manufacturing to construction and consumer goods, we have helped companies streamline operations, reduce lead times, and access high-quality materials without disruption. 
          Our tailored approach allows us to understand each client’s unique challenges and deliver solutions that fuel sustainable business growth.
         </p>
 
-        <p className="mt-4 text-[#1F4278] text-sm md:text-base">
+        <p className="mt-4 text-[#1F4278]  text-justify text-sm md:text-base">
         One success story involves a mid-sized manufacturing firm that was struggling with delayed shipments and inconsistent material quality.
          After partnering with SolviGlobe, they experienced a 30% reduction in production downtime and a significant boost in customer satisfaction.
           Through consistent supply and real-time inventory support,
@@ -84,7 +84,7 @@ const Blog3 = () => {
         </p>
 
         
-        <p className="mt-4 text-[#1F4278] text-sm md:text-base">
+        <p className="mt-4 text-[#1F4278] text-justify  text-sm md:text-base">
         Across different sectors, SolviGlobe’s impact remains the same: driving efficiency, enhancing competitiveness, and accelerating business expansion.
          Our global reach, combined with a customer-centric mindset, ensures that whether a client is scaling regionally or globally, they have a trusted partner
           by their side to support every step of their growth journey.

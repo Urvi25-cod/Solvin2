@@ -389,7 +389,7 @@ const Testimonial = () => {
   return (
     <div className="container mx-auto px-6 py-12 relative">
       {/* Heading */}
-      <h4 className="text-orange-500 font-semibold">Testimonial</h4>
+      <h4 className="text-orange-500 text-lg font-semibold mb-2 text-center">Testimonial</h4>
       <h2 className="text-2xl md:text-4xl font-bold text-[#1F4278]">
         To <span className="text-orange-500">increase productivity</span> and{" "}
         <span className="text-[#1F4278]">cost effectiveness</span>

@@ -1,201 +1,9 @@
-// import React from "react";
-// import background from "../Images/background.png"; // Replace with your background image path
-// import Product1 from "../Images/Product1.png";
-
-// const Product = () => {
-//   return (
-//     <>
-//       <div
-//         className="relative h-100 w-full bg-cover bg-center  flex items-center"
-//         style={{ backgroundImage: `url(${background})` }}
-//       >
-//         {/* Overlay */}
-//         <div className="absolute inset-0 bg-opacity-30"></div>
-
-//         {/* Content */}
-//         <div className="relative z-10 container mx-auto px-4 text-white">
-//           {/* Breadcrumb */}
-//           <p className="text-sm md:text-base font-light mb-2">
-//             Home / Product
-//           </p>
-
-//           {/* Title */}
-//           <h1 className="text-2xl md:text-4xl font-bold text-orange-500">
-//             Product
-//           </h1>
-//         </div>
-//       </div>
-//       <div className="container mx-auto px-4 py-8">
-//         {/* Main Layout */}
-//         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-//           {/* Sidebar */}
-//           <div className="bg-white shadow-md rounded-lg p-2">
-//             <ul className="space-y-3">
-//               {/* <li className="text-gray-700 hover:text-orange-500 cursor-pointerfont-medium">Aliphatic Based Spotting Fluid</li> */}
-//               <li
-//                 className="cursor-pointer font-medium px-4 py-2 rounded-lg hover:bg-orange-500 text-gray-700 hover:text-white"
-
-//               >
-//                 Aliphatic Based Spotting Fluid
-//               </li>
-//               <li className="cursor-pointer font-medium px-4 py-2 rounded-lg hover:bg-orange-500 text-gray-700 hover:text-white">Plastic Raw Materials</li>
-//               <li className="cursor-pointer font-medium px-4 py-2 rounded-lg hover:bg-orange-500 text-gray-700 hover:text-white">FMCG Products</li>
-//               <li className="cursor-pointer font-medium px-4 py-2 rounded-lg hover:bg-orange-500 text-gray-700 hover:text-white">Commodities</li>
-//               <li className="cursor-pointer font-medium px-4 py-2 rounded-lg hover:bg-orange-500 text-gray-700 hover:text-white">Metals</li>
-//               <li className="cursor-pointer font-medium px-4 py-2 rounded-lg hover:bg-orange-500 text-gray-700 hover:text-white">Oil & Gas</li>
-//               <li className="cursor-pointer font-medium px-4 py-2 rounded-lg hover:bg-orange-500 text-gray-700 hover:text-white">Chemicals</li>
-//               <li className="cursor-pointer font-medium px-4 py-2 rounded-lg hover:bg-orange-500 text-gray-700 hover:text-white">Aviation Spare Parts</li>
-//             </ul>
-//           </div>
-
-//           {/* Product Grid */}
-//           <div className="col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-//             {/* Product Cards */}
-//             {Array(9)
-//               .fill(0)
-//               .map((_, index) => (
-//                 <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
-//                   <img src={Product1} alt="Product" className="w-full h-auto" />
-//                   <div className="p-4 text-center">
-//                     {index % 2 === 0 ? (
-//                       <p className="font-medium text-gray-800">Aviation Spare Parts</p>
-//                     ) : (
-//                       <p className="font-medium text-gray-800">Zinc Carbonate - Hydrogen Sulphide Scavenger</p>
-//                     )}
-//                   </div>
-//                 </div>
-//               ))}
-//           </div>
-//         </div>
-//       </div>
-//     </>
-//   );
-// }
-// export default Product
-
-
-
-// import React from "react";
-// import { useLocation } from "react-router-dom";
-// import background from "../Images/background.png";
-// import product1 from "../Images/product1.png"
-// import Nav from "./Nav";
-
-// export default function Product() {
-
-//   const location = useLocation();
-//   const queryParams = new URLSearchParams(location.search);
-//   const category = queryParams.get("category"); // Get the 'category' value
-//   console.log(category);
-//   const categories = [
-//     "Aliphatic Based Spotting Fluid",
-//     "FMCG Products",
-//     "Industrial Chemicals",
-//     "Petrochemical Products",
-//     "Metals & Alloys",
-//     "Agri-Commodities",
-//     "Aviation Service and Parts",
-//     "Pharmaceutical Products",
-//     "Machinery & Equipment",
-//     "Animal Nutrition & Feed",
-//   ];
-
-
-
-//   return (
-//     <>
-//       <Nav bgColor="bg-white" textColor="text-black" />
-//       <div
-//         className="relative h-[40vh] w-full bg-cover bg-center flex items-center"
-//         style={{ backgroundImage: `url(${background})` }}
-//       >
-
-//         {/* Content Container */}
-//         <div className="relative  h-full flex flex-col justify-center px-6 md:px-12 lg:px-20">
-//           {/* Breadcrumb Navigation */}
-//           {/* <div className="absolute inset-0  bg-opacity-50"></div> */}
-
-//           <div className="mb-2 text-white text-sm md:text-base">
-//             <a href="/" className="hover:text-orange-400 transition-colors">
-//               Home
-//             </a>
-//             <span className="mx-2">/</span>
-//             <a
-//               href="/product"
-//               className="hover:text-orange-400 transition-colors"
-//             >
-//               Product
-//             </a>
-//           </div>
-
-//           {/* Page Title */}
-//           <h1 className="text-orange-500 text-3xl sm:text-4xl md:text-5xl font-bold">
-//             Product
-//           </h1>
-//         </div>
-//       </div>
-
-//       <div className="container mx-auto px-4 py-8">
-//         <div className="mb-4 flex rounded-lg">
-//           <input
-//             type="text"
-//             placeholder="Search Product..."
-//             className="w-full md:w-72  px-4 py-2 text-gray-700 bg-[#1F4278]"
-//           />
-//           <button className="text-white px-4 py-2 bg-[#1F4278] transition-colors duration-300">
-//             Search
-//           </button>
-//         </div>
-
-//         {/* Main Layout */}
-//         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-//           {/* Sidebar */}
-//           {/* Sidebar */}
-//           <div className="bg-white shadow-md rounded-lg p-2">
-//             <ul className="space-y-3">
-//               {categories.map((item, index) => (
-//                 <li
-//                   key={index}
-//                   className={`cursor-pointer font-medium px-4 py-2 rounded-lg  cursor-pointer
-//                 ${category === item ? "bg-orange-500 text-white" : "hover:bg-orange-500 hover:text-white text-gray-700"}`}
-//                 >
-//                   {item}
-//                 </li>
-//               ))}
-//             </ul>
-//           </div>
-
-//           {/* Product Grid */}
-//           <div className="col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-//             {/* Product Cards */}
-//             {Array(9)
-//               .fill(0)
-//               .map((_, index) => (
-//                 <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
-//                   <img src={product1} alt="Product" className="w-full h-auto" />
-//                   <div className="p-4 text-center">
-//                     {index % 2 === 0 ? (
-//                       <p className="font-medium text-gray-800">Aviation Spare Parts</p>
-//                     ) : (
-//                       <p className="font-medium text-gray-800">Zinc Carbonate - Hydrogen Sulphide Scavenger</p>
-//                     )}
-//                   </div>
-//                 </div>
-//               ))
-
-//               }
-//           </div>
-//         </div>
-//       </div>
-//     </>
-//   )
-// }
-
 
 
 
 
 import React, { useState } from "react";
+import { FiFilter } from "react-icons/fi"; // Import the filter icon
 import { useLocation } from "react-router-dom";
 import background from "../Images/background.png";
 import Nav from "./Nav";
@@ -539,6 +347,7 @@ export default function Product() {
   const queryParams = new URLSearchParams(location.search);
   const defaultCategory = queryParams.get("category"); // default category from URL
   const [selectedCategory, setSelectedCategory] = useState(defaultCategory || null);
+  const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
 
   const categories = [
     "Aliphatic Based Spotting Fluid",
@@ -902,11 +711,11 @@ export default function Product() {
     { name: "Electronic Waste Scrap (Wires, PCBs)", category: "Metals & Alloys", imgs: me29 },
     { name: "Cable Scrap (Aluminum/Copper Cables)", category: "Metals & Alloys", imgs: me30 },
 
-//-----------------------------------------------
+    //-----------------------------------------------
 
-{ name: "Polyvinyl Alcohol ", category: "Petrochemical Products", imgs: p1},
-{ name: " Polycarbonate ", category: "Petrochemical Products", imgs: p3 },
-{ name: " Nitrile Rubber", category: "Petrochemical Products", imgs: p4 },
+    { name: "Polyvinyl Alcohol ", category: "Petrochemical Products", imgs: p1 },
+    { name: " Polycarbonate ", category: "Petrochemical Products", imgs: p3 },
+    { name: " Nitrile Rubber", category: "Petrochemical Products", imgs: p4 },
 
 
 
@@ -1006,7 +815,7 @@ export default function Product() {
         className="relative h-[40vh] w-full bg-cover bg-center flex items-center"
         style={{ backgroundImage: `url(${background})` }}
       >
-        <div className="relative h-full container mx-auto flex flex-col justify-center px-4 sm:px-6 md:px-12">
+        <div className="relative h-full container mx-auto flex flex-col justify-center px-4 py-8">
           <div className="mb-2 text-white text-xs sm:text-sm md:text-base">
             <a href="/" className="hover:text-orange-400 transition-colors">
               Home
@@ -1035,6 +844,126 @@ export default function Product() {
             Search
           </button>
         </div> */}
+        <button
+          className="block md:hidden mb-4 text-orange-500 text-2xl"
+          onClick={() => setMobileFilterOpen(true)}
+          aria-label="Open Filters"
+        >
+          <FiFilter />
+        </button>
+
+        {/* {mobileFilterOpen && (
+          <div className="fixed inset-0 z-40 flex flex-col justify-end">
+            <div
+              className="fixed inset-0"
+              onClick={() => setMobileFilterOpen(false)}
+            />
+            <div className="relative w-full  bg-white rounded-t-xl shadow-lg p-4 z-50 animate-slide-up">
+              <button
+                className="absolute top-2 right-2 text-gray-500 text-xl"
+                onClick={() => setMobileFilterOpen(false)}
+                aria-label="Close Filters"
+              >
+                ×
+              </button>
+              <ul className="space-y-3 mt-8">
+                {categories.map((item, index) => (
+                  <li
+                    key={index}
+                    className={`cursor-pointer font-medium px-4 py-2 rounded-lg text-center animate-down
+                    ${selectedCategory === item
+                        ? "bg-orange-500 text-white"
+                        : "hover:bg-orange-500 hover:text-white text-gray-700"
+                      }`}
+                    onClick={() => {
+                      setSelectedCategory(item);
+                      setMobileFilterOpen(false);
+                    }}
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        )} */}
+
+        {/* {mobileFilterOpen && (
+  <div className="fixed inset-0 z-40 flex flex-col justify-end">
+    <div
+      className="fixed inset-0"
+      onClick={() => setMobileFilterOpen(false)}
+    />
+    <div className="relative w-full left-0 right-0 bg-white rounded-t-xl shadow-lg p-4 z-50 animate-slide-up">
+      <button
+        className="absolute top-2 right-2 text-gray-500 text-xl"
+        onClick={() => setMobileFilterOpen(false)}
+        aria-label="Close Filters"
+      >
+        ×
+      </button>
+      <ul className="space-y-3 mt-8">
+        {categories.map((item, index) => (
+          <li
+            key={index}
+            className={`cursor-pointer font-medium px-4 py-2 rounded-lg text-center animate-down
+            ${selectedCategory === item
+                ? "bg-orange-500 text-white"
+                : "hover:bg-orange-500 hover:text-white text-gray-700"
+              }`}
+            onClick={() => {
+              setSelectedCategory(item);
+              setMobileFilterOpen(false);
+            }}
+          >
+            {item}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+)} */}
+
+
+        {mobileFilterOpen && (
+          <div className="fixed inset-0 z-40">
+            {/* Overlay */}
+            <div
+              className="absolute inset-0 bg-black bg-opacity-40"
+              onClick={() => setMobileFilterOpen(false)}
+            />
+            {/* Fullscreen filter panel */}
+            <div className="fixed inset-0 w-full h-full bg-white z-50 flex flex-col">
+              <button
+                className="absolute top-4 right-4 text-gray-500 text-2xl"
+                onClick={() => setMobileFilterOpen(false)}
+                aria-label="Close Filters"
+              >
+                ×
+              </button>
+              <ul className="space-y-3 mt-20 px-4">
+                {categories.map((item, index) => (
+                  <li
+                    key={index}
+                    className={`cursor-pointer font-medium px-4 py-2 rounded-lg text-center
+              ${selectedCategory === item
+                        ? "bg-orange-500 text-white"
+                        : "hover:bg-orange-500 hover:text-white text-gray-700"
+                      }`}
+                    onClick={() => {
+                      setSelectedCategory(item);
+                      setMobileFilterOpen(false);
+                    }}
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        )}
+
+
         <div className="mb-4 flex sm:mt-2 flex-col md:flex-row md:space-x-1 lg:flex-row lg:space-x-1 rounded-lg">
           <input
             type="text"
@@ -1049,13 +978,13 @@ export default function Product() {
 
         <div className="flex flex-col md:flex-row gap-6">
           {/* Sidebar */}
-          <div className="md:w-1/4 bg-white shadow-lg border border-gray-200 rounded-lg p-4">
+          <div className="hidden md:block md:w-1/4 bg-white shadow-lg border border-gray-200 rounded-lg p-4">
             <ul className="space-y-3">
               {categories.map((item, index) => (
                 <li
                   key={index}
                   className={`cursor-pointer font-medium px-4 py-2 rounded-lg text-center md:text-left
-              ${selectedCategory === item
+          ${selectedCategory === item
                       ? "bg-orange-500 text-white"
                       : "hover:bg-orange-500 hover:text-white text-gray-700"
                     }`}
@@ -1066,6 +995,7 @@ export default function Product() {
               ))}
             </ul>
           </div>
+
 
           {/* Product Grid */}
           {/* <div className="md:w-3/4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -1087,17 +1017,17 @@ export default function Product() {
               </div>
             ))}
           </div> */}
-          <div className="md:w-3/4 max-h-[80vh] overflow-y-auto pr-2 ">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
+          <div className="md:w-3/4 max-h-[80vh] overflow-y-auto pr-2 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {filteredProducts.map((product, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col "
+                  className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col"
                 >
                   <img
                     src={product.imgs}
                     alt={product.name}
-                    className="w-full h-48 sm:h-56 md:h-64 object-cover"
+                    className="w-full h-48 sm:h-56 md:h-64 cursor-pointer object-cover"
                   />
                   <div className="p-4 text-center">
                     <p className="font-medium text-gray-800 text-sm sm:text-base">
@@ -1107,6 +1037,8 @@ export default function Product() {
                 </div>
               ))}
             </div>
+
+
           </div>
 
         </div>

@@ -25,7 +25,8 @@ const Blog1 = () => {
       >
 
         {/* Content Container */}
-        <div className="relative  h-full flex flex-col justify-center px-6 md:px-12 lg:px-20">
+        {/* <div className="relative  h-full flex flex-col justify-center px-6 md:px-12 lg:px-20"> */}
+        <div className="relative  h-full flex flex-col justify-center container mx-auto px-4 py-8">
           {/* Breadcrumb Navigation */}
           {/* <div className="absolute inset-0  bg-opacity-50"></div> */}
 
@@ -62,7 +63,7 @@ const Blog1 = () => {
                  <img src={oil}
                   alt="Model 2" 
                   className="lg:w-[80%] w-[90%] " /> */}
-                  <img  src={sky} className="w-full h-auto"></img>
+                  <img  src={sky} className="w-full h-auto rounded-lg"></img>
                </div>
               
       <div className="w-full lg:w-1/2 px-4 md:px-8 lg:px-0">
@@ -71,7 +72,7 @@ const Blog1 = () => {
           Global Supply, <span className="text-orange-500">Innovation, Reliability,</span>
             <span className="text-[#1F4278]"> Efficiency, Growth</span>
         </h2>
-        <p className="mt-4 text-[#1F4278] text-sm md:text-base">
+        <p className="mt-4 text-[#1F4278] text-justify text-sm md:text-base">
         In today’s rapidly evolving global marketplace, supply chains must be more agile, efficient, and resilient than ever before.
          SolviGlobe Ltd, founded in 2022, stands at the forefront of this transformation by offering a seamless bridge between raw materials, 
          semi-finished products, and finished goods across multiple industries. With a foundation built on efficiency, innovation, and reliability, 
@@ -80,7 +81,7 @@ const Blog1 = () => {
          inefficiencies in their supply chains.
         </p>
 
-        <p className="mt-4 text-[#1F4278] text-sm md:text-base">
+        <p className="mt-4 text-[#1F4278]  text-justify text-sm md:text-base">
         At the heart of SolviGlobe’s success is a commitment to innovation and advanced technologies. From intelligent sourcing methods and
          predictive inventory management to digitalized tracking systems, SolviGlobe integrates cutting-edge solutions that enhance transparency and 
          agility at every step of the supply journey. By embracing these technologies, we minimize delays, anticipate market shifts, and provide our 
@@ -88,7 +89,7 @@ const Blog1 = () => {
         </p>
 
         
-        <p className="mt-4 text-[#1F4278] text-sm md:text-base">
+        <p className="mt-4 text-[#1F4278]  text-justify text-sm md:text-base">
 
         This proactive approach not only reduces risk but also empowers businesses to make strategic decisions faster — a critical 
         advantage in today’s competitive and unpredictable markets.

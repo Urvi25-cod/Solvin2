@@ -189,7 +189,7 @@ export default function Whychoose() {
                 key={idx}
                 className="w-full sm:min-w-[50%] md:min-w-[33.33%] lg:min-w-[25%] p-4"
               >
-                <div className="p-6 shadow-lg rounded-lg text-left flex flex-col items-center h-auto md:h-[350px]">
+                <div className="p-6 border border-gray-300 rounded-lg text-left flex flex-col items-center h-auto md:h-[350px]">
                   <img src={feature.icon} alt={feature.title} className="mb-4" />
                   <h3 className="text-lg font-bold text-[#1F4278]">{feature.title}</h3>
                   <p className="text-gray-600 mt-2 text-center">{feature.description}</p>
