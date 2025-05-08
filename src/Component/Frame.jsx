@@ -43,7 +43,7 @@ const Frame = () => {
       {/* </div>  mx-auto px-4 md:px-6 py-12 */}
 
       {/* <section className="container mx-auto px-4 sm:px-6 md:px-6  py-12 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center"> */}
-      <section className="px-4 py-12 container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 items-center md:px-6">
+      <section className="px-8 py-12 container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 items-center md:px-10">
         <div className=" w-full flex justify-center ">
           <img
             src={supply}

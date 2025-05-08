@@ -21,7 +21,7 @@ const Singleproduct = () => {
       >
 
         {/* Content Container */}
-        <div className="relative  h-full flex flex-col justify-center px-6 md:px-12 lg:px-20">
+        <div className="relative  h-full flex flex-col justify-center px-10 md:px-16 lg:px-24">
           {/* Breadcrumb Navigation */}
           {/* <div className="absolute inset-0  bg-opacity-50"></div> */}
 

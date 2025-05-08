@@ -316,7 +316,7 @@ const Blog = () => {
 
         {/* Content Container */}
         {/* <div className="relative  h-full flex flex-col justify-center px-6 md:px-12 lg:px-20"> */}
-        <div className="relative  h-full flex flex-col justify-center container mx-auto px-4 py-8"> 
+        <div className="relative  h-full flex flex-col justify-center container mx-auto px-8 py-8"> 
           {/* Breadcrumb Navigation */}
           {/* <div className="absolute inset-0  bg-opacity-50"></div> */}
 
@@ -342,7 +342,7 @@ const Blog = () => {
 
       {/* Blog Cards */}
       {/* <div className="px-4 md:px-6 lg:px-12 xl:px-20 py-10"> */}
-      <div className="container mx-auto px-4 py-8"> 
+      <div className="container mx-auto px-8 py-8"> 
   <div className="grid gap-6 grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
     {blogPosts.map((post, index) => (
       <div key={index} className="bg-white shadow-md rounded-lg overflow-hidden">

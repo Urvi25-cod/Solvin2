@@ -25,7 +25,7 @@ const Blog5 = () => {
       >
 
         {/* Content Container */}
-        <div className="relative  h-full flex flex-col justify-center container mx-auto px-4 py-8">
+        <div className="relative  h-full flex flex-col justify-center container mx-auto px-8 py-8">
           {/* Breadcrumb Navigation */}
           {/* <div className="absolute inset-0  bg-opacity-50"></div> */}
 
@@ -51,7 +51,7 @@ const Blog5 = () => {
 
 
     
-    <section className="container mx-auto px-4 py-8 flex flex-col lg:flex-row items-center gap-10">
+    <section className="container mx-auto px-8 py-8 flex flex-col lg:flex-row items-center gap-10">
      <div className="relative w-full lg:w-1/2 ">
                {/* <img
                  src={stacked}

@@ -97,7 +97,7 @@ const About2 = () => {
   return (
     <>
       <div className="py-8 bg-gray-50">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-4">
           <h3 className="text-orange-500 text-lg font-semibold mb-4 text-center">
             Our Core Values
           </h3>

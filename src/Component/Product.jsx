@@ -815,7 +815,7 @@ export default function Product() {
         className="relative h-[40vh] w-full bg-cover bg-center flex items-center"
         style={{ backgroundImage: `url(${background})` }}
       >
-        <div className="relative h-full container mx-auto flex flex-col justify-center px-4 py-8">
+        <div className="relative h-full container mx-auto flex flex-col justify-center px-8 py-8">
           <div className="mb-2 text-white text-xs sm:text-sm md:text-base">
             <a href="/" className="hover:text-orange-400 transition-colors">
               Home
@@ -832,7 +832,7 @@ export default function Product() {
       </div>
 
       {/* Main Container */}
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-8 py-8">
         {/* Search Bar */}
         {/* <div className="mb-4 flex flex-col sm:flex-row sm:space-x-1 rounded-lg">
           <input

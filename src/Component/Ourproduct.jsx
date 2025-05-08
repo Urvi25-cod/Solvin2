@@ -244,7 +244,7 @@ const Ourproduct = () => {
   };
 
   return (
-    <div className="container mx-auto px-5 md:px-6 py-12">
+    <div className="container mx-auto px-8 md:px-10 py-12">
       {/* Header */}
       <div className="text-center mb-8">
         <h2 className="text-orange-500 font-semibold text-sm">Our Product</h2>

@@ -145,7 +145,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-orange-500 text-white py-8">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-8">
         {/* Top Section */}
         <div className="flex flex-col md:flex-row justify-between items-start lg:items-center gap-6 pb-6 border-b border-white">
           {/* Heading */}

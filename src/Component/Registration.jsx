@@ -7,7 +7,7 @@ export default function Registration() {
             <Nav bgColor="bg-white" textColor="text-black" />
             {/* <div className="sm:px-6 px-6 lg:px-18 py-4">
              */}
-              <div className="container mx-auto px-4 py-8">
+              <div className="container mx-auto px-8 py-8">
                 {/* Header Section */}
                 <div className="mb-8 flex flex-col justify-start">
                     <p className="text-orange-500 font-semibold text-lg">Vendor Registration Form</p>

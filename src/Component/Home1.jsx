@@ -265,7 +265,9 @@ const Home = () => {
     <>
       <div>
         {/* Header Section */}
-        <main className="mx-auto px-4 sm:px-6 md:px-8 lg:px-12 py-10">
+        {/* <main className="mx-auto px-4 sm:px-6 md:px-8 lg:px-12 py-10"> */}
+        <main className="mx-auto px-8 sm:px-10 md:px-12 lg:px-16 py-10">
+
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[1fr_2fr_1fr] gap-8 items-center relative">
             {/* Left Image */}
             <div className="flex justify-center">

@@ -20,7 +20,7 @@ const About = () => {
       >
 
         {/* Content Container */}
-        <div className="relative container mx-auto  z-10 h-full flex flex-col justify-center px-6 md:px-12 ">
+        <div className="relative container mx-auto  z-10 h-full flex flex-col justify-center px-8 md:px-16 ">
           {/* Breadcrumb Navigation */}
           {/* <div className="absolute inset-0  bg-opacity-50"></div> */}
 
@@ -45,19 +45,19 @@ const About = () => {
       </div>
 
       {/* <section className="container mx-auto px-4 sm:px-6 lg:px-12 py-12 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center"> */}
-      <section className="container mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+      <section className="container mx-auto px-8 py-8 grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
         {/* Image Container */}
-        <div className="w-full flex justify-center">
+        <div className="w-full flex lg:col-span-1">
           <img
             src={supply}
             alt="Supply Chain"
-            className="w-full max-w-[90%] sm:max-w-[80%] md:max-w-[70%] object-cover rounded-md"
+            className="w-full  object-cover rounded-md"
           />
         </div>
 
 
         {/* Text Content */}
-        <div className="px-4 text-center sm:text-left">
+        <div className="px-4 text-center sm:text-left  lg:col-span-2">
           <h4 className="text-orange-500 font-semibold">Who we are</h4>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1F4278]">
             Global Supply, <span className="text-orange-500">Innovation, Reliability,</span>
@@ -80,7 +80,7 @@ const About = () => {
 
 
 
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-8 py-12">
         <div>
           <h3 className="text-orange-500 mb-4">
             Our Mission & Vision </h3>

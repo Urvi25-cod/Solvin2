@@ -20,7 +20,7 @@ export default function WorldLocationsMap() {
 
   return (
     <>
-    <div className="container mx-auto px-4 py-2">
+    <div className="container mx-auto px-8 py-2">
     <div className="text-center">
       <h2 className="text-orange-500 font-semibold text-sm md:text-base lg:text-lg">
         Our Synergy in Trade
@@ -35,7 +35,7 @@ export default function WorldLocationsMap() {
     </div>
     </div>
     <section className="w-full  bg-white">
-      <div className="container mx-auto px-4 py-2">
+      <div className="container mx-auto px-8 py-2">
         {/* World Map with Location Markers */}
         <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] mb-12">
           {/* World Map Image */}

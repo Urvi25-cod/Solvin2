@@ -165,7 +165,7 @@ export default function Whychoose() {
   // };
 
   return (
-    <div className="container mx-auto px-4 md:px-6 py-12">
+    <div className="container mx-auto px-8 md:px-10 py-12">
       <div className="text-center mb-8">
         <h3 className="text-orange-500 font-semibold">Why choose us?</h3>
         <h2 className="text-2xl md:text-3xl font-bold text-[#1F4278] mt-2">

@@ -104,7 +104,7 @@ export default function ITOutsourcing() {
             >
 
                 {/* Content Container */}
-                <div className="relative container mx-auto  h-full flex flex-col justify-center px-6 md:px-12 lg:px-20">
+                <div className="relative container mx-auto  h-full flex flex-col justify-center px-10 md:px-16 lg:px-24">
                     {/* Breadcrumb Navigation */}
                     {/* <div className="absolute inset-0  bg-opacity-50"></div> */}
 
@@ -127,7 +127,7 @@ export default function ITOutsourcing() {
                     </h1>
                 </div>
             </div>
-            <section className="container mx-auto px-4 py-12 flex flex-col lg:flex-row items-center gap-10">
+            <section className="container mx-auto px-8 py-12 flex flex-col lg:flex-row items-center gap-10">
 
                 <div className="relative w-full lg:w-1/2 flex justify-center">
                     {/* Orange Background Box */}

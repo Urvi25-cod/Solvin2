@@ -271,7 +271,7 @@ const OurTeam = () => {
                 {/* <div className="relative h-full flex flex-col justify-center  md:px-18 px-10  xl:px-25"> */}
                     {/* Breadcrumb Navigation */}
 
-                    <div className="relative h-full flex flex-col justify-center container mx-auto px-4 py-8">
+                    <div className="relative h-full flex flex-col justify-center container mx-auto px-8 py-8">
                     <div className="mb-2 text-white text-sm md:text-base">
                         <a href="/" className="hover:text-orange-400 transition-colors">
                             Home
@@ -301,7 +301,7 @@ const OurTeam = () => {
 
             {/* <div className="px-4 md:px-6 lg:px-12 xl:px-20 py-10"> */}
                
-            <div className="container mx-auto px-1 py-8">
+            <div className="container mx-auto px-8 py-8">
             {/* Card */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-4">
                     {teamMembers.map((member, index) => (

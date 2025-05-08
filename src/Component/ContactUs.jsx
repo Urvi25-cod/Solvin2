@@ -77,7 +77,7 @@ const ContactUs = () => {
           {/* <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-12 lg:px-20"> */}
             {/* Breadcrumb Navigation */}
             {/* <div className="absolute inset-0  bg-opacity-50"></div> */}
-            <div className="relative z-10 h-full flex flex-col justify-center container mx-auto px-4 py-8">
+            <div className="relative z-10 h-full flex flex-col justify-center container mx-auto px-8 py-8">
             <div className="mb-2 text-white text-sm md:text-base">
               <a href="/" className="hover:text-orange-400 transition-colors">
                 Home
@@ -100,7 +100,7 @@ const ContactUs = () => {
 
         {/* Map Section */}
         <WorldLocationsMap/>
-        <div className="container mx-auto px-4 py-12">
+        <div className="container mx-auto px-8 py-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
             {locations.map((location, index) => (
               <div
@@ -125,7 +125,7 @@ const ContactUs = () => {
           </div>
         </div>
 
-        <div className="container mx-auto px-4 py-12">
+        <div className="container mx-auto px-8 py-12">
           {/* Main Layout */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 xl:gap-10">
             {/* Map Section */}
