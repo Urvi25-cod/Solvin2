@@ -20,7 +20,7 @@ const About = () => {
       >
 
         {/* Content Container */}
-        <div className="relative container mx-auto  z-10 h-full flex flex-col justify-center px-12 md:px-20 ">
+        <div className="relative container mx-auto  z-10 h-full flex flex-col justify-center px-16 md:px-24 ">
           {/* Breadcrumb Navigation */}
           {/* <div className="absolute inset-0  bg-opacity-50"></div> */}
 
