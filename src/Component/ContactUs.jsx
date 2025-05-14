@@ -75,9 +75,9 @@ const ContactUs = () => {
 
           {/* Content Container */}
           {/* <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-12 lg:px-20"> */}
-            {/* Breadcrumb Navigation */}
-            {/* <div className="absolute inset-0  bg-opacity-50"></div> */}
-            <div className="relative z-10 h-full flex flex-col justify-center container mx-auto px-16 py-8">
+          {/* Breadcrumb Navigation */}
+          {/* <div className="absolute inset-0  bg-opacity-50"></div> */}
+          <div className="relative z-10 h-full flex flex-col justify-center container mx-auto px-16 py-8">
             <div className="mb-2 text-white text-sm md:text-base">
               <a href="/" className="hover:text-orange-400 transition-colors">
                 Home
@@ -99,7 +99,7 @@ const ContactUs = () => {
         </div>
 
         {/* Map Section */}
-        <WorldLocationsMap/>
+        <WorldLocationsMap />
         <div className="container mx-auto px-12 py-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
             {locations.map((location, index) => (
@@ -127,21 +127,26 @@ const ContactUs = () => {
 
         <div className="container mx-auto px-8 py-12">
           {/* Main Layout */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 xl:gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 xl:gap-10 mt-10">
             {/* Map Section */}
             <div className="w-full h-[400px] md:h-[600px] lg:h-[700px] xl:h-[800px] rounded-lg overflow-hidden">
-              <img
-                src={mapimages}
-                alt="Map"
-                className="object-cover h-full w-full"
-              />
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1859.418684617869!2d72.8895756262605!3d21.23829665968726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s34%20Meridian%20Business%20Center%20Lajamni%20Chowk%20opposite%20Opera%20Business%20center%20Mota%20Varachha%20Surat%20Gujarat%20394105!5e0!3m2!1sen!2sin!4v1747218022977!5m2!1sen!2sin"
+                width="600"
+                height="700"
+                // style="border:0;"
+                // allowfullscreen
+                loading="lazy"
+                // referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+
             </div>
 
             {/* Contact Form Section */}
             <div className="flex flex-col justify-center">
               {/* Header */}
               <div className="text-orange-500 font-medium mb-2">Contact us</div>
-              <h1 className="text-3xl md:text-4xl  xl:text-4xl font-bold text-blue-900 mb-4">
+              {/* <h1 className="text-3xl md:text-4xl  xl:text-4xl font-bold text-blue-900 mb-4">
                 Get in touch
               </h1>
 
@@ -151,10 +156,10 @@ const ContactUs = () => {
                 or want to explore new opportunities, we're here to help. Connect
                 with us today and let's collaborate to achieve success together.
                 Your journey starts with a simple conversation!
-              </p>
+              </p> */}
 
               {/* Form */}
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-4 mb-40">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 xl:gap-8">
                   <input
                     name="name"

@@ -482,7 +482,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-orange-500 text-white pt-10 pb-3">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="container mx-auto px-16 py-8">
         {/* Main Grid */}
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           {/* Logo and Contact */}
