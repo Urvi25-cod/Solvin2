@@ -20,7 +20,7 @@ const About = () => {
       >
 
         {/* Content Container */}
-        <div className="relative container mx-auto  z-10 h-full flex flex-col justify-center px-16 md:px-24 ">
+        <div className="relative container mx-auto  z-10 h-full flex flex-col justify-center px-16 py-8 ">
           {/* Breadcrumb Navigation */}
           {/* <div className="absolute inset-0  bg-opacity-50"></div> */}
 
@@ -45,7 +45,7 @@ const About = () => {
       </div>
 
       {/* <section className="container mx-auto px-4 sm:px-6 lg:px-12 py-12 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center"> */}
-      <section className="container mx-auto px-12 py-8 grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
+      <section className="container mx-auto lg:px-16   md:px-20  sm:px-6 py-12 p-2 py-8 grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
         {/* Image Container */}
         <div className="w-full flex lg:col-span-1">
           <img
@@ -80,7 +80,7 @@ const About = () => {
 
 
 
-      <div className="container mx-auto px-12 py-12">
+      <div className="container mx-auto lg:px-16   md:px-20  sm:px-6 py-12 p-2 py-8">
         <div>
           <h3 className="text-orange-500 mb-4">
             Our Mission & Vision </h3>

@@ -26,7 +26,7 @@ import ITOutsourcing from './Component/ITOutsourcing';
 import Tradefinance from './Component/Tradefinance';
 import ProductRandD from './Component/ProductRandD';
 import Shipchandling from './Component/Shipchandling';
-// import Abc from './Component/Abc';
+// import Registration1 from './Component/Registration1';
 
 
 
@@ -66,6 +66,7 @@ function App() {
           {/* <Route path='/Abc' element={< Abc/>} /> */}
         </Routes>
         <Footer />
+        {/* <Registration1 /> */}
         {/* <Abc/> */}
       </Router>
 

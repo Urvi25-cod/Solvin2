@@ -390,9 +390,9 @@ const Testimonial = () => {
     <div className="container mx-auto px-10 py-12 relative">
       {/* Heading */}
       <h4 className="text-orange-500 text-lg font-semibold mb-2 text-center">Testimonial</h4>
-      <h2 className="text-2xl md:text-4xl font-bold text-[#1F4278]">
-        To <span className="text-orange-500">increase productivity</span> and{" "}
-        <span className="text-[#1F4278]">cost effectiveness</span>
+      <h2 className="text-2xl md:text-3xl font-bold  text-[#1F4278] text-center">
+         <span className="">Built on {" "}</span><span className="text-orange-500 text-center">Trust Proven {" "}</span> 
+        <span className="text-[#1F4278] text-center">by Clients</span>
       </h2>
 
       {/* Slider */}

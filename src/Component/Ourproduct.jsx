@@ -248,7 +248,7 @@ const Ourproduct = () => {
       {/* Header */}
       <div className="text-center mb-8">
         <h2 className="text-orange-500 font-semibold text-sm">Our Product</h2>
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#1F4278]">
+        <h1 className="text-2xl md:text-3xl font-bold  text-[#1F4278]">
           Premium Raw Material <span className="text-orange-500">Supply Solutions</span>
         </h1>
       </div>

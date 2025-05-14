@@ -815,7 +815,7 @@ export default function Product() {
         className="relative h-[40vh] w-full bg-cover bg-center flex items-center"
         style={{ backgroundImage: `url(${background})` }}
       >
-        <div className="relative h-full container mx-auto flex flex-col justify-center px-8 py-8">
+        <div className="relative h-full container mx-auto flex flex-col justify-center px-16 py-8">
           <div className="mb-2 text-white text-xs sm:text-sm md:text-base">
             <a href="/" className="hover:text-orange-400 transition-colors">
               Home
@@ -832,7 +832,7 @@ export default function Product() {
       </div>
 
       {/* Main Container */}
-      <div className="container mx-auto px-8 py-8">
+      <div className="container mx-auto px-12 py-8">
         {/* Search Bar */}
         {/* <div className="mb-4 flex flex-col sm:flex-row sm:space-x-1 rounded-lg">
           <input
@@ -844,13 +844,7 @@ export default function Product() {
             Search
           </button>
         </div> */}
-        <button
-          className="block md:hidden mb-4 text-orange-500 text-2xl"
-          onClick={() => setMobileFilterOpen(true)}
-          aria-label="Open Filters"
-        >
-          <FiFilter />
-        </button>
+       
 
         {/* {mobileFilterOpen && (
           <div className="fixed inset-0 z-40 flex flex-col justify-end">
@@ -974,6 +968,13 @@ export default function Product() {
             Search
           </button>
         </div>
+         <button
+          className="block md:hidden mb-4 text-orange-500 text-2xl"
+          onClick={() => setMobileFilterOpen(true)}
+          aria-label="Open Filters"
+        >
+          <FiFilter />
+        </button>
 
 
         <div className="flex flex-col md:flex-row gap-6">

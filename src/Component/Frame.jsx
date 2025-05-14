@@ -9,7 +9,7 @@ const Frame = () => {
 
   useEffect(() => {
     let start = 0;
-    let endValues = { partnerships: 250, countries: 31, experience: 9 };
+    let endValues = { partnerships: 250, countries: 40, experience: 10 };
     let duration = 1000; // 3 seconds
     let stepTime = 50; // Update every 50ms
     let steps = duration / stepTime;

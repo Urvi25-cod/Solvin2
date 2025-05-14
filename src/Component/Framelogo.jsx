@@ -205,7 +205,7 @@ const Framelogo = () => {
             <div className="container mx-auto px-8">
                 {/* Heading Section */}
                 <h3 className="text-orange-500 text-lg font-semibold mb-2 text-center">Our Associate</h3>
-                <h2 className="text-2xl sm:text-3xl font-bold text-[#1F4278] text-center mb-8">
+                <h2 className="text-2xl md:text-3xl font-bold  text-[#1F4278] text-center mb-8">
                   Our <span className="text-orange-500">Network</span><span className="text-[#1F4278]"> of Excellence</span>
                 </h2>
 

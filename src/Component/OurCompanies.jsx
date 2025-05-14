@@ -53,7 +53,7 @@ const OurCompanies = () => {
 
     return (
         <div className="py-12 bg-gray-50">
-            <div className="container mx-auto px-10">
+            <div className="container mx-auto px-16">
                 {/* Heading Section */}
                 <h3 className="text-orange-500 text-lg font-semibold mb-2 text-center">Our Network</h3>
                 <h2 className="text-2xl sm:text-3xl font-bold text-[#1F4278] text-center mb-8">
