@@ -20,7 +20,7 @@ export default function WorldLocationsMap() {
 
   return (
     <>
-    <div className="container mx-auto px-8 py-2">
+    <div className="container mx-auto px-8 py-4">
     <div className="text-center">
       <h2 className="text-orange-500 font-semibold text-sm md:text-base lg:text-lg">
         Our Synergy in Trade

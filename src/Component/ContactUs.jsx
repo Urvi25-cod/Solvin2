@@ -137,7 +137,7 @@ const ContactUs = () => {
                 // style="border:0;"
                 // allowfullscreen
                 loading="lazy"
-                // referrerpolicy="no-referrer-when-downgrade"
+              // referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
 
             </div>
@@ -159,7 +159,7 @@ const ContactUs = () => {
               </p> */}
 
               {/* Form */}
-              <form onSubmit={handleSubmit} className="space-y-4 mb-40">
+              {/* <form onSubmit={handleSubmit} className="space-y-4 mb-40">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 xl:gap-8">
                   <input
                     name="name"
@@ -210,7 +210,64 @@ const ContactUs = () => {
                 >
                   Submit
                 </button>
+              </form> */}
+
+              <form onSubmit={handleSubmit} className="space-y-4 mb-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 xl:gap-8">
+                  <input
+                    name="name"
+                    placeholder="Your Name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    // className="border border-gray-300 rounded-md p-2 max-w-xs md:max-w-sm lg:max-w-md"
+                    className="border border-gray-300 rounded-md p-5 h-[80%] w-full"
+
+                  />
+
+
+                  <input
+                    name="email"
+                    type="email"
+                    placeholder="Email ID"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="border border-gray-300 rounded-md p-5 w-full  h-[80%] max-w-md"
+                  />
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 xl:gap-8">
+                  <input
+                    name="phone"
+                    placeholder="Phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className="border border-gray-300 rounded-md p-5 h-[80%]  w-full max-w-md"
+                  />
+
+                  <input
+                    name="subject"
+                    placeholder="Subject"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    className="border border-gray-300 rounded-md p-5 h-[80%]  w-full max-w-md"
+                  />
+                </div>
+
+                <textarea
+                  name="message"
+                  placeholder="Message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  className="border border-gray-300 rounded-md p-5 w-full max-w-3xl  lg:min-h-[250px]"
+                />
+
+                <button
+                  type="submit"
+                  className="w-full py-3  bg-orange-500  text-white font-medium cursor-pointer rounded-md max-w-md"
+                >
+                  Submit
+                </button>
               </form>
+
             </div>
           </div>
         </div>

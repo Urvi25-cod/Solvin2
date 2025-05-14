@@ -443,7 +443,7 @@ export default function Registration() {
       <div className="container mx-auto sm:px-6 px-6 lg:px-16 py-4">
         
         {/* Header Section */}
-        <div className="mb-8 flex flex-col justify-start">
+        <div className="mb-8 flex flex-col text-center">
           <p className="text-orange-500 font-semibold text-lg">Vendor Registration Form</p>
           <h1 className="text-3xl sm:text-4xl font-bold text-[#1F4278]">
             Let’s Connect <span className="text-orange-500">Became our Vendor Solvi Glob</span>

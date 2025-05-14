@@ -228,6 +228,7 @@ const InquirySchema = Yup.object().shape({
   location: Yup.string().required("Location is required"),
   inquiryTypes: Yup.array().min(1, "Select at least one inquiry type"),
   inquiryDetails: Yup.string().required("Please describe your inquiry"),
+  WhenDoYouRequireIt:Yup.array().min(1, "Select at least one inquiry type"),
   contactModes: Yup.array().min(1, "Select at least one contact mode"),
   uploadDocuments: Yup.mixed()
     .test("fileSize", "File size must be less than 10MB", value => {
@@ -246,6 +247,8 @@ const inquiryTypesList = [
 ];
 
 const contactModesList = ["Email", "Phone", "WhatsApp"];
+const DoYouRequireIt = ["When Do You Require It?", "Within a Week", "Within a Month","Flexible / No Urgent Timeline"];
+
 
 export default function InquiryForm() {
   return (
@@ -254,7 +257,12 @@ export default function InquiryForm() {
             {/* <div className="container mx-auto sm:px-6 px-6 lg:px-16 py-4"> */}
 
       <div className="container mx-auto sm:px-6 px-6 lg:px-16 py-4 bg-white rounded-xl shadow-lg">
-        <h2 className="text-2xl font-bold mb-6">Inquiry Form</h2>
+        <div className="mb-8 flex flex-col text-center">
+          <p className="text-orange-500 font-semibold text-lg">Business Inquiry</p>
+          <h1 className="text-3xl sm:text-4xl font-bold text-[#1F4278]">
+            Let’s Connect With SolviGlobe Limited <span className="text-orange-500">SolviGlobe Limited </span>
+          </h1>
+        </div>
         <Formik
           initialValues={{
             fullName: "",
@@ -263,6 +271,7 @@ export default function InquiryForm() {
             companyName: "",
             website: "",
             location: "",
+            WhenDoYouRequireIt:[],
             inquiryTypes: [],
             inquiryDetails: "",
             contactModes: [],
@@ -286,7 +295,9 @@ export default function InquiryForm() {
           {({ setFieldValue, isSubmitting, values }) => (
             <Form className="space-y-6" noValidate>
               {/* Full Name */}
+                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
+              
                 <label className="block text-lg font-medium mb-1">Full Name *</label>
                 <Field
                   type="text"
@@ -305,6 +316,8 @@ export default function InquiryForm() {
                 />
                 <ErrorMessage name="email" component="div" className="text-red-500 text-sm" />
               </div>
+              </div>
+                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Phone Number */}
               <div>
                 <label className="block text-lg font-medium mb-1">Phone Number *</label>
@@ -326,7 +339,9 @@ export default function InquiryForm() {
                 />
                 <ErrorMessage name="companyName" component="div" className="text-red-500 text-sm" />
               </div>
+              </div>
               {/* Website */}
+                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label className="block text-lg font-medium mb-1">Website</label>
                 <Field
@@ -345,10 +360,11 @@ export default function InquiryForm() {
                 />
                 <ErrorMessage name="location" component="div" className="text-red-500 text-sm" />
               </div>
+              </div>
               {/* Inquiry Types */}
               <div>
                 <label className="block text-lg font-medium mb-2">Inquiry Type *</label>
-                <div className="flex flex-wrap gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2">
                   {inquiryTypesList.map((type) => (
                     <label key={type} className="flex items-center space-x-2">
                       <Field
@@ -374,6 +390,41 @@ export default function InquiryForm() {
                 />
                 <ErrorMessage name="inquiryDetails" component="div" className="text-red-500 text-sm" />
               </div>
+
+               {/* <div className="md:col-span-2">
+            <label className="block text-xl font-medium text-gray mb-[5px]">
+              When Do You Require It?
+            </label>
+            {["When Do You Require It?", "Within a Week", "Within a Month","Flexible / No Urgent Timeline"].map((term) => (
+              <label key={term} className="flex items-center space-x-5 mb-[10px]">
+                <Field
+                  type="radio"
+                  name="WhenDoYouRequireIt"
+                  value={term}
+                  className="form-radio h-[18px] w-[18px]"
+                />
+               {term}
+              </label>
+            ))}
+           <ErrorMessage name="WhenDoYouRequireIt" component="div" className="text-red-500 text-sm" />
+          </div> */}
+          <div>
+                <label className="block text-lg font-medium mb-2">When Do You Require It? *</label>
+                <div className="flex flex-wrap gap-4">
+                  {DoYouRequireIt.map((term) => (
+                    <label key={term} className="flex items-center space-x-2">
+                      <Field
+                        type="radio"
+                        name="WhenDoYouRequireIt"
+                        value={term}
+                        className="form-radio h-5 w-5 text-blue-600 border-gray-300 rounded"
+                      />
+                      <span>{term}</span>
+                    </label>
+                  ))}
+                </div>
+                <ErrorMessage name="WhenDoYouRequireIt" component="div" className="text-red-500 text-sm" />
+              </div>
               {/* Contact Modes */}
               <div>
                 <label className="block text-lg font-medium mb-2">Preferred Contact Mode *</label>
@@ -392,6 +443,7 @@ export default function InquiryForm() {
                 </div>
                 <ErrorMessage name="contactModes" component="div" className="text-red-500 text-sm" />
               </div>
+
               {/* File Upload */}
               <div>
               <label className="block text-lg font-medium mb-1">Upload Document (optional, max 10MB)</label>
