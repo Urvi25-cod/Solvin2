@@ -125,7 +125,7 @@ const ContactUs = () => {
           </div>
         </div>
 
-        <div className="container mx-auto px-8 py-12">
+        <div className="container mx-auto px-12 py-8">
           {/* Main Layout */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 xl:gap-10 mt-10">
             {/* Map Section */}
@@ -143,7 +143,7 @@ const ContactUs = () => {
             </div>
 
             {/* Contact Form Section */}
-            <div className="flex flex-col justify-center">
+            <div className="flex flex-col justify-center ">
               {/* Header */}
               <div className="text-orange-500 font-medium mb-2">Contact us</div>
               {/* <h1 className="text-3xl md:text-4xl  xl:text-4xl font-bold text-blue-900 mb-4">

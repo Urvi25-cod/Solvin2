@@ -122,7 +122,7 @@ const About2 = () => {
                   scrollSnapAlign: "center",
                 }}
               >
-                <div className="w-full h-60 bg-white rounded-lg shadow-lg p-6 text-center flex flex-col items-center justify-center">
+                <div className="w-full h-60 bg-white rounded-lg shadow-lg p-6 text-center flex flex-col items-center justify-center border border-gray-200">
                   <div className="w-14 h-14 flex items-center justify-center mb-4">
                     <img
                       src={value.icon}

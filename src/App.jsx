@@ -1,6 +1,6 @@
 import React from 'react';
 import Product from './Component/Product';
-import Footer from './Component/Footer';
+import Footer2 from './Component/Footer2';
 import Services from './Component/Services';
 import Blog from './Component/Blog';
 import ContactUs from './Component/ContactUs';
@@ -65,7 +65,7 @@ function App() {
           <Route path='/Blog6' element={< Blog6/>} /> 
           {/* <Route path='/Abc' element={< Abc/>} /> */}
         </Routes>
-        <Footer />
+        <Footer2 />
         {/* <Registration1 /> */}
         {/* <Abc/> */}
       </Router>

@@ -209,16 +209,11 @@ export default function Nav({ bgColor, textColor }) {
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false)
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
 
-  const handleNavigation = (categoryName) => {
-    // Navigate to the Product.jsx page with the category name as a query parameter
-    navigate(`/product?category=${encodeURIComponent(categoryName)}`);
-    console.log(categoryName, "22");
-  };
-  const navigate = useNavigate();
+
   return (
     <>
       {/* <nav className={`flex justify-between items-center px-4 py-5 ${bgColor} md:px-10 lg:px-20`}> */}
-      <nav className={`flex justify-between items-center px-16 py-8 container mx-auto  ${bgColor}`}>
+      <nav className={`flex justify-between items-center lg:px-16 py-8  px-4 container mx-auto  ${bgColor}`}>
         <div className="flex justify-start">
           <Link to="/"><img src={logo2} alt="" className="h-15 w-auto md:h-10 lg:h-12"/></Link>
         </div>

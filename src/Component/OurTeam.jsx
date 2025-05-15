@@ -229,33 +229,33 @@
 
 import React from 'react';
 import background from "../Images/background.png";
-import gril from "../Images/gril.png";
-import email from "../Images/email.png"; // Import the email icon image
-import linkded from "../Images/linkded.png"
+// import gril from "../Images/gril.png";
+// import email from "../Images/email.png"; // Import the email icon image
+// import linkded from "../Images/linkded.png"
 import Nav from "./Nav";
 
-const teamMembers = [
-    {
-        name: "Brijeshkumar Kakdiya",
-        position: "Co-Founder & CEO",
-        image: gril,
-    },
-    {
-        name: "Brijeshkumar Kakdiya",
-        position: "Co-Founder & CEO",
-        image: gril,
-    },
-    {
-        name: "Brijeshkumar Kakdiya",
-        position: "Co-Founder & CEO",
-        image: gril,
-    },
-    {
-        name: "Brijeshkumar Kakdiya",
-        position: "Co-Founder & CEO",
-        image: gril,
-    },
-];
+// const teamMembers = [
+//     {
+//         name: "Brijeshkumar Kakdiya",
+//         position: "Co-Founder & CEO",
+//         image: gril,
+//     },
+//     {
+//         name: "Brijeshkumar Kakdiya",
+//         position: "Co-Founder & CEO",
+//         image: gril,
+//     },
+//     {
+//         name: "Brijeshkumar Kakdiya",
+//         position: "Co-Founder & CEO",
+//         image: gril,
+//     },
+//     {
+//         name: "Brijeshkumar Kakdiya",
+//         position: "Co-Founder & CEO",
+//         image: gril,
+//     },
+// ];
 
 const OurTeam = () => {
     return (
@@ -301,9 +301,9 @@ const OurTeam = () => {
 
             {/* <div className="px-4 md:px-6 lg:px-12 xl:px-20 py-10"> */}
                
-            <div className="container mx-auto px-12 py-8">
-            {/* Card */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-4">
+            <div className="container mx-auto px-12 py-8 h-screen">
+            
+                {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-4">
                     {teamMembers.map((member, index) => (
                         <div key={index} className="bg-white shadow-md rounded-lg overflow-hidden">
                             <img
@@ -318,11 +318,11 @@ const OurTeam = () => {
                                 </div>
                                 <p className="text-blue-900">{member.position}</p>
 
-                                {/* Email Icon and Link */}
+                             
                                 <div className="mt-4 flex items-center gap-2">
                                     <img src={email} alt="Email Icon" className="w-[30px] h-[30px]" />
                                     <a
-                                        href="mailto:example@example.com" // Replace with the actual email address
+                                        href="mailto:example@example.com" 
                                         className="text-blue-900 font-semibold hover:underline"
                                     >
                                         Email Now
@@ -332,7 +332,7 @@ const OurTeam = () => {
 
                         </div>
                     ))}
-                </div>
+                </div> */}
             </div>
         </>
     );

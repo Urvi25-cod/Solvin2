@@ -400,17 +400,17 @@ const Testimonial = () => {
         <Slider {...settings}>
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="px-4">
-              <div className="p-4 rounded-lg">
-                {/* <img
-                  src={testimonial.image}
-                  alt={`testimonial-${testimonial.id}`}
-                  className="w-full h-auto rounded-lg object-cover"
-                /> */}
+              <div className="p-5 rounded-lg">
                 <img
                   src={testimonial.image}
                   alt={`testimonial-${testimonial.id}`}
-                  className="  w-full h-auto rounded-lg object-cover  scale-132 md:scale-100 transition-transform duration-300 "
+                  className="w-full h-auto rounded-lg object-cover"
                 />
+                {/* <img
+                  src={testimonial.image}
+                  alt={`testimonial-${testimonial.id}`}
+                  className="  w-full h-auto rounded-lg object-cover  scale-132 md:scale-100 transition-transform duration-300 "
+                /> */}
 
               </div>
             </div>

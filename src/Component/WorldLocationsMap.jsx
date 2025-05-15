@@ -9,7 +9,7 @@ const locations = [
     address:
       "  6, Ground Floor, Opera House, Mini Bazaar, Varachha Road, SURAT, Gujarat State, INDIA, 395006",
     icon: "/india.svg",
-    position: { top: "40%", left: "67%" },
+    position: { top: "40%", left: "63%" },
     mobilePosition: { top: "45%", left: "5%" }, // Adjusted for mobile
   },
  
