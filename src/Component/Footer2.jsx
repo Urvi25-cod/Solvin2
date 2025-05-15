@@ -159,7 +159,7 @@ const Footer2 = () => {
                     <span className="ml-1">{languageDropdownOpen ? "▲" : "▼"}</span>
                   </button>
                   {languageDropdownOpen && (
-                    <ul className="absolute right-0 z-10 mt-2 bg-white bottom-full   text-black rounded-md shadow-lg w-[200px]">
+                    <ul className="absolute right-0 z-10 mt-2  mr-20  bg-white bottom-full   text-black rounded-md shadow-lg w-[200px]">
                       {languages.map((lang) => (
                         <li
                           key={lang.name}
