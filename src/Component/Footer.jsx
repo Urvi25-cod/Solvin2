@@ -159,7 +159,7 @@
 //               <FiLinkedin className="w-6 h-6 bg-white text-orange-500 rounded-full p-1" />
 //               <FiYoutube className="w-6 h-6 bg-white text-orange-500 rounded-full p-1" />
 
-               
+
 //             </div>
 //             <div className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
 //             <input
@@ -496,13 +496,13 @@ export default function Footer() {
     <footer className="bg-orange-500 text-white pt-10 pb-3">
       <div className="container mx-auto px-16 ">
         {/* Main Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
           {/* Logo and Contact */}
           <div className="flex flex-col">
             <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
               <img src={footerlogo} alt="Solvi Globe Logo" className="mb-4 w-36" />
             </Link>
-            <p className="text-sm mb-2">
+            <p className="text-sm mb-2 ">
               34. Meridian Business Center, Lajamni Chowk, opposite Opera Business center, Mota Varachha, Surat, Gujarat 394105
             </p>
             <p className="text-sm mb-1">
@@ -512,10 +512,21 @@ export default function Footer() {
               <span className="font-bold">Number :</span> +91 84011 48142
             </p>
             <div className="flex space-x-4 mb-6 mt-2">
-              <a href="#"><FiInstagram className="w-6 h-6 hover:text-gray-300" /></a>
-              <a href="#"><FiFacebook className="w-6 h-6 hover:text-gray-300" /></a>
-              <a href="#"><FiLinkedin className="w-6 h-6 hover:text-gray-300" /></a>
-              <a href="#"><FiTwitter className="w-6 h-6 hover:text-gray-300" /></a>
+              <div className="bg-white rounded-full p-2 flex items-center justify-center">
+                <FiInstagram className="w-6 h-6 text-orange-500" />
+              </div>
+              <div className="bg-white rounded-full p-2 flex items-center justify-center">
+
+                <a href="#"><FiFacebook className="w-6 h-6   text-orange-500 "/></a>
+              </div>
+              <div className="bg-white rounded-full p-2 flex items-center justify-center">
+
+                <a href="#"><FiLinkedin className="w-6 h-6  text-orange-500" /></a>
+              </div>
+              <div className="bg-white rounded-full p-2 flex items-center justify-center">
+
+                <a href="#"><FiTwitter className="w-6 h-6   text-orange-500" /></a>
+              </div>
             </div>
             {/* Newsletter */}
             {/* <div className="flex w-full">
@@ -545,56 +556,56 @@ export default function Footer() {
           </div>
 
           {/* About */}
-          <div>
+          <div className=" text-justify">
             <h3 className="font-bold mb-4 text-lg">About</h3>
-            <ul className="space-y-2 text-base">
+            <ul className="space-y-2 text-base ">
               <Link to="/About" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}><li>Company</li></Link>
-              <Link to="/Founder" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}><li>Founder’s Note</li></Link>
               <Link to="/OurTeam" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}><li>Our Core Team</li></Link>
+              <Link to="/Founder" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}><li>Founder’s Note</li></Link>
             </ul>
           </div>
 
           {/* Product */}
-          <div>
+          <div className=" text-justify">
             <h3 className="font-bold mb-4 text-lg">Product</h3>
             <Link Link to="/Product" onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }) }}><ul className="space-y-2 text-base">
               <li>FMCG Products</li>
-              <li>Industrial Chemicals</li>
-              <li>Petrochemical Products</li>
               <li>Metals & Alloys</li>
               <li>Agri-Commodities</li>
-              <li>Aviation Service and Parts</li>
-              <li>Pharmaceutical Products</li>
-              <li>Animal Nutrition & Feed</li>
+              <li>Industrial Chemicals</li>
+              <li>Petrochemical Products</li>
               <li>Machinery & Equipment</li>
+              <li>Animal Nutrition & Feed</li>
+              <li>Pharmaceutical Products</li>
+              <li>Aviation Service and Parts</li>
             </ul></Link>
           </div>
 
           {/* Services */}
-          <div>
+          <div className=" text-justify">
             <h3 className="font-bold mb-4 text-lg">Services</h3>
             <ul className="space-y-2 text-base">
-              <Link to={'/Services'}><li className="mb-2" onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Export-Import Services</li></Link>
-              <Link to={'/E2Eservices'}><li className="mb-2" onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }) }}>vE2E Logistic Services</li></Link>
-              <Link to={'/Distribution'}><li className="mb-2" onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Product Distribution</li></Link>
-              <Link to={'/Warehousing'}><li className="mb-2" onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Warehousing Services</li></Link>
-              <Link to={'/ITOutsourcing'}><li className="mb-2" onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }) }}>IT Outsourcing Services</li></Link>
-              <Link to={'/Tradefinance'}><li className="mb-2" onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Trade Finance</li></Link>
               <Link to={'/ProductRandD'}><li className="mb-2" onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Product R&D</li></Link>
+              <Link to={'/Tradefinance'}><li className="mb-2" onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Trade Finance</li></Link>
+              <Link to={'/Distribution'}><li className="mb-2" onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Product Distribution</li></Link>
+              <Link to={'/E2Eservices'}><li className="mb-2" onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }) }}>VE2E Logistic Services</li></Link>
+              <Link to={'/Warehousing'}><li className="mb-2" onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Warehousing Services</li></Link>
+              <Link to={'/Services'}><li className="mb-2" onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Export-Import Services</li></Link>
+              <Link to={'/ITOutsourcing'}><li className="mb-2" onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }) }}>IT Outsourcing Services</li></Link>
               <Link to={'/Shipchandling'}><li onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Ship Chandling Services</li></Link>
             </ul>
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className=" text-justify">
             <h3 className="font-bold mb-4 text-lg"> </h3>
             <ul className="space-y-2 text-base mt-2">
-              <Link to="/InquiryForm" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} ><li>Business Inquiry</li></Link>
-              <Link to="/Registration" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}><li>Register As Vendor</li></Link>
-              <Link to="/Career" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}><li>Join Our Team</li></Link>
               <Link to="/Blog" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}><li>Blog</li></Link>
               <Link to={'/'} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}><li>Privacy Policy</li></Link>
+              <Link to="/Career" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}><li>Join Our Team</li></Link>
+              <Link to="/InquiryForm" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} ><li>Business Inquiry</li></Link>
               <Link to={'/'} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}><li>Terms & Condition</li></Link>
+              <Link to="/Registration" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}><li>Register As Vendor</li></Link>
 
               <div className="flex justify-end lg:ml-10 xl:m-2 xl:mt-25 lg:mt-23 md:mr-2">
                 <div className="relative">
@@ -609,7 +620,7 @@ export default function Footer() {
                   {languageDropdownOpen && (
                     // <ul className="absolute right-0 z-10 mt-2 mr-20 bg-white bottom-full   text-black rounded-md shadow-lg w-[200px]">
                     // <ul className="absolute right-0 z-10 mt-2 mr-20 bg-white bottom-full    text-black rounded-md shadow-lg w-[200px]">
-                     <ul className="absolute xl:right-12 right-0 z-10 mt-2  mr-[-5] md:bottom-[45px]   bg-white bottom-full   text-black rounded-md shadow-lg w-[200px]"> 
+                    <ul className="absolute xl:right-12 right-0 z-10 mt-2  mr-[-5] md:bottom-[45px]   bg-white bottom-full   text-black rounded-md shadow-lg w-[200px]">
 
                       {languages.map((lang) => (
                         <li

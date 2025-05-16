@@ -199,11 +199,12 @@
 //-------------------------------my code----------------------
 
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import logo2 from "../Images/logo2.png";
 
 export default function Nav({ bgColor, textColor }) {
+  const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isProductDropdownOpen, setIsProductDropdownOpen] = useState(false);
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false)
@@ -215,12 +216,15 @@ export default function Nav({ bgColor, textColor }) {
     console.log(categoryName, "22");
   };
   const navigate = useNavigate();
+
+  // console.log(location.pathname === "/", 'location');
+
   return (
     <>
       {/* <nav className={`flex justify-between items-center px-4 py-5 ${bgColor} md:px-10 lg:px-20`}> */}
       <nav className={`flex justify-between items-center lg:px-16 py-8  px-4 container mx-auto  ${bgColor}`}>
         <div className="flex justify-start">
-          <Link to="/"><img src={logo2} alt="" className="h-15 w-auto md:h-10 lg:h-12"/></Link>
+          <Link to="/"><img src={logo2} alt="" className="h-15 w-auto md:h-10 lg:h-12" /></Link>
         </div>
 
         {/* Desktop Navigation */}
@@ -339,7 +343,7 @@ export default function Nav({ bgColor, textColor }) {
         </button></Link>
         {/* Mobile Navigation Toggle */}
         <button
-          className="md:hidden flex justify-end  w-8 h-8 bg-black-900 ml-2"
+          className={`md:hidden flex justify-end  w-8 h-8 bg-black-900 ml-2 ${location.pathname === "/" ? "text-white" : ""} ` }
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {!isMobileMenuOpen ? (
@@ -388,7 +392,7 @@ export default function Nav({ bgColor, textColor }) {
       >
         {/* Close Button */}
         <button
-          className="absolute top-4 right-0 text-black mb-20"
+          className="absolute top-4 right-0 text-black mb-20 p-2"
           onClick={() => setIsMobileMenuOpen(false)}
         >
           <svg
@@ -411,7 +415,7 @@ export default function Nav({ bgColor, textColor }) {
         <ul className="flex flex-col space-y-4 p-4">
           {/* About Dropdown */}
           <li>
-           <Link to={'/About'}> <div
+            <Link to={'/About'}> <div
               className="flex justify-between items-center text-sm md:text-base py-2 hover:bg-gray-200 cursor-pointer mt-5"
               onClick={() => setIsAboutDropdownOpen(!isAboutDropdownOpen)}
             >

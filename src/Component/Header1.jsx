@@ -117,7 +117,7 @@
 
 
 
-  
+
 
 //   return (
 //     <>
@@ -132,8 +132,8 @@
 //         <Nav bgColor="" textColor="text-white" />
 //         {/* <Nav bgColor="" textColor="text-white" /> */}
 //         {/* Navigation */}
-      
-        
+
+
 //         <main className="flex flex-col items-center justify-center text-center h-[calc(100vh_-_80px)] px-6">
 //         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
 //           From Raw to Refined:{" "}
@@ -144,15 +144,15 @@
 //           <span className="text-orange-500 font-semibold">Your Needs</span> with
 //           Our Expertise.
 //         </p>
-      
+
 //       </main>
 
 //       </header>
 
-     
+
 
 //       {/* Footer */}
-    
+
 //      {/* </header> */}
 //     </>
 //   );
@@ -160,15 +160,42 @@
 
 
 
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
+
 import Nav from "./Nav";
 
 
 import background from "../Images/background.png";
 import serach from "../Images/serach.png";
- // Updated background image
+
+const PLACEHOLDER = "Search Product & Services";
+// Updated background image
 
 export default function Header1() {
+  const [placeholder, setPlaceholder] = useState("");
+  const indexRef = useRef(0);
+  const timeoutRef = useRef(null);
+
+  useEffect(() => {
+    function typeWriter() {
+      if (indexRef.current <= PLACEHOLDER.length) {
+        setPlaceholder(PLACEHOLDER.slice(0, indexRef.current));
+        indexRef.current += 1;
+        timeoutRef.current = setTimeout(typeWriter, 80);
+      } else {
+        timeoutRef.current = setTimeout(() => {
+          setPlaceholder("");
+          indexRef.current = 0;
+          typeWriter();
+        }, 2000);
+      }
+    }
+
+    typeWriter();
+
+    return () => clearTimeout(timeoutRef.current);
+  }, []);
+
   return (
     <>
       <header className="min-h-screen bg-cover bg-center z-10" style={{ backgroundImage: `url(${background})` }}>
@@ -183,9 +210,9 @@ export default function Header1() {
             Connecting {" "}
             <span className="text-orange-500 font-semibold">Your Needs</span> with Our Expertise.
           </p>
-          
+
           {/* Search Section */}
-          <div className="flex items-center bg-white rounded-lg p-2 shadow-md w-full max-w-md">
+          {/* <div className="flex items-center bg-white rounded-lg p-2 shadow-md w-full max-w-md">
           <button className="px-4 py-2  text-white rounded-lg">
               <img src={serach}/>
             </button>
@@ -195,6 +222,16 @@ export default function Header1() {
               className="flex-1 p-2 outline-none text-blue-800"
             />
            
+          </div> */}
+          <div className="flex items-center bg-white rounded-lg p-2 shadow-md w-full max-w-md">
+            <button className="px-4 py-2 text-white rounded-lg">
+              <img src={serach} alt="search" />
+            </button>
+            <input
+              type="text"
+              placeholder={placeholder}
+              className="flex-1 p-2 outline-none text-blue-800"
+            />
           </div>
         </main>
       </header>

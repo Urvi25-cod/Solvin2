@@ -2,10 +2,10 @@ import { useState } from "react"
 import background from "../Images/background.png";
 import map from "../Images/map.svg";
 import Nav from "./Nav";
-import India from "../Images/India.png";
-import Usa from "../Images/Usa.png";
-import germany from "../Images/germany.png";
-import ausr from "../Images/ausr.svg"
+import INDIA from "../Images/INDIA.svg";
+import USA from "../Images/USA.svg";
+import GERMANY from "../Images/GERMANY.svg";
+import AUSTRALIA from "../Images/AUSTRALIA.svg"
 import mapimages from "../Images/mapimages.png";
 import WorldLocationsMap from "./WorldLocationsMap";
 // import Abc from "./Abc";
@@ -19,28 +19,28 @@ const ContactUs = () => {
       address: "701 E Parks Hwy, Wasilla, Alaska United States, 61.581765, 99654",
       number: "+91 23409 12348",
       email: "solviglobe@gmail.com",
-      icon: India,
+      icon: INDIA,
     },
     {
       name: "USA",
       address: "701 E Parks Hwy, Wasilla, Alaska United States, 61.581765, 99654",
       number: "+91 23409 12348",
       email: "solviglobe@gmail.com",
-      icon: Usa,
+      icon: USA,
     },
     {
       name: "GERMANY",
       address: "701 E Parks Hwy, Wasilla, Alaska United States, 61.581765, 99654",
       number: "+91 23409 12348",
       email: "solviglobe@gmail.com",
-      icon: germany,
+      icon: GERMANY,
     },
     {
       name: "AUSTRALIA",
       address: "701 E Parks Hwy, Wasilla, Alaska United States, 61.581765, 99654",
       number: "+91 23409 12348",
       email: "solviglobe@gmail.com",
-      icon: ausr,
+      icon: AUSTRALIA,
     },
   ];
 
@@ -101,7 +101,7 @@ const ContactUs = () => {
         {/* Map Section */}
         <WorldLocationsMap />
         <div className="container mx-auto px-12 py-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-4 md:grid-cols-2 lg:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
             {locations.map((location, index) => (
               <div
                 key={index}
@@ -111,7 +111,9 @@ const ContactUs = () => {
                 <img
                   src={location.icon}
                   alt={`${location.name} Icon`}
-                  className="w-12 md:w-16 lg:w-20 mb-4"
+                  // className="w-12 md:w-16 lg:w-20 mb-4"
+                  className="w-full h-[80px]"
+
                 />
                 {/* Location Name */}
                 <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-800 mb-2">{location.name}</h3>
@@ -119,7 +121,7 @@ const ContactUs = () => {
                 <p className="text-sm md:text-base lg:text-lg text-gray-600 mb-2">{location.address}</p>
                 {/* Contact Details */}
                 <p className="text-sm md:text-base lg:text-lg text-gray-600 mb-1">Number: {location.number}</p>
-                <p className="text-sm md:text-base lg:text-lg text-gray-600">Email: {location.email}</p>
+                <p className="text-sm md:text-base lg:text-lg text-gray-600 ">Email: {location.email}</p>
               </div>
             ))}
           </div>
@@ -127,12 +129,12 @@ const ContactUs = () => {
 
         <div className="container mx-auto px-12 py-8">
           {/* Main Layout */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 xl:gap-10 mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 xl:gap-10 2xl:gap-0 mt-10">
             {/* Map Section */}
-            <div className="w-full h-[400px] md:h-[600px] lg:h-[700px] xl:h-[800px] rounded-lg overflow-hidden">
+            <div className="w-full h-[400px] md:h-[600px] lg:h-[700px] xl:h-[800px]  rounded-lg overflow-hidden">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1859.418684617869!2d72.8895756262605!3d21.23829665968726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s34%20Meridian%20Business%20Center%20Lajamni%20Chowk%20opposite%20Opera%20Business%20center%20Mota%20Varachha%20Surat%20Gujarat%20394105!5e0!3m2!1sen!2sin!4v1747218022977!5m2!1sen!2sin"
-                width="600"
+                width="650"
                 height="700"
                 // style="border:0;"
                 // allowfullscreen
@@ -213,7 +215,7 @@ const ContactUs = () => {
               </form> */}
 
               <form onSubmit={handleSubmit} className="space-y-4 mb-10">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 xl:gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6  xl:gap-8">
                   <input
                     name="name"
                     placeholder="Your Name"
@@ -262,7 +264,7 @@ const ContactUs = () => {
 
                 <button
                   type="submit"
-                  className="w-full py-3  bg-orange-500  text-white font-medium cursor-pointer rounded-md max-w-md"
+                  className="w-full py-3  bg-orange-500  text-white font-medium cursor-pointer rounded-md "
                 >
                   Submit
                 </button>

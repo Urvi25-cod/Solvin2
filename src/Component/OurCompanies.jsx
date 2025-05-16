@@ -7,40 +7,43 @@ import delment from "../Images/delment.png";
 
 const OurCompanies = () => {
     const settings = {
-        dots: false, // Disable dots for manual scrolling
+        dots: false,
         infinite: true,
-        speed: 1000, // Speed of the auto-scroll (in milliseconds)
-        slidesToShow: 5, // Number of logos visible on large screens
+        speed: 6000, // Make this large for slow, smooth movement (e.g., 6000ms)
+        slidesToShow: 5,
         slidesToScroll: 1,
-        autoplay: true, // Enable auto-scrolling
-        autoplaySpeed: 1000, // Time interval between auto-scrolls (in milliseconds)
+        autoplay: true,
+        autoplaySpeed: 0, // Set to 0 for continuous scroll
+        cssEase: "linear", // Makes the animation linear and smooth
+        pauseOnHover: false,
         responsive: [
             {
-                breakpoint: 1024, // Tablet devices
+                breakpoint: 1024,
                 settings: {
-                    slidesToShow: 3, // Number of logos visible on tablets
+                    slidesToShow: 3,
                     slidesToScroll: 1,
                     infinite: true,
                 },
             },
             {
-                breakpoint: 768, // Mobile devices
+                breakpoint: 768,
                 settings: {
-                    slidesToShow: 2, // Number of logos visible on mobile devices
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                     infinite: true,
                 },
             },
             {
-                breakpoint: 480, // Small mobile devices
+                breakpoint: 480,
                 settings: {
-                    slidesToShow: 1, // Single logo visible on very small screens
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
                 },
             },
         ],
     };
+
 
     const companies = [
         { id: 1, logoUrl: delment }, // Replace with actual logo paths

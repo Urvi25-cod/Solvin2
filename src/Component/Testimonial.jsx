@@ -326,6 +326,8 @@
 
 // export default Testimonial;
 
+
+
 import React from "react";
 import Slider from "react-slick";
 import review from "../Images/review.svg";
@@ -408,7 +410,7 @@ const settings = {
 
 const Testimonial = () => {
   return (
-    <div className="container mx-auto  px-4  py-12 relative">
+    <div className="container mx-auto px-8 py-12 relative">
       {/* Heading */}
       <h4 className="text-orange-500 text-lg font-semibold mb-2 text-center">Testimonial</h4>
       <h2 className="text-2xl md:text-3xl font-bold  text-[#1F4278] text-center">
@@ -421,7 +423,7 @@ const Testimonial = () => {
         <Slider {...settings}>
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="px-4">
-              <div className="p-5 rounded-lg">
+              <div className="py-4 md:py-4 md:px-4 rounded-lg">
                 {/* <div
                   className="bg-white text-black px-6 pt-10 pb-6 w-full border border-gray-200 shadow-xl relative transition-all duration-200"
                   style={{
@@ -438,8 +440,8 @@ const Testimonial = () => {
     bg-white text-black 
     px-3 py-6 
     sm:px-4 sm:py-8 
-    md:px-6 md:pt-10 md:pb-6 
-    xl:w-[400px] max-w-[320px] 
+    md:px-6 md:pt-10 md:pb-6  
+    xl:w-[400px]  max-w-[360px] 
     h-auto min-h-[180px] lg:w-[280px] 
     mx-auto border border-gray-200 shadow-xl 
     relative transition-all duration-200

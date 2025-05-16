@@ -6,8 +6,8 @@ import sr4 from "../Images/sr4.png";
 import se55 from "../Images/se55.svg";
 import sr5 from "../Images/sr5.png";
 // import sr6 from "../Images/sr6.png";
-import ship from "../Images/ship.svg";
-import ship2 from "../Images/ship2.svg";
+import ship66 from "../Images/ship66.svg";
+import ship7 from "../Images/ship7.svg";
 
 
 import sr7 from "../Images/sr7.png";
@@ -35,7 +35,7 @@ const OurServices = () => {
     { name: "Product Distribution", icon: sr3, hover: se3, pagename: '/Distribution' },
     { name: "Warehousing Services", icon: sr4, hover: se55, pagename: '/Warehousing' },
     { name: "Product R&D", icon: sr5, hover: se5, pagename: '/ITOutsourcing' },
-    { name: "Ship Candling Services", icon: ship, hover: ship2, pagename: '/Tradefinance' },
+    { name: "Ship Candling Services", icon: ship66, hover: ship7, pagename: '/Tradefinance' },
     { name: "IT Outsourcing Services", icon: sr7, hover: se7, pagename: '/ProductRandD' },
     { name: "IT Outsourcing Services", icon: sr8, hover: se8, pagename: '/Shipchandling' },
 
