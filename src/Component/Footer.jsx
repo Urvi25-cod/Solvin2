@@ -556,7 +556,7 @@ export default function Footer() {
           </div>
 
           {/* About */}
-          <div className=" text-justify">
+          <div className="">
             <h3 className="font-bold mb-4 text-lg">About</h3>
             <ul className="space-y-2 text-base ">
               <Link to="/About" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}><li>Company</li></Link>
@@ -566,7 +566,7 @@ export default function Footer() {
           </div>
 
           {/* Product */}
-          <div className=" text-justify">
+          <div className="">
             <h3 className="font-bold mb-4 text-lg">Product</h3>
             <Link Link to="/Product" onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }) }}><ul className="space-y-2 text-base">
               <li>FMCG Products</li>
@@ -582,7 +582,7 @@ export default function Footer() {
           </div>
 
           {/* Services */}
-          <div className=" text-justify">
+          <div className="">
             <h3 className="font-bold mb-4 text-lg">Services</h3>
             <ul className="space-y-2 text-base">
               <Link to={'/ProductRandD'}><li className="mb-2" onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Product R&D</li></Link>
@@ -597,7 +597,7 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className=" text-justify">
+          <div className="">
             <h3 className="font-bold mb-4 text-lg"> </h3>
             <ul className="space-y-2 text-base mt-2">
               <Link to="/Blog" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}><li>Blog</li></Link>
