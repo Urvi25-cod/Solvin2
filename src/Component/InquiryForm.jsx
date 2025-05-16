@@ -260,7 +260,7 @@ export default function InquiryForm() {
         <div className="mb-8 flex flex-col text-center">
           <p className="text-orange-500 font-semibold text-lg">Business Inquiry</p>
           <h1 className="text-3xl sm:text-4xl font-bold text-[#1F4278]">
-            Let’s Connect With SolviGlobe Limited <span className="text-orange-500">SolviGlobe Limited </span>
+            Let’s Connect With  <span className="text-orange-500">SolviGlobe Limited </span>
           </h1>
         </div>
         <Formik

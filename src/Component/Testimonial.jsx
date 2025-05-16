@@ -405,6 +405,14 @@ const settings = {
         dots: true,
       },
     },
+    {
+      breakpoint: 435,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+      },
+    },
   ],
 };
 
@@ -453,11 +461,11 @@ const Testimonial = () => {
                     borderBottomLeftRadius: "100px",
                   }}
                 >
-                  <div className="absolute -top-6 left-6 w-12 h-12 rounded-full overflow-hidden border-2 border-white shadow-md">
+                  <div className="absolute -top-4 left-6 w-12 h-12 rounded-full overflow-hidden border-2 border-white shadow-md">
                     <img
                       src={testimonial.image}
                       alt={`testimonial-${testimonial.id}`}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full "
                     />
                   </div>
 

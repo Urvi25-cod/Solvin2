@@ -6,16 +6,53 @@ import bright from "../Images/bright.png";
 import delment from "../Images/delment.png";
 
 const OurCompanies = () => {
+    // const settings = {
+    //     dots: false, // Disable dots for manual scrolling
+    //     infinite: true,
+    //     speed: 1000, // Speed of the auto-scroll (in milliseconds)
+    //     slidesToShow: 5, // Number of logos visible on large screens
+    //     slidesToScroll: 1,
+    //     autoplay: true, // Enable auto-scrolling
+    //     autoplaySpeed: 1000, // Time interval between auto-scrolls (in milliseconds)
+    //     responsive: [
+    //         {
+    //             breakpoint: 1024, // Tablet devices
+    //             settings: {
+    //                 slidesToShow: 3, // Number of logos visible on tablets
+    //                 slidesToScroll: 1,
+    //                 infinite: true,
+    //             },
+    //         },
+    //         {
+    //             breakpoint: 768, // Mobile devices
+    //             settings: {
+    //                 slidesToShow: 2, // Number of logos visible on mobile devices
+    //                 slidesToScroll: 1,
+    //                 infinite: true,
+    //             },
+    //         },
+    //         {
+    //             breakpoint: 480, // Small mobile devices
+    //             settings: {
+    //                 slidesToShow: 1, // Single logo visible on very small screens
+    //                 slidesToScroll: 1,
+    //                 infinite: true,
+    //             },
+    //         },
+    //     ],
+    // };
+
+
     const settings = {
         dots: false,
         infinite: true,
-        speed: 6000, // Make this large for slow, smooth movement (e.g., 6000ms)
+        speed: 5000, // Make the transition take longer (slower scroll)
+        cssEase: "linear", // Smooth continuous animation
         slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 0, // Set to 0 for continuous scroll
-        cssEase: "linear", // Makes the animation linear and smooth
-        pauseOnHover: false,
+        autoplaySpeed: 0, // Needed for continuous scroll
+        pauseOnHover: true, // Stop scroll on hover
         responsive: [
             {
                 breakpoint: 1024,

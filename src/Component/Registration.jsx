@@ -446,7 +446,7 @@ export default function Registration() {
         <div className="mb-8 flex flex-col text-center">
           <p className="text-orange-500 font-semibold text-lg">Vendor Registration Form</p>
           <h1 className="text-3xl sm:text-4xl font-bold text-[#1F4278]">
-            Let’s Connect <span className="text-orange-500">Became our Vendor Solvi Glob</span>
+            Let’s Connect <span className="text-orange-500">Became our Vendor SolviGlobe Limited</span>
           </h1>
         </div>
 
@@ -823,7 +823,7 @@ export default function Registration() {
           {/* Send Inquiry */}
           <button
             type="submit"
-            className="lg:w-120 sm:w-auto bg-orange-500 text-white py-3 px-6 rounded-lg hover:bg-orange-600 focus:outline-none focus:ring focus:ring-orange-300 transition duration-200 ease-in-out"
+            className="lg:w-120 sm:w-auto bg-orange-500 text-white py-3 px-6 rounded-lg focus:outline-none focus:ring focus:ring-orange-300 transition duration-200 ease-in-out cursor-pointer"
           >
             Send Inquiry
           </button>

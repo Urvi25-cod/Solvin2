@@ -443,7 +443,7 @@ const { values, errors, touched, handleBlur, handleChange, handleSubmit } =  use
         <div className="mb-8 flex flex-col text-center">
           <p className="text-orange-500 font-semibold text-lg">Career Form</p>
           <h1 className="text-3xl sm:text-4xl font-bold text-[#1F4278]">
-            Let’s Connect <span className="text-orange-500">Join Our Team Solvi Glob</span>
+            Let’s Connect <span className="text-orange-500">Join Our Team SolviGlobe Limited</span>
           </h1>
         </div>
 
@@ -542,7 +542,7 @@ const { values, errors, touched, handleBlur, handleChange, handleSubmit } =  use
               {/* Position Applying For */}
               <div>
                 <label className="block text-xl font-medium text-gray-700">
-                  Position Applying For <span className="text-red-500">*</span>
+                  Position Applying For <span className="text-orange-500">*</span>
                 </label>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2">
                   {[
@@ -765,7 +765,7 @@ const { values, errors, touched, handleBlur, handleChange, handleSubmit } =  use
             {/* Submit Button */}
             <button
               type="submit"
-              className="lg:w-120 sm:w-auto bg-orange-500 text-white py-3 px-6 rounded-lg hover:bg-orange-600 focus:outline-none focus:ring focus:ring-orange-300 transition duration-200 ease-in-out"
+              className="lg:w-120 sm:w-auto bg-orange-500 text-white py-3 px-6 rounded-lg focus:outline-none focus:ring focus:ring-orange-300 transition duration-200 ease-in-out cursor-pointer"
             >
               Send Inquiry
             </button>

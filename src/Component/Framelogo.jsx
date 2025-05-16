@@ -155,16 +155,54 @@ import bright from "../Images/bright.png";
 import delment from "../Images/delment.png";
 
 const Framelogo = () => {
-    const settings = {
+    // const settings = {
+    //     dots: false,
+    //     infinite: true,
+    //     speed: 6000, // Make this large for slow, smooth movement (e.g., 6000ms)
+    //     slidesToShow: 5,
+    //     slidesToScroll: 1,
+    //     autoplay: true,
+    //     autoplaySpeed: 0, // Set to 0 for continuous scroll
+    //     cssEase: "linear", // Makes the animation linear and smooth
+    //     pauseOnHover: false,
+    //     responsive: [
+    //         {
+    //             breakpoint: 1024,
+    //             settings: {
+    //                 slidesToShow: 3,
+    //                 slidesToScroll: 1,
+    //                 infinite: true,
+    //             },
+    //         },
+    //         {
+    //             breakpoint: 768,
+    //             settings: {
+    //                 slidesToShow: 2,
+    //                 slidesToScroll: 1,
+    //                 infinite: true,
+    //             },
+    //         },
+    //         {
+    //             breakpoint: 480,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 slidesToScroll: 1,
+    //                 infinite: true,
+    //             },
+    //         },
+    //     ],
+    // };
+
+     const settings = {
         dots: false,
         infinite: true,
-        speed: 6000, // Make this large for slow, smooth movement (e.g., 6000ms)
+        speed: 5000, // Make the transition take longer (slower scroll)
+        cssEase: "linear", // Smooth continuous animation
         slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 0, // Set to 0 for continuous scroll
-        cssEase: "linear", // Makes the animation linear and smooth
-        pauseOnHover: false,
+        autoplaySpeed: 0, // Needed for continuous scroll
+        pauseOnHover: true, // Stop scroll on hover
         responsive: [
             {
                 breakpoint: 1024,
@@ -219,7 +257,7 @@ const Framelogo = () => {
                                 <img
                                     src={company.logoUrl}
                                     alt={`Logo of ${company.id}`}
-                                    className="w-full max-w-[120px] sm:max-w-[150px] h-auto"
+                                    className="w-full max-w-[120px] sm:max-w-[150px] h-auto cursor-pointer"
                                 />
                             </div>
                         </div>

@@ -601,11 +601,11 @@ export default function Footer() {
             <h3 className="font-bold mb-4 text-lg"> </h3>
             <ul className="space-y-2 text-base mt-2">
               <Link to="/Blog" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}><li>Blog</li></Link>
-              <Link to={'/'} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}><li>Privacy Policy</li></Link>
               <Link to="/Career" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}><li>Join Our Team</li></Link>
               <Link to="/InquiryForm" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} ><li>Business Inquiry</li></Link>
-              <Link to={'/'} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}><li>Terms & Condition</li></Link>
               <Link to="/Registration" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}><li>Register As Vendor</li></Link>
+              <Link to={'/'} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}><li>Privacy Policy</li></Link>
+              <Link to={'/'} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}><li>Terms & Condition</li></Link>
 
               <div className="flex justify-end lg:ml-10 xl:m-2 xl:mt-25 lg:mt-23 md:mr-2">
                 <div className="relative">

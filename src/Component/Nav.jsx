@@ -338,7 +338,7 @@ export default function Nav({ bgColor, textColor }) {
           {/* Inquiry Button */}
 
         </ul>
-        <Link to="/InquiryForm"><button className="bg-orange-500 hover:bg-orange-600 text-white text-sm md:text-base px-4 py-2 rounded-lg hidden md:block">
+        <Link to="/InquiryForm"><button className="bg-orange-500 hover:bg-orange-600 text-white text-sm md:text-base px-4 py-2 rounded-lg hidden md:block cursor-pointer">
           Inquiry Form
         </button></Link>
         {/* Mobile Navigation Toggle */}
