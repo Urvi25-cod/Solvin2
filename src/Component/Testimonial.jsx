@@ -434,7 +434,16 @@ const Testimonial = () => {
                 {/* Image */}
 
                 <div
-                  className="bg-white text-black px-4 md:px-6 pt-8 md:pt-10 pb-6 md:w-[300px]  h-[178px] w-[280px] max-w-md  mx-auto border border-gray-200 shadow-xl relative transition-all duration-200"
+                  className="
+    bg-white text-black 
+    px-3 py-6 
+    sm:px-4 sm:py-8 
+    md:px-6 md:pt-10 md:pb-6 
+    xl:w-[400px] max-w-[320px] 
+    h-auto min-h-[180px] lg:w-[280px] 
+    mx-auto border border-gray-200 shadow-xl 
+    relative transition-all duration-200
+  "
                   style={{
                     borderTopRightRadius: "100px",
                     borderTopLeftRadius: "10px",
@@ -481,4 +490,3 @@ const Testimonial = () => {
 };
 
 export default Testimonial;
-	
