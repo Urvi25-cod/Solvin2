@@ -600,14 +600,17 @@ export default function Footer() {
                 <div className="relative">
                   <button
                     onClick={() => setLanguageDropdownOpen((open) => !open)}
-                    className="max-w-full bg-[#1F4278]   text-white px-4 py-2  rounded-md flex items-center justify-between mt-1    md:w-[108px] md:text-sm md:px-2 md:mt-[130px]  lg:mr-[50px] lg:mt-[70px] xl:mr-[100px] xl:mt-[1px] 2xl:mr-[140px] 2xl:w-[50%]"
+                    className="max-w-full bg-[#1F4278]   text-white px-4 py-2  rounded-md flex items-center justify-between mt-1    md:w-[108px] md:text-sm md:px-2 md:mt-[130px]  lg:mr-[50px] lg:mt-[70px] xl:mr-[100px] xl:mt-[1px] 2xl:mr-[140px] 2xl:w-[65%]"
                   >
                     <img src={flag1} alt="flag" className="inline-block w-6 h-6 mr-2 md:w-4 h-4 " />
                     ENGLISH
                     <span className="ml-1">{languageDropdownOpen ? "▲" : "▼"}</span>
                   </button>
                   {languageDropdownOpen && (
-                    <ul className="absolute right-0 z-10 mt-2 mr-20 bg-white bottom-full   text-black rounded-md shadow-lg w-[200px]">
+                    // <ul className="absolute right-0 z-10 mt-2 mr-20 bg-white bottom-full   text-black rounded-md shadow-lg w-[200px]">
+                    // <ul className="absolute right-0 z-10 mt-2 mr-20 bg-white bottom-full    text-black rounded-md shadow-lg w-[200px]">
+                     <ul className="absolute xl:right-12 right-0 z-10 mt-2  mr-[-5] md:bottom-[45px]   bg-white bottom-full   text-black rounded-md shadow-lg w-[200px]"> 
+
                       {languages.map((lang) => (
                         <li
                           key={lang.name}

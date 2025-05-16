@@ -45,8 +45,10 @@ const About = () => {
       </div>
 
       {/* <section className="container mx-auto px-4 sm:px-6 lg:px-12 py-12 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center"> */}
-      <section className="container mx-auto lg:px-16   md:px-20  sm:px-6 py-12 p-2 py-8 grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
+      {/* <section className="container mx-auto lg:px-16   md:px-20  sm:px-6 py-12 p-2 py-8 grid grid-cols-1 lg:grid-cols-3 gap-6 items-center"> */}
         {/* Image Container */}
+              <section className="container mx-auto sm:px-6 px-6 lg:px-16 py-4 grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
+
         <div className="w-full flex lg:col-span-1">
           <img
             src={supply}
@@ -80,7 +82,7 @@ const About = () => {
 
 
 
-      <div className="container mx-auto lg:px-16   md:px-20  sm:px-6 py-12 p-2 py-8">
+      <div className="container mx-auto sm:px-6 px-6 lg:px-16 py-4">
         <div>
           <h3 className="text-orange-500 mb-4">
             Our Mission & Vision </h3>

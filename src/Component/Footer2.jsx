@@ -152,7 +152,7 @@ const Footer2 = () => {
                 <div className="relative">
                   <button
                     onClick={() => setLanguageDropdownOpen((open) => !open)}
-                    className="max-w-full bg-[#1F4278]   text-white px-4 py-2  rounded-md flex items-center justify-between mt-1    md:w-[108px] md:text-sm md:px-2 md:mt-[130px]  lg:mr-[50px] lg:mt-[70px] xl:mr-[100px] xl:m-[1px] 2xl:mr-[140px] 2xl:w-[50%]"
+                    className="max-w-full bg-[#1F4278]   text-white px-4 py-2  rounded-md flex items-center justify-between mt-1    md:w-[108px] md:text-sm md:px-2 md:mt-[130px]  lg:mr-[50px] lg:mt-[70px] xl:mr-[100px] xl:m-[1px] 2xl:mr-[140px] 2xl:w-[6%]"
                   >
                     <img src={flag1} alt="flag" className="inline-block w-6 h-6 mr-2 md:w-4 h-4 " />
                     ENGLISH
@@ -183,6 +183,7 @@ const Footer2 = () => {
           © 2022–2026 SolviGlobe Limited. All Rights Reserved.
         </p> */}
       {/* </div> */}
+     
       </div>
     </footer>
   );

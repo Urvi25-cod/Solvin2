@@ -328,18 +328,39 @@
 
 import React from "react";
 import Slider from "react-slick";
-import testi from "../Images/testi.png";
+import review from "../Images/review.svg";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const testimonials = [
-  { id: 1, image: testi },
-  { id: 2, image: testi },
-  { id: 3, image: testi },
-  { id: 4, image: testi },
-  { id: 5, image: testi },
+  {
+    id: 1,
+    desc: "Pengalaman yang sangat menyenangkan, di tambah pelayananya ramah banget, top banget, rekomend buat yang mau cobain!",
+    image: review, // Replace with actual image path
+    rating: 4,
+  },
+  {
+    id: 2,
+    desc: "Pengalaman yang sangat menyenangkan, di tambah pelayananya ramah banget, top banget, rekomend buat yang mau cobain!",
+    image: review, // Replace with actual image path
+    rating: 4,
+  },
+  {
+    id: 3,
+    desc: "Pengalaman yang sangat menyenangkan, di tambah pelayananya ramah banget, top banget, rekomend buat yang mau cobain!",
+    image: review, // Replace with actual image path
+    rating: 4,
+  },
+  {
+    id: 4,
+    desc: "Pengalaman yang sangat menyenangkan, di tambah pelayananya ramah banget, top banget, rekomend buat yang mau cobain!",
+    image: review, // Replace with actual image path
+    rating: 4,
+  },
+  // add more...
 ];
+
 
 const settings = {
   dots: false,
@@ -369,7 +390,7 @@ const settings = {
     {
       breakpoint: 768,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
         dots: true,
       },
@@ -387,11 +408,11 @@ const settings = {
 
 const Testimonial = () => {
   return (
-    <div className="container mx-auto px-10 py-12 relative">
+    <div className="container mx-auto  px-4  py-12 relative">
       {/* Heading */}
       <h4 className="text-orange-500 text-lg font-semibold mb-2 text-center">Testimonial</h4>
       <h2 className="text-2xl md:text-3xl font-bold  text-[#1F4278] text-center">
-         <span className="">Built on {" "}</span><span className="text-orange-500 text-center">Trust Proven {" "}</span> 
+        <span className="">Built on {" "}</span><span className="text-orange-500 text-center">Trust Proven {" "}</span>
         <span className="text-[#1F4278] text-center">by Clients</span>
       </h2>
 
@@ -401,17 +422,55 @@ const Testimonial = () => {
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="px-4">
               <div className="p-5 rounded-lg">
-                <img
-                  src={testimonial.image}
-                  alt={`testimonial-${testimonial.id}`}
-                  className="w-full h-auto rounded-lg object-cover"
-                />
-                {/* <img
-                  src={testimonial.image}
-                  alt={`testimonial-${testimonial.id}`}
-                  className="  w-full h-auto rounded-lg object-cover  scale-132 md:scale-100 transition-transform duration-300 "
-                /> */}
+                {/* <div
+                  className="bg-white text-black px-6 pt-10 pb-6 w-full border border-gray-200 shadow-xl relative transition-all duration-200"
+                  style={{
+                    borderTopRightRadius: "100px",
+                    borderTopLeftRadius: "10px",
+                    borderBottomRightRadius: "5px",
+                    borderBottomLeftRadius: "100px",
+                  }}
+                > */}
+                {/* Image */}
 
+                <div
+                  className="bg-white text-black px-4 md:px-6 pt-8 md:pt-10 pb-6 md:w-[300px]  h-[178px] w-[280px] max-w-md  mx-auto border border-gray-200 shadow-xl relative transition-all duration-200"
+                  style={{
+                    borderTopRightRadius: "100px",
+                    borderTopLeftRadius: "10px",
+                    borderBottomRightRadius: "5px",
+                    borderBottomLeftRadius: "100px",
+                  }}
+                >
+                  <div className="absolute -top-6 left-6 w-12 h-12 rounded-full overflow-hidden border-2 border-white shadow-md">
+                    <img
+                      src={testimonial.image}
+                      alt={`testimonial-${testimonial.id}`}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+
+                  {/* Stars */}
+                  <div className="flex pl-20 mt-2 space-x-1">
+                    {[...Array(5)].map((_, i) => (
+                      <svg
+                        key={i}
+                        xmlns="http://www.w3.org/2000/svg"
+                        className={`h-4 w-4 ${i < testimonial.rating ? "text-orange-400" : "text-gray-300"
+                          }`}
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.042 3.2a1 1 0 00.95.69h3.364c.969 0 1.371 1.24.588 1.81l-2.722 1.975a1 1 0 00-.364 1.118l1.042 3.2c.3.921-.755 1.688-1.538 1.118L10 13.011l-2.722 1.975c-.783.57-1.838-.197-1.538-1.118l1.042-3.2a1 1 0 00-.364-1.118L3.696 8.627c-.783-.57-.38-1.81.588-1.81h3.364a1 1 0 00.95-.69l1.042-3.2z" />
+                      </svg>
+                    ))}
+                  </div>
+
+                  {/* Description */}
+                  <p className="text-sm text-gray-700 mt-4 leading-relaxed text-center">
+                    “{testimonial.desc}”
+                  </p>
+                </div>
               </div>
             </div>
           ))}
@@ -422,3 +481,4 @@ const Testimonial = () => {
 };
 
 export default Testimonial;
+	

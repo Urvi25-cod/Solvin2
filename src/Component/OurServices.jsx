@@ -3,17 +3,22 @@ import sr1 from "../Images/sr1.png";
 import sr2 from "../Images/sr2.png";
 import sr3 from "../Images/sr3.png";
 import sr4 from "../Images/sr4.png";
+import se55 from "../Images/se55.svg";
 import sr5 from "../Images/sr5.png";
-import sr6 from "../Images/sr6.png";
+// import sr6 from "../Images/sr6.png";
+import ship from "../Images/ship.svg";
+import ship2 from "../Images/ship2.svg";
+
+
 import sr7 from "../Images/sr7.png";
 import sr8 from "../Images/sr8.png";
 
 import se1 from "../Images/se1.png";
 import se2 from "../Images/se2.png";
 import se3 from "../Images/se3.png";
-import se4 from "../Images/se4.png";
+// import se4 from "../Images/se4.png";
 import se5 from "../Images/se5.png";
-import se6 from "../Images/se6.png";
+// import se6 from "../Images/se6.png";
 import se7 from "../Images/se7.png";
 import se8 from "../Images/se8.png";
 
@@ -28,9 +33,9 @@ const OurServices = () => {
     { name: "Export-Import Services", icon: sr1, hover: se1, pagename: '/Services' },
     { name: "E2E Logistic Services", icon: sr2, hover: se2, pagename: '/E2Eservices' },
     { name: "Product Distribution", icon: sr3, hover: se3, pagename: '/Distribution' },
-    { name: "Warehousing Services", icon: sr4, hover: se4, pagename: '/Warehousing' },
+    { name: "Warehousing Services", icon: sr4, hover: se55, pagename: '/Warehousing' },
     { name: "Product R&D", icon: sr5, hover: se5, pagename: '/ITOutsourcing' },
-    { name: "Ship Candling Services", icon: sr6, hover: se6, pagename: '/Tradefinance' },
+    { name: "Ship Candling Services", icon: ship, hover: ship2, pagename: '/Tradefinance' },
     { name: "IT Outsourcing Services", icon: sr7, hover: se7, pagename: '/ProductRandD' },
     { name: "IT Outsourcing Services", icon: sr8, hover: se8, pagename: '/Shipchandling' },
 
