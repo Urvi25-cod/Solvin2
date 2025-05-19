@@ -228,7 +228,7 @@ const InquirySchema = Yup.object().shape({
   location: Yup.string().required("Location is required"),
   inquiryTypes: Yup.array().min(1, "Select at least one inquiry type"),
   inquiryDetails: Yup.string().required("Please describe your inquiry"),
-  WhenDoYouRequireIt:Yup.array().min(1, "Select at least one inquiry type"),
+  WhenDoYouRequireIt: Yup.array().min(1, "Select at least one inquiry type"),
   contactModes: Yup.array().min(1, "Select at least one contact mode"),
   uploadDocuments: Yup.mixed()
     .test("fileSize", "File size must be less than 10MB", value => {
@@ -247,14 +247,14 @@ const inquiryTypesList = [
 ];
 
 const contactModesList = ["Email", "Phone", "WhatsApp"];
-const DoYouRequireIt = ["When Do You Require It?", "Within a Week", "Within a Month","Flexible / No Urgent Timeline"];
+const WhenDoYouRequireIt = ["When Do You Require It?", "Within a Week", "Within a Month", "Flexible / No Urgent Timeline"];
 
 
 export default function InquiryForm() {
   return (
     <>
       <Nav bgColor="bg-white" textColor="text-black" />
-            {/* <div className="container mx-auto sm:px-6 px-6 lg:px-16 py-4"> */}
+      {/* <div className="container mx-auto sm:px-6 px-6 lg:px-16 py-4"> */}
 
       <div className="container mx-auto sm:px-6 px-6 lg:px-16 py-4 bg-white rounded-xl shadow-lg">
         <div className="mb-8 flex flex-col text-center">
@@ -271,7 +271,7 @@ export default function InquiryForm() {
             companyName: "",
             website: "",
             location: "",
-            WhenDoYouRequireIt:[],
+            WhenDoYouRequireIt: [],
             inquiryTypes: [],
             inquiryDetails: "",
             contactModes: [],
@@ -280,9 +280,9 @@ export default function InquiryForm() {
           validationSchema={InquirySchema}
           onSubmit={(values, { setSubmitting, resetForm }) => {
             for (const [key, value] of Object.entries(values)) {
-            console.log(`${key}:`, value);
-          }
-                    console.log("Submitted data:", values);
+              console.log(`${key}:`, value);
+            }
+            console.log("Submitted data:", values);
 
             setTimeout(() => {
               alert("Form submitted successfully!");
@@ -295,71 +295,71 @@ export default function InquiryForm() {
           {({ setFieldValue, isSubmitting, values }) => (
             <Form className="space-y-6" noValidate>
               {/* Full Name */}
-                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-              
-                <label className="block text-lg font-medium mb-1">Full Name *</label>
-                <Field
-                  type="text"
-                  name="fullName"
-                  className="w-full border border-gray-300 rounded-lg p-3 focus:ring-blue-500 focus:border-blue-500"
-                />
-                <ErrorMessage name="fullName" component="div" className="text-red-500 text-sm" />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+
+                  <label className="block text-lg font-medium mb-1">Full Name *</label>
+                  <Field
+                    type="text"
+                    name="fullName"
+                    className="w-full border border-gray-300 rounded-lg p-3 focus:ring-blue-500 focus:border-blue-500"
+                  />
+                  <ErrorMessage name="fullName" component="div" className="text-red-500 text-sm" />
+                </div>
+                {/* Email */}
+                <div>
+                  <label className="block text-lg font-medium mb-1">Email *</label>
+                  <Field
+                    type="email"
+                    name="email"
+                    className="w-full border border-gray-300 rounded-lg p-3 focus:ring-blue-500 focus:border-blue-500"
+                  />
+                  <ErrorMessage name="email" component="div" className="text-red-500 text-sm" />
+                </div>
               </div>
-              {/* Email */}
-              <div>
-                <label className="block text-lg font-medium mb-1">Email *</label>
-                <Field
-                  type="email"
-                  name="email"
-                  className="w-full border border-gray-300 rounded-lg p-3 focus:ring-blue-500 focus:border-blue-500"
-                />
-                <ErrorMessage name="email" component="div" className="text-red-500 text-sm" />
-              </div>
-              </div>
-                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Phone Number */}
-              <div>
-                <label className="block text-lg font-medium mb-1">Phone Number *</label>
-                <Field
-                  type="text"
-                  name="phoneNumber"
-                  maxLength={10}
-                  className="w-full border border-gray-300 rounded-lg p-3 focus:ring-blue-500 focus:border-blue-500"
-                />
-                <ErrorMessage name="phoneNumber" component="div" className="text-red-500 text-sm" />
-              </div>
-              {/* Company Name */}
-              <div>
-                <label className="block text-lg font-medium mb-1">Company Name *</label>
-                <Field
-                  type="text"
-                  name="companyName"
-                  className="w-full border border-gray-300 rounded-lg p-3 focus:ring-blue-500 focus:border-blue-500"
-                />
-                <ErrorMessage name="companyName" component="div" className="text-red-500 text-sm" />
-              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Phone Number */}
+                <div>
+                  <label className="block text-lg font-medium mb-1">Phone Number *</label>
+                  <Field
+                    type="text"
+                    name="phoneNumber"
+                    maxLength={10}
+                    className="w-full border border-gray-300 rounded-lg p-3 focus:ring-blue-500 focus:border-blue-500"
+                  />
+                  <ErrorMessage name="phoneNumber" component="div" className="text-red-500 text-sm" />
+                </div>
+                {/* Company Name */}
+                <div>
+                  <label className="block text-lg font-medium mb-1">Company Name *</label>
+                  <Field
+                    type="text"
+                    name="companyName"
+                    className="w-full border border-gray-300 rounded-lg p-3 focus:ring-blue-500 focus:border-blue-500"
+                  />
+                  <ErrorMessage name="companyName" component="div" className="text-red-500 text-sm" />
+                </div>
               </div>
               {/* Website */}
-                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label className="block text-lg font-medium mb-1">Website</label>
-                <Field
-                  type="text"
-                  name="website"
-                  className="w-full border border-gray-300 rounded-lg p-3 focus:ring-blue-500 focus:border-blue-500"
-                />
-              </div>
-              {/* Location */}
-              <div>
-                <label className="block text-lg font-medium mb-1">Location *</label>
-                <Field
-                  type="text"
-                  name="location"
-                  className="w-full border border-gray-300 rounded-lg p-3 focus:ring-blue-500 focus:border-blue-500"
-                />
-                <ErrorMessage name="location" component="div" className="text-red-500 text-sm" />
-              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label className="block text-lg font-medium mb-1">Website</label>
+                  <Field
+                    type="text"
+                    name="website"
+                    className="w-full border border-gray-300 rounded-lg p-3 focus:ring-blue-500 focus:border-blue-500"
+                  />
+                </div>
+                {/* Location */}
+                <div>
+                  <label className="block text-lg font-medium mb-1">Location *</label>
+                  <Field
+                    type="text"
+                    name="location"
+                    className="w-full border border-gray-300 rounded-lg p-3 focus:ring-blue-500 focus:border-blue-500"
+                  />
+                  <ErrorMessage name="location" component="div" className="text-red-500 text-sm" />
+                </div>
               </div>
               {/* Inquiry Types */}
               <div>
@@ -391,7 +391,7 @@ export default function InquiryForm() {
                 <ErrorMessage name="inquiryDetails" component="div" className="text-red-500 text-sm" />
               </div>
 
-               {/* <div className="md:col-span-2">
+              {/* <div className="md:col-span-2">
             <label className="block text-xl font-medium text-gray mb-[5px]">
               When Do You Require It?
             </label>
@@ -408,14 +408,14 @@ export default function InquiryForm() {
             ))}
            <ErrorMessage name="WhenDoYouRequireIt" component="div" className="text-red-500 text-sm" />
           </div> */}
-          <div>
+              {/* <div>
                 <label className="block text-lg font-medium mb-2">When Do You Require It? *</label>
                 <div className="flex flex-wrap gap-4">
-                  {DoYouRequireIt.map((term) => (
+                  {WhenDoYouRequireIt.map((term) => (
                     <label key={term} className="flex items-center space-x-2">
                       <Field
                         type="radio"
-                        name="WhenDoYouRequireIt"
+                        name="DoYouRequire"
                         value={term}
                         className="form-radio h-5 w-5 text-blue-600 border-gray-300 rounded"
                       />
@@ -423,8 +423,27 @@ export default function InquiryForm() {
                     </label>
                   ))}
                 </div>
+                <ErrorMessage name="DoYouRequire" component="div" className="text-red-500 text-sm" />
+              </div> */}
+
+              <div>
+                <label className="block text-xl font-semibold mb-2">When Do You Require It?</label>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {WhenDoYouRequireIt.map((option) => (
+                    <label key={option} className="flex items-center space-x-2">
+                      <Field
+                        type="checkbox"
+                        name="WhenDoYouRequireIt"
+                        value={option}
+                        className="form-checkbox h-5 w-5 text-blue-600"
+                      />
+                      <span>{option}</span>
+                    </label>
+                  ))}
+                </div>
                 <ErrorMessage name="WhenDoYouRequireIt" component="div" className="text-red-500 text-sm" />
               </div>
+
               {/* Contact Modes */}
               <div>
                 <label className="block text-lg font-medium mb-2">Preferred Contact Mode *</label>
@@ -446,21 +465,21 @@ export default function InquiryForm() {
 
               {/* File Upload */}
               <div>
-              <label className="block text-lg font-medium mb-1">Upload Document (optional, max 10MB)</label>
-              <input
-                type="file"
-                name="uploadDocuments"
-                accept=".pdf,.doc,.docx,.jpg,.png"
-                className="block w-full text-gray-700"
-                onChange={event => {
-                  setFieldValue("uploadDocuments", event.currentTarget.files[0]);
-                }}
-              />
-              <p className="text-lg text-gray-500 mt-1">
+                <label className="block text-lg font-medium mb-1">Upload Document (optional, max 10MB)</label>
+                <input
+                  type="file"
+                  name="uploadDocuments"
+                  accept=".pdf,.doc,.docx,.jpg,.png"
+                  className="block w-full text-gray-700"
+                  onChange={event => {
+                    setFieldValue("uploadDocuments", event.currentTarget.files[0]);
+                  }}
+                />
+                <p className="text-lg text-gray-500 mt-1">
                   Accepted formats: PDF, DOC, JPG, PNG (Max 10MB)
                 </p>
-              <ErrorMessage name="uploadDocuments" component="div" className="text-red-500 text-sm" />
-            </div>
+                <ErrorMessage name="uploadDocuments" component="div" className="text-red-500 text-sm" />
+              </div>
 
               {/* Submit Button */}
               {/* <div className="mb-6">
